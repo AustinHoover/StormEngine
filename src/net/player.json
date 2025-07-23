@@ -1,0 +1,45 @@
+{
+    "outputPath" : "./src/main/java/electrosphere/net/parser/",
+    "packageName" : "electrosphere.net.parser",
+    "categories":[
+        {
+            "categoryName" : "Player",
+            "data" : [
+                {
+                    "name" : "playerID",
+                    "type" : "FIXED_INT"
+                },
+                {
+                    "name" : "initialDiscretePositionX",
+                    "type" : "FIXED_INT"
+                },
+                {
+                    "name" : "initialDiscretePositionY",
+                    "type" : "FIXED_INT"
+                },
+                {
+                    "name" : "initialDiscretePositionZ",
+                    "type" : "FIXED_INT"
+                }
+            ],
+            "messageTypes" : [
+                {
+                    "messageName" : "Set_ID",
+                    "description" : "Provides the server's id for the player",
+                    "data" : [
+                        "playerID"
+                    ]
+                },
+                {
+                    "messageName" : "SetInitialDiscretePosition",
+                    "description" : "Tells the client the initial position of the player entity",
+                    "data" : [
+                        "initialDiscretePositionX",
+                        "initialDiscretePositionY",
+                        "initialDiscretePositionZ"
+                    ]
+                }
+            ]
+        }
+    ]
+}

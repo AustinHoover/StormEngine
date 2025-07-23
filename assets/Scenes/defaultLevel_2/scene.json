@@ -1,0 +1,11 @@
+{
+    "entities" : [],
+    "scriptPaths" : [],
+    "initScriptPath" : "/Scenes/defaultLevel_2/scene.ts",
+    "realmDescriptor" : {
+        "type" : "gridded",
+        "griddedRealmSize" : 2
+    },
+    "createSaveInstance" : true,
+    "loadAllCells": true
+}

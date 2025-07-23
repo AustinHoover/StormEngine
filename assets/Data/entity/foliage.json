@@ -1,0 +1,12 @@
+{
+    "foliageList" : [
+    ],
+    "files" : [
+        "Data/entity/foliage/grass.json",
+        "Data/entity/foliage/trees.json",
+        "Data/entity/foliage/bushes.json",
+        "Data/entity/foliage/rocks.json",
+        "Data/entity/foliage/flowers.json",
+        "Data/entity/foliage/crops.json"
+    ]
+}

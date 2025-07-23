@@ -1,0 +1,248 @@
+{
+    "textureMap": {
+        "Models/plane.fbx": [
+            {
+                "meshName" : "Cube",
+                "diffuse" : "/Textures/Ground/Dirt1.png"
+            }
+        ],
+        "Models/basic/geometry/unitsphere.glb": [
+            {
+                "meshName" : "Sphere",
+                "diffuse" : "/Textures/transparent_blue.png"
+            }
+        ],
+        "Models/basic/geometry/unitsphere.fbx": [
+            {
+                "meshName" : "Sphere",
+                "diffuse" : "/Textures/transparent_blue.png"
+            }
+        ],
+        "Models/basic/geometry/unitsphere_1.fbx": [
+            {
+                "meshName" : "Sphere",
+                "diffuse" : "/Textures/transparent_red.png"
+            }
+        ],
+        "Models/basic/geometry/unitsphere_grey.fbx": [
+            {
+                "meshName" : "Sphere",
+                "diffuse" : "/Textures/transparent_grey.png"
+            }
+        ],
+        "Models/basic/geometry/SmallCube.fbx": [
+            {
+                "meshName" : "Sphere",
+                "diffuse" : "/Textures/transparent_grey.png",
+                "isDefault": true
+            }
+        ],
+        "Models/basic/geometry/unitcylinder.glb": [
+            {
+                "meshName" : "Cylinder",
+                "diffuse" : "/Textures/transparent_grey.png",
+                "isDefault": true
+            }
+        ],
+        "Models/basic/geometry/unitcapsule.glb": [
+            {
+                "meshName" : "Sphere",
+                "diffuse" : "/Textures/transparent_grey.png",
+                "isDefault": true
+            }
+        ],
+        "Models/items/weapons/katana1alt.fbx": [
+            {
+                "meshName" : "Cube.001",
+                "diffuse" : "/Textures/katana1.png"
+            }
+        ],
+        "Models/items/weapons/katana1alt.glb": [
+            {
+                "meshName" : "Cube.001",
+                "diffuse" : "/Textures/katana1.png"
+            }
+        ],
+        "Models/goblin1.fbx" : [
+            {
+                "meshName" : "makehuman1",
+                "diffuse" : "/Textures/GoblinSkin.png",
+                "isDefault" : true
+            },
+            {
+                "meshName" : "high-poly",
+                "diffuse" : "/Textures/GoblinEyes.png"
+            }
+        ],
+        "Models/elf1.fbx" : [
+            {
+                "meshName" : "Torso.001",
+                "diffuse" : "/Textures/skin1.png",
+                "isDefault" : true
+            },
+            {
+                "meshName" : "Eyebrow.R",
+                "diffuse" : "/Textures/b1.png"
+            },
+            {
+                "meshName" : "Eyebrow.L",
+                "diffuse" : "/Textures/b1.png"
+            },
+            {
+                "meshName" : "Eye.R",
+                "diffuse" : "/Textures/w1.png"
+            },
+            {
+                "meshName" : "Eye.L",
+                "diffuse" : "/Textures/w1.png"
+            },
+            {
+                "meshName" : "Iris.R",
+                "diffuse" : "/Textures/b1.png"
+            },
+            {
+                "meshName" : "Iris.L",
+                "diffuse" : "/Textures/b1.png"
+            }
+        ],
+        "Models/basic/geometry/unitcylinder.fbx" : [
+            {
+                "meshName" : "Cylinder",
+                "diffuse" : "/Textures/transparent_blue.png"
+            }
+        ],
+        "Models/basic/geometry/unitplane.fbx" : [
+            {
+                "meshName" : "Plane",
+                "diffuse" : "/Textures/transparent_blue.png"
+            }
+        ],
+        "Models/basic/geometry/unitcube.fbx" : [
+            {
+                "meshName" : "Cube",
+                "diffuse" : "/Textures/transparent_blue.png"
+            }
+        ],
+        "Models/falloak1.fbx" : [
+            {
+                "meshName" : "Tree",
+                "diffuse" : "/Textures/transparent_blue.png",
+                "isDefault" : true
+            }
+        ],
+        "Models/deer1.fbx" : [
+            {
+                "meshName" : "Cube.001",
+                "diffuse" : "/Textures/transparent_blue.png",
+                "isDefault" : true
+            }
+        ],
+        "Models/bow1.fbx" : [
+            {
+                "meshName" : "BowMesh",
+                "diffuse" : "/Textures/bow1.png",
+                "isDefault" : true
+            }
+        ],
+        "Models/arrow1.fbx" : [
+            {
+                "meshName" : "ArrowMesh",
+                "diffuse" : "/Textures/arrow1.png",
+                "isDefault" : true
+            }
+        ],
+        "/Models/engine/lockoncrosshair1.fbx" : [
+            {
+                "meshName" : "Cube",
+                "diffuse" : "/Textures/w1.png",
+                "isDefault" : true
+            }
+        ],
+        "Models/creatures/person2/clothing/shorts1.fbx" : [
+            {
+                "meshName" : "ClothingItem",
+                "diffuse" : "/Textures/shorts1.png",
+                "isDefault" : true
+            }
+        ],
+        "Models/creatures/person2/hair/hairshort1meshed.fbx" : [
+            {
+                "meshName" : "Hair",
+                "diffuse" : "/Textures/b1.png",
+                "isDefault" : true
+            }
+        ],
+        "Models/boots1.fbx" : [
+            {
+                "meshName" : "BootLeft",
+                "diffuse" : "/Textures/boots1.png"
+            },
+            {
+                "meshName" : "BootRight",
+                "diffuse" : "/Textures/boots1.png"
+            }
+        ],
+        "Models/shirt1.fbx" : [
+            {
+                "meshName" : "ClothingItem",
+                "diffuse" : "/Textures/shirt1.png",
+                "isDefault" : true
+            }
+        ],
+        "Models/environment/cloudRing.fbx" : [
+            {
+                "meshName" : "Sphere",
+                "diffuse" : "/Textures/cloudRing.png",
+                "isDefault" : true
+            }
+        ],
+        "Models/environment/skyboxSphere.fbx" : [
+            {
+                "meshName" : "Sphere",
+                "diffuse" : "/Textures/starrySky.png",
+                "isDefault" : true
+            }
+        ],
+        "Models/campfire1.fbx" : [
+            {
+                "meshName" : "Cylinder",
+                "diffuse" : "/Textures/campfire1.png",
+                "isDefault" : true
+            }
+        ],
+        "Models/crate2.fbx" : [
+            {
+                "meshName" : "Cube",
+                "diffuse" : "/Textures/woodplanks1.png",
+                "isDefault" : true
+            }
+        ],
+        "Models/foliage/foliageBlockTemplate1Test1.fbx" : [
+            {
+                "meshName" : "Plane",
+                "diffuse" : "/Textures/leaf3layer1.png",
+                "isDefault" : true
+            }
+        ],
+        "Models/proceduralTree2/proceduralTree2.fbx": [
+            {
+                "meshName" : "Trunk",
+                "diffuse" : "/Textures/proceduralTree2/Trunk.png",
+                "isDefault" : true
+            }
+        ],
+        "Models/foliage/proceduralTree2/proceduralTree2v2.fbx": [
+            {
+                "meshName" : "Trunk",
+                "diffuse" : "/Models/foliage/proceduralTree2/Trunk.png",
+                "isDefault" : true
+            }
+        ],
+        "Models/foliage/grass2.fbx": [
+            {
+                "meshName": "Plane",
+                "diffuse": "/Textures/b1.png"
+            }
+        ]
+    }
+}

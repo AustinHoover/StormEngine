@@ -1,0 +1,59 @@
+{
+    "types" : [
+        {
+            "id" : 0,
+            "name" : "Air"
+        },
+        {
+            "id" : 1,
+            "name" : "Brick (Slab)",
+            "texture" : "/Textures/block/tileableSlabstone.png"
+        },
+        {
+            "id" : 2,
+            "name" : "Wood",
+            "texture" : "/Textures/wooden.png"
+        },
+        {
+            "id" : 3,
+            "name" : "Brick (Fantasy)",
+            "texture" : "/Textures/block/ruin_wall_01.png"
+        },
+        {
+            "id" : 4,
+            "name" : "Roof Tile",
+            "texture" : "/Textures/block/roof1.png"
+        },
+        {
+            "id" : 5,
+            "name" : "Wood (Refined)",
+            "texture" : "/Textures/block/woodfiber.png"
+        },
+        {
+            "id" : 6,
+            "name" : "Glass",
+            "texture" : "/Textures/block/glass1.png",
+            "transparent" : true
+        },
+        {
+            "id" : 7,
+            "name" : "Wood Planks",
+            "texture" : "/Textures/block/woodplank1.png"
+        },
+        {
+            "id" : 8,
+            "name" : "Wood (Fine)",
+            "texture" : "/Textures/block/wood_fine_1.png"
+        },
+        {
+            "id" : 9,
+            "name" : "Wood (Redwood)",
+            "texture" : "/Textures/block/wood_redwood_1.png"
+        },
+        {
+            "id" : 10,
+            "name" : "Plaster",
+            "texture" : "/Textures/block/plaster_1.png"
+        }
+    ]
+}

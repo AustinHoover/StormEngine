@@ -1,0 +1,39 @@
+{
+    "textureMap": {
+        "Models/items/materials/log.glb": [
+            {
+                "meshName" : "Cylinder",
+                "diffuse" : "/Models/items/materials/logmodel.png",
+                "isDefault" : true
+            }
+        ],
+        "Models/items/materials/stick1.glb": [
+            {
+                "meshName" : "Cylinder",
+                "diffuse" : "/Textures/wooden.png",
+                "isDefault" : true
+            }
+        ],
+        "Models/items/materials/rock1.glb": [
+            {
+                "meshName" : "Cylinder",
+                "diffuse" : "/Textures/Ground/rock3_256.png",
+                "isDefault" : true
+            }
+        ],
+        "Models/items/materials/rock2.glb": [
+            {
+                "meshName" : "Cylinder",
+                "diffuse" : "/Textures/Ground/rock3_256.png",
+                "isDefault" : true
+            }
+        ],
+        "Models/items/materials/rock3.glb": [
+            {
+                "meshName" : "Cylinder",
+                "diffuse" : "/Textures/Ground/rock3_256.png",
+                "isDefault" : true
+            }
+        ]
+    }
+}

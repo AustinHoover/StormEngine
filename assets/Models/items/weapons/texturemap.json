@@ -1,0 +1,18 @@
+{
+    "textureMap": {
+        "Models/items/weapons/shovel1.glb": [
+            {
+                "meshName" : "Cylinder",
+                "diffuse" : "/Models/items/weapons/shovel1.png",
+                "isDefault" : true
+            }
+        ],
+        "Models/items/weapons/axe1.glb": [
+            {
+                "meshName" : "Axe",
+                "diffuse" : "/Models/items/weapons/axe.png",
+                "isDefault" : true
+            }
+        ]
+    }
+}

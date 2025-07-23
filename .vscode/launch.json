@@ -1,0 +1,86 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}",
+            "vmArgs": "-Xmx6G -Xms1024m -Djava.library.path=./shared-folder -XX:+UseZGC -XX:SoftMaxHeapSize=5G -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=\"./tmp/heap.hprof\"",
+            "preLaunchTask": "Install Native Lib"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main",
+            "request": "launch",
+            "mainClass": "electrosphere.engine.Main",
+            "vmArgs": "-Xmx6G -Xms1024m -Djava.library.path=./shared-folder -XX:+UseZGC -XX:SoftMaxHeapSize=5G -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=\"./tmp/heap.hprof\"",
+            "projectName": "Renderer",
+            "preLaunchTask": "Install Native Lib"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main (Debug Memory)",
+            "request": "launch",
+            "mainClass": "electrosphere.engine.Main",
+            "vmArgs": "-Xmx6G -Xms1024m -Djava.library.path=./shared-folder -XX:+UseZGC -XX:SoftMaxHeapSize=5G -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=\"./tmp/heap.hprof\" -javaagent:./lwjglx-debug-1.0.0.jar=t;o=trace.log",
+            "projectName": "Renderer",
+            "preLaunchTask": "Install Native Lib"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main (Debug Audio)",
+            "request": "launch",
+            "mainClass": "electrosphere.engine.Main",
+            "env": {
+                "ALSOFT_LOGLEVEL": 4
+            },
+            "vmArgs": "-Xmx6G -Xms1024m -Djava.library.path=./shared-folder -XX:+UseZGC -XX:SoftMaxHeapSize=5G -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=\"./tmp/heap.hprof\"",
+            "projectName": "Renderer"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main (macos)",
+            "request": "launch",
+            "mainClass": "electrosphere.engine.Main",
+            "projectName": "Renderer",
+            "vmArgs": "-XstartOnFirstThread"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main (Headless)",
+            "request": "launch",
+            "mainClass": "electrosphere.engine.Main",
+            "projectName": "Renderer",
+            "args": "--headless"
+        },
+        {
+            "name": "C/C++: gcc.exe build and debug active file",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${cwd}/out/build/test_runner.exe",
+            "args": [
+                "${cmake.testArgs}"
+            ],
+            "stopAtEntry": false,
+            "cwd": "${cmake.testWorkingDirectory}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerPath": "C:\\ProgramData\\mingw64\\mingw64\\bin\\gdb.exe",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set Disassembly Flavor to Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "CMake: clean rebuild"
+        }
+    ]
+}

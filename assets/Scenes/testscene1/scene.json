@@ -1,0 +1,10 @@
+{
+    "entities" : [],
+    "scriptPaths" : [],
+    "realmDescriptor" : {
+        "type" : "gridded",
+        "griddedRealmSize" : 2
+    },
+    "createSaveInstance" : false,
+    "loadAllCells": true
+}

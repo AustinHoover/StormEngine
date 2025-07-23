@@ -1,0 +1,10 @@
+{
+    "recipes": [
+    ],
+    "files": [
+        "Data/game/recipes/weapons.json",
+        "Data/game/recipes/tools.json",
+        "Data/game/recipes/fabs.json",
+        "Data/game/recipes/voxelrecipes.json"
+    ]
+}

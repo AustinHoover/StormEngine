@@ -1,0 +1,574 @@
+{
+    "creatures" : [
+        {
+            "id" : "skeleton",
+            "displayName" : "Skeleton",
+            "hitboxes" : [
+                {
+                    "type": "hurt",
+                    "bone": "Bicep.L",
+                    "radius": 0.04
+                },
+                {
+                    "type": "hurt",
+                    "bone": "Bicep.R",
+                    "radius": 0.04
+                },
+                {
+                    "type": "hurt",
+                    "bone": "Forearm.L",
+                    "radius": 0.06
+                },
+                {
+                    "type": "hurt",
+                    "bone": "Forearm.R",
+                    "radius": 0.06
+                },
+                {
+                    "type": "hurt",
+                    "bone": "Leg.L",
+                    "radius": 0.06
+                },
+                {
+                    "type": "hurt",
+                    "bone": "Leg.R",
+                    "radius": 0.06
+                },
+                {
+                    "type": "hurt",
+                    "bone": "LowerLeg.L",
+                    "radius": 0.06
+                },
+                {
+                    "type": "hurt",
+                    "bone": "LowerLeg.R",
+                    "radius": 0.06
+                },
+                {
+                    "type": "hurt",
+                    "bone": "Neck",
+                    "radius": 0.06
+                },
+                {
+                    "type": "hurt",
+                    "bone": "Head",
+                    "radius": 0.07,
+                    "offset": [0.0,0.13,0.0]
+                }
+            ],
+            "tokens" : [
+                "ATTACKER",
+                "GRAVITY",
+                "TARGETABLE",
+                "CAN_EQUIP",
+                "OUTLINE",
+                "UNIT_CONTROLS"
+            ],
+            "inventoryData" : {
+                "naturalSize" : 10
+            },
+            "visualAttributes" : [
+            ],
+            "movementSystems" : [
+                {
+                    "type" : "GROUND",
+                    "acceleration" : 4000.0,
+                    "maxVelocity" : 20.5,
+                    "strafeMultiplier" : 1.0,
+                    "backpedalMultiplier" : 0.5,
+                    "footstepFirstAudioOffset" : 0.2,
+                    "footstepSecondAudioOffset" : 0.6,
+                    "animationStartup" : {
+                        "nameThirdPerson" : "Jog",
+                        "priorityCategory"  : "CORE_MOVEMENT"
+                    },
+                    "animationLoop" : {
+                        "nameThirdPerson" : "Jog",
+                        "priorityCategory"  : "CORE_MOVEMENT"
+                    },
+                    "animationWindDown" : {
+                        "nameThirdPerson" : "Jog",
+                        "priorityCategory"  : "CORE_MOVEMENT"
+                    },
+                    "sprintSystem" : {
+                        "modifier" : 1.4,
+                        "staminaMax" : 500,
+                        "animationStartUp" : {
+                            "nameThirdPerson" : "Sprint",
+                            "priorityCategory"  : "MOVEMENT_MODIFIER"
+                        },
+                        "animationMain" : {
+                            "nameThirdPerson" : "Sprint",
+                            "priorityCategory"  : "MOVEMENT_MODIFIER"
+                        }
+                    }
+                },
+                {
+                    "type" : "JUMP",
+                    "jumpFrames" : 3,
+                    "jumpForce" : 1.3,
+                    "animationJump" : {
+                        "nameThirdPerson" : "Jump",
+                        "nameFirstPerson" : "Jump",
+                        "priorityCategory"  : "MOVEMENT_MODIFIER"
+                    }
+                },
+                {
+                    "type" : "FALL",
+                    "fallState" : {
+                        "animation" : {
+                            "nameThirdPerson" : "Fall",
+                            "nameFirstPerson" : "Fall",
+                            "priorityCategory"  : "MOVEMENT_MODIFIER"
+                        }
+                    },
+                    "landState" : {
+                        "animation" : {
+                            "nameThirdPerson" : "Land",
+                            "nameFirstPerson" : "Land",
+                            "priorityCategory"  : "MOVEMENT_MODIFIER"
+                        }
+                    }
+                },
+                {
+                    "type" : "WALK",
+                    "modifier": 0.3
+                }
+            ],
+            "rotatorSystem" : {
+            },
+            "equipPoints" : [
+                {
+                    "equipPointId" : "handLeft",
+                    "bone" : "Hand.L",
+                    "firstPersonBone" : "hand.L",
+                    "offsetVectorFirstPerson" : [0,0,0],
+                    "offsetVectorThirdPerson" : [0,0,0],
+                    "offsetRotationFirstPerson" : [0,0,0,1],
+                    "offsetRotationThirdPerson" : [0,0,0,1],
+                    "equipClassWhitelist" : [
+                        "tool",
+                        "shield",
+                        "item"
+                    ]
+                },
+                {
+                    "equipPointId" : "handRight",
+                    "bone" : "Hand.R",
+                    "firstPersonBone" : "hand.R",
+                    "offsetVectorFirstPerson" : [-0.01,-0.05,-0.10],
+                    "offsetVectorThirdPerson" : [0.02,-0.06,0],
+                    "offsetRotationThirdPerson" : [-0.334,0.145,-0.28,0.89],
+                    "offsetRotationFirstPerson" : [0.02,-0.977,-0.211,-0.005],
+                    "canBlock" : true,
+                    "equipClassWhitelist" : [
+                        "tool",
+                        "weapon",
+                        "item"
+                    ],
+                    "equippedAnimation" : {
+                        "nameThirdPerson" : "Idle1",
+                        "nameFirstPerson" : "Idle",
+                        "priorityCategory"  : "MODIFIER_HIGH",
+                        "boneGroups" : ["handRight"]
+                    },
+                    "isToolbarSlot": true
+                },
+                {
+                    "equipPointId" : "handsCombined",
+                    "bone" : "Hand.R",
+                    "firstPersonBone" : "hand.R",
+                    "offsetVectorThirdPerson" : [0.02,-0.06,0],
+                    "offsetVectorFirstPerson" : [0.04,-0.08,0.016],
+                    "offsetRotationThirdPerson" : [0.665,-0.462,0.176,-0.56],
+                    "offsetRotationFirstPerson" : [0.35,-0.775,-0.012,-0.53],
+                    "canBlock" : true,
+                    "equipClassWhitelist" : [
+                        "tool",
+                        "weapon2H",
+                        "item"
+                    ],
+                    "equippedAnimation" : {
+                        "nameThirdPerson" : "HoldItemR2H",
+                        "nameFirstPerson" : "HoldItemR2H",
+                        "priorityCategory"  : "MODIFIER_HIGH",
+                        "boneGroups" : ["armLeft", "armRight", "handLeft", "handRight"]
+                    },
+                    "isToolbarSlot": true,
+                    "isCombinedPoint": true,
+                    "subPoints" : ["handLeft","handRight"]
+                },
+                {
+                    "equipPointId" : "Torso",
+                    "bone" : "Bone",
+                    "offsetVectorFirstPerson" : [0,0,0],
+                    "offsetVectorThirdPerson" : [0,0,0],
+                    "offsetRotationFirstPerson" : [0,0,0,1],
+                    "offsetRotationThirdPerson" : [0,0,0,1],
+                    "equipClassWhitelist" : [
+                        "armor",
+                        "clothing"
+                    ]
+                },
+                {
+                    "equipPointId" : "Legs",
+                    "bone" : "Bone",
+                    "offsetVectorFirstPerson" : [0,0,0],
+                    "offsetVectorThirdPerson" : [0,0,0],
+                    "offsetRotationFirstPerson" : [0,0,0,1],
+                    "offsetRotationThirdPerson" : [0,0,0,1],
+                    "equipClassWhitelist" : [
+                        "armor",
+                        "clothing"
+                    ]
+                }
+            ],
+            "toolbarData" : {
+                "primarySlot" : "handRight",
+                "combinedSlot" : "handsCombined"
+            },
+            "blockSystem" : {
+                "variants": [
+                    {
+                        "variantId": "block2H",
+                        "windUpAnimation" : {
+                            "nameThirdPerson": "HoldItemR2HBlockStart",
+                            "nameFirstPerson": "HoldItemR2HBlockWindUp",
+                            "priorityCategory": "MOVEMENT_MODIFIER",
+                            "boneGroups" : ["armLeft", "armRight", "handLeft", "handRight"]
+                        },
+                        "mainAnimation" : {
+                            "nameThirdPerson": "HoldItemR2HBlock",
+                            "nameFirstPerson": "HoldItemR2HBlock",
+                            "priorityCategory": "MOVEMENT_MODIFIER",
+                            "boneGroups" : ["armLeft", "armRight", "handLeft", "handRight"]
+                        },
+                        "cooldownAnimation" : {
+                            "nameThirdPerson": "HoldItemR2HBlockCooldown",
+                            "nameFirstPerson": "HoldItemR2HBlockCooldown",
+                            "priorityCategory": "MOVEMENT_MODIFIER",
+                            "boneGroups" : ["armLeft", "armRight", "handLeft", "handRight"]
+                        },
+                        "defaults" : [
+                            {
+                                "equipPoint" : "handsCombined",
+                                "itemClassEquipped" : "weapon2H"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "collidable" : {
+                "type" : "CYLINDER",
+                "dimension1" : 0.2,
+                "dimension2" : 1.6,
+                "dimension3" : 0.2,
+                "linearFriction": 0.001,
+                "mass": 0.3,
+                "rotX": 0,
+                "rotY": 0,
+                "rotZ": 0,
+                "rotW": 1,
+                "offsetX" : 0,
+                "offsetY" : 0.8,
+                "offsetZ" : 0,
+                "angularlyStatic" : true
+            },
+            "attackMoves" : [
+                {
+                    "attackMoveId" : "Unarmed1",
+                    "type" : "ATTACK_MOVE_UNARMED",
+                    "firesProjectile" : false,
+                    "nextMoveId" : "Unarmed2",
+                    "nextAttackMoveWindowStart" : 0,
+                    "nextAttackMoveWindowEnd" : 1,
+                    "moveChainWindowStart" : 12,
+                    "moveChainWindowEnd" : 18,
+                    "initialMove" : true,
+                    "attackState" : {
+                        "animation" : {
+                            "nameFirstPerson" : "AttackUnarmed1",
+                            "nameThirdPerson" : "AttackUnarmed1",
+                            "priorityCategory"  : "MOVEMENT_MODIFIER"
+                        }
+                    }
+                },
+                {
+                    "attackMoveId" : "Unarmed2",
+                    "type" : "ATTACK_MOVE_UNARMED",
+                    "firesProjectile" : false,
+                    "nextAttackMoveWindowStart" : 0,
+                    "nextAttackMoveWindowEnd" : 1,
+                    "moveChainWindowStart" : 12,
+                    "moveChainWindowEnd" : 18,
+                    "initialMove" : false,
+                    "attackState" : {
+                        "animation" : {
+                            "nameFirstPerson" : "AttackUnarmed2",
+                            "nameThirdPerson" : "AttackUnarmed2",
+                            "priorityCategory"  : "MOVEMENT_MODIFIER"
+                        }
+                    }
+                },
+                {
+                    "attackMoveId" : "Sword1HSlash1",
+                    "type" : "MELEE_WEAPON_SWING_ONE_HAND",
+                    "windupFrames" : 5,
+                    "attackFrames" : 5,
+                    "cooldownFrames" : 25,
+                    "firesProjectile" : false,
+                    "nextMoveId" : "Sword1HSlash2",
+                    "nextAttackMoveWindowStart" : 0,
+                    "nextAttackMoveWindowEnd" : 1,
+                    "moveChainWindowStart" : 12,
+                    "moveChainWindowEnd" : 18,
+                    "driftGoal" : 0.02,
+                    "driftFrameStart" : 7,
+                    "driftFrameEnd" : 15,
+                    "initialMove" : true,
+                    "windupState" : {
+                        "animation" : {
+                            "nameFirstPerson" : "Sword1HSlash1",
+                            "nameThirdPerson" : "Sword1HSlash1",
+                            "priorityCategory"  : "MOVEMENT_MODIFIER"
+                        }
+                    },
+                    "holdState" : {
+                        "animation" : {
+                            "nameFirstPerson" : "Sword1HSlash1",
+                            "nameThirdPerson" : "Sword1HSlash1",
+                            "priorityCategory"  : "MOVEMENT_MODIFIER"
+                        }
+                    },
+                    "attackState" : {
+                        "animation" : {
+                            "nameFirstPerson" : "Sword1HSlash1",
+                            "nameThirdPerson" : "Sword1HSlash1",
+                            "priorityCategory"  : "MOVEMENT_MODIFIER"
+                        }
+                    }
+                },
+                {
+                    "attackMoveId" : "Sword1HSlash2",
+                    "type" : "MELEE_WEAPON_SWING_ONE_HAND",
+                    "windupFrames" : 2,
+                    "attackFrames" : 5,
+                    "cooldownFrames" : 28,
+                    "firesProjectile" : false,
+                    "nextMoveId" : "Sword1HSlash1",
+                    "nextAttackMoveWindowStart" : 10,
+                    "nextAttackMoveWindowEnd" : 18,
+                    "driftGoal" : 0.03,
+                    "driftFrameStart" : 1,
+                    "driftFrameEnd" : 10,
+                    "initialMove" : false,
+                    "windupState" : {
+                        "animation" : {
+                            "nameFirstPerson" : "Jump",
+                            "nameThirdPerson" : "Jump",
+                            "priorityCategory"  : "MOVEMENT_MODIFIER"
+                        }
+                    },
+                    "holdState" : {
+                        "animation" : {
+                            "nameFirstPerson" : "Jump",
+                            "nameThirdPerson" : "Jump",
+                            "priorityCategory"  : "MOVEMENT_MODIFIER"
+                        }
+                    },
+                    "attackState" : {
+                        "animation" : {
+                            "nameFirstPerson" : "Sword1HSlash2",
+                            "nameThirdPerson" : "Sword1HSlash2",
+                            "priorityCategory"  : "MOVEMENT_MODIFIER"
+                        }
+                    }
+                },
+                {
+                    "attackMoveId" : "SwordR2HSlash1",
+                    "type" : "MELEE_WEAPON_SWING_TWO_HAND",
+                    "windupFrames" : 2,
+                    "attackFrames" : 5,
+                    "cooldownFrames" : 28,
+                    "firesProjectile" : false,
+                    "nextAttackMoveWindowStart" : 10,
+                    "nextAttackMoveWindowEnd" : 18,
+                    "driftGoal" : 0.03,
+                    "driftFrameStart" : 1,
+                    "driftFrameEnd" : 10,
+                    "initialMove" : true,
+                    "hitstun" : 7,
+                    "attackState" : {
+                        "animation" : {
+                            "nameFirstPerson" : "SwordR2HSlash1",
+                            "nameThirdPerson" : "SwordR2HSlash1",
+                            "priorityCategory"  : "MOVEMENT_MODIFIER",
+                            "boneGroups" : ["armLeft", "armRight", "handLeft", "handRight"]
+                        },
+                        "audioData" : {
+                            "audioPath" : "Audio/weapons/swoosh-03.ogg"
+                        }
+                    },
+                    "blockRecoilState" : {
+                        "animation" : {
+                            "nameFirstPerson" : "SwordR2HSlash1Recoil",
+                            "nameThirdPerson" : "SwordR2HSlash1Recoil",
+                            "priorityCategory"  : "MOVEMENT_MODIFIER",
+                            "boneGroups" : ["armLeft", "armRight", "handLeft", "handRight"]
+                        }
+                    }
+                },
+                {
+                    "attackMoveId" : "Bow2HFire",
+                    "type" : "RANGED_WEAPON_BOW_TWO_HAND",
+                    "damageStartFrame" : 30,
+                    "damageEndFrame" : 60,
+                    "firesProjectile" : true,
+                    "nextMoveId" : "",
+                    "nextAttackMoveWindowStart" : 0,
+                    "nextAttackMoveWindowEnd" : 1,
+                    "movementStart" : 0,
+                    "movementEnd" : 0,
+                    "movementGoal" : 0,
+                    "initialMove" : true,
+                    "windupState" : {
+                        "animation" : {
+                            "nameFirstPerson" : "Jump",
+                            "nameThirdPerson" : "HoldBowString",
+                            "priorityCategory"  : "MOVEMENT_MODIFIER"
+                        }
+                    },
+                    "holdState" : {
+                        "animation" : {
+                            "nameFirstPerson" : "Jump",
+                            "nameThirdPerson" : "HoldBow",
+                            "priorityCategory"  : "MOVEMENT_MODIFIER"
+                        }
+                    },
+                    "attackState" : {
+                        "animation" : {
+                            "nameFirstPerson" : "Sword1HSlash2",
+                            "nameThirdPerson" : "HoldBowString",
+                            "priorityCategory"  : "MOVEMENT_MODIFIER"
+                        }
+                    }
+                }
+            ],
+            "healthSystem" : {
+                "maxHealth" : 60,
+                "onDamageIFrames" : 30
+            },
+            "graphicsTemplate": {
+                "model": {
+                    "idleData": {
+                        "animation": {
+                            "nameFirstPerson" : "Idle",
+                            "nameThirdPerson" : "Idle1",
+                            "priorityCategory" : "IDLE"
+                        }
+                    },
+                    "path" : "Models/creatures/skeleton/skeleton1.glb"
+                }
+            },
+            "viewModelData" : {
+                "heightFromOrigin" : 1.3,
+                "cameraViewDirOffsetY" : -0.3,
+                "cameraViewDirOffsetZ" : 0.0,
+                "firstPersonModelPath" : "Models/creatures/viewmodel.glb"
+            },
+            "aiTrees" : [
+                {
+                    "name" : "Attacker",
+                    "aggroRange" : 10,
+                    "attackRange" : 0.8
+                }
+            ],
+            "cameraData" : {
+                "thirdPersonCameraOffset": {
+                    "x": 0.0,
+                    "y": 1.5,
+                    "z": 0.0
+                }
+            },
+            "boneGroups" : [
+                {
+                    "id" : "torso",
+                    "boneNamesThirdPerson" : [
+                        "Bone", "UpperTorso", "Shoulder.R", "Shoulder.L", "Breast.R", "Breast.L", "Butt.L", "Butt.R"
+                    ]
+                },
+                {
+                    "id" : "head",
+                    "boneNamesThirdPerson" : [
+                        "Neck", "Head", "Ear.L", "Ear.R", "Eye.L", "Eye.R", "Jaw", "Nose", "MouthCorner.R", "MouthCorner.L", "JawTop", "Iris.L", "Iris.R"
+                    ]
+                },
+                {
+                    "id" : "armRight",
+                    "boneNamesThirdPerson" : [
+                        "Bicep.R", "Forearm.R"
+                    ],
+                    "boneNamesFirstPerson" : [
+                        "clavicle.R", "deltoid.R", "upper_arm.R", "forearm.R"
+                    ]
+                },
+                {
+                    "id" : "handRight",
+                    "boneNamesThirdPerson" : [
+                        "Hand.R", "MiddleUpper.R", "ThumbUpper.R"
+                    ],
+                    "boneNamesFirstPerson" : [
+                        "hand.R",
+                        "palm_pinky.R",
+                        "f_pinky.01.R",
+                        "f_pinky.02.R",
+                        "f_pinky.03.R",
+                        "palm_middle.R",
+                        "f_middle.01.R",
+                        "f_middle.02.R",
+                        "f_middle.03.R",
+                        "palm_ring.R",
+                        "f_ring.01.R",
+                        "f_ring.02.R",
+                        "f_ring.03.R",
+                        "thumb.01.R",
+                        "thumb.02.R",
+                        "thumb.03.R",
+                        "palm_index.R",
+                        "f_index.01.R",
+                        "f_index.02.R",
+                        "f_index.03.R"
+                    ]
+                },
+                {
+                    "id" : "armLeft",
+                    "boneNamesThirdPerson" : [
+                        "Bicep.L", "Forearm.L"
+                    ],
+                    "boneNamesFirstPerson" : [
+                        "clavicle.L", "deltoid.L", "upper_arm.L", "forearm.L"
+                    ]
+                },
+                {
+                    "id" : "handLeft",
+                    "boneNamesThirdPerson" : [
+                        "Hand.L", "MiddleUpper.L", "ThumbUpper.L"
+                    ]
+                },
+                {
+                    "id" : "legLeft",
+                    "boneNamesThirdPerson" : [
+                        "Leg.L", "LowerLeg.L", "Foot.L"
+                    ]
+                },
+                {
+                    "id" : "legRight",
+                    "boneNamesThirdPerson" : [
+                        "Leg.R", "LowerLeg.R", "Foot.R"
+                    ]
+                }
+            ]
+        }
+    ],
+    "files" : []
+}

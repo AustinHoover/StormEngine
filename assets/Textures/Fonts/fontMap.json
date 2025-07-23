@@ -1,0 +1,294 @@
+{
+    "imageWidth":  256,
+    "imageHeight": 256,
+    "glyphs": [
+        {
+            "symbol":  "A",
+            "startX":   31,
+            "startY":  111,
+            "width":    12,
+            "height":   14
+        },
+        {
+            "symbol":  "B",
+            "startX":   65,
+            "startY":  111,
+            "width":    10,
+            "height":   14
+        },
+        {
+            "symbol":  "C",
+            "startX":   96,
+            "startY":  111,
+            "width":    10,
+            "height":   14
+        },
+        {
+            "symbol":  "D",
+            "startX":  128,
+            "startY":  111,
+            "width":    11,
+            "height":   14
+        },
+        {
+            "symbol":  "E",
+            "startX":  159,
+            "startY":  111,
+            "width":    10,
+            "height":   14
+        },
+        {
+            "symbol":  "F",
+            "startX":  192,
+            "startY":  111,
+            "width":    10,
+            "height":   14
+        },
+        {
+            "symbol":  "G",
+            "startX":  224,
+            "startY":  111,
+            "width":    12,
+            "height":   13
+        },
+        {
+            "symbol":  "O",
+            "startX":  224,
+            "startY":   79,
+            "width":    12,
+            "height":   14
+        },
+        {
+            "symbol":  "N",
+            "startX":  192,
+            "startY":   79,
+            "width":    11,
+            "height":   14
+        },
+        {
+            "symbol":  "M",
+            "startX":  161,
+            "startY":   79,
+            "width":    12,
+            "height":   14
+        },
+        {
+            "symbol":  "L",
+            "startX":  129,
+            "startY":   79,
+            "width":     9,
+            "height":   14
+        },
+        {
+            "symbol":  "K",
+            "startX":   95,
+            "startY":   79,
+            "width":    11,
+            "height":   13
+        },
+        {
+            "symbol":  "J",
+            "startX":   60,
+            "startY":   76,
+            "width":    11,
+            "height":   16
+        },
+        {
+            "symbol":  "I",
+            "startX":   30,
+            "startY":   78,
+            "width":     9,
+            "height":   14
+        },
+        {
+            "symbol":  "H",
+            "startX":    0,
+            "startY":   79,
+            "width":    11,
+            "height":   13
+        },
+        {
+            "symbol":  "W",
+            "startX":  223,
+            "startY":   48,
+            "width":    16,
+            "height":   12
+        },
+        {
+            "symbol":  "X",
+            "startX":    0,
+            "startY":   16,
+            "width":     9,
+            "height":   11
+        },
+        {
+            "symbol":  "V",
+            "startX":  191,
+            "startY":   48,
+            "width":    11,
+            "height":   12
+        },
+        {
+            "symbol":  "U",
+            "startX":  160,
+            "startY":   48,
+            "width":    11,
+            "height":   12
+        },
+        {
+            "symbol":  "T",
+            "startX":  127,
+            "startY":   48,
+            "width":    10,
+            "height":   12
+        },
+        {
+            "symbol":  "S",
+            "startX":   96,
+            "startY":   48,
+            "width":     8,
+            "height":   13
+        },
+        {
+            "symbol":  "R",
+            "startX":   64,
+            "startY":   48,
+            "width":     9,
+            "height":   13
+        },
+        {
+            "symbol":  "Q",
+            "startX":   32,
+            "startY":   46,
+            "width":    12,
+            "height":   15
+        },
+        {
+            "symbol":  "P",
+            "startX":    0,
+            "startY":   48,
+            "width":     9,
+            "height":   13
+        },
+        {
+            "symbol":  "X",
+            "startX":    0,
+            "startY":   16,
+            "width":    10,
+            "height":   12
+        },
+        {
+            "symbol":  "Y",
+            "startX":   31,
+            "startY":   16,
+            "width":    10,
+            "height":   12
+        },
+        {
+            "symbol":  "Z",
+            "startX":   64,
+            "startY":   16,
+            "width":    10,
+            "height":   12
+        },
+        {
+            "symbol":  "[",
+            "startX":   97,
+            "startY":   14,
+            "width":     4,
+            "height":   13
+        },
+        {
+            "symbol":  "\\",
+            "startX":  128,
+            "startY":   16,
+            "width":     6,
+            "height":   11
+        },
+        {
+            "symbol":  " ",
+            "startX":  0,
+            "startY":   240,
+            "width":    16,
+            "height":   16
+        },
+        {
+            "symbol":  "0",
+            "startX":    0,
+            "startY":  175,
+            "width":    10,
+            "height":   14
+        },
+        {
+            "symbol":  "1",
+            "startX":   32,
+            "startY":  175,
+            "width":    10,
+            "height":   14
+        },
+        {
+            "symbol":  "2",
+            "startX":   64,
+            "startY":  175,
+            "width":    10,
+            "height":   14
+        },
+        {
+            "symbol":  "3",
+            "startX":   96,
+            "startY":  175,
+            "width":    10,
+            "height":   14
+        },
+        {
+            "symbol":  "4",
+            "startX":  128,
+            "startY":  175,
+            "width":    10,
+            "height":   14
+        },
+        {
+            "symbol":  "5",
+            "startX":  160,
+            "startY":  175,
+            "width":    10,
+            "height":   14
+        },
+        {
+            "symbol":  "6",
+            "startX":  192,
+            "startY":  175,
+            "width":    10,
+            "height":   14
+        },
+        {
+            "symbol":  "7",
+            "startX":  224,
+            "startY":  175,
+            "width":    10,
+            "height":   14
+        },
+        {
+            "symbol":  "8",
+            "startX":    0,
+            "startY":  143,
+            "width":    11,
+            "height":   14
+        },
+        {
+            "symbol":  "9",
+            "startX":   31,
+            "startY":  143,
+            "width":    11,
+            "height":   14
+        },
+        {
+            "symbol":  ".",
+            "startX":  190,
+            "startY":  205,
+            "width":    11,
+            "height":   14
+        }
+        
+    ]
+}

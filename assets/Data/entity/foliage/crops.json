@@ -1,0 +1,55 @@
+{
+    "foliageList" : [
+
+        {
+            "id" : "wheat_plant",
+            "displayName" : "Wheat",
+            "hitboxData" : [
+                    {
+                    "type": "static_capsule",
+                    "radius": 2,
+                    "length": 5
+                }
+            ],
+            "tokens": [
+                "HARVESTABLE"
+            ],
+            "buttonInteraction" : {
+                "onInteract" : "harvest",
+                "interactionShape" : {
+                    "type" : "CUBE",
+                    "dimension1" : 0.3,
+                    "dimension2" : 0.3,
+                    "dimension3" : 0.3,
+                    "rotX": 0,
+                    "rotY": 0,
+                    "rotZ": 0,
+                    "rotW": 1,
+                    "offsetX" : 0.0,
+                    "offsetY" : 0.1,
+                    "offsetZ" : 0.0
+                }
+            },
+            "graphicsTemplate": {
+                "model": {
+                    "path" : "Models/foliage/flowers/Flower_3_Group.gltf"
+                }
+            },
+            "growthData" : {
+                "growthMax" : 1000,
+                "scaleMax" : 3,
+                "maxGrowthLoot" : {
+                    "tickets" : [
+
+                    ]
+                }
+            },
+            "healthSystem" : {
+                "maxHealth" : 5,
+                "onDamageIFrames" : 0
+            }
+        }
+
+    ],
+    "files" : []
+}

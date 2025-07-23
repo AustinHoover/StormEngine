@@ -1,0 +1,55 @@
+{
+    "recipes": [
+        {
+            "displayName": "Refined Wood",
+            "craftingTag" : "HAND",
+            "ingredients": [
+                {
+                    "itemType": "mat:Log",
+                    "count": 1
+                }
+            ],
+            "products": [
+                {
+                    "itemType": "block:Wood (Refined)",
+                    "count": 16
+                }
+            ]
+        },
+        {
+            "displayName": "Fantasy Brick",
+            "craftingTag" : "HAND",
+            "ingredients": [
+                {
+                    "itemType": "mat:Rock",
+                    "count": 1
+                }
+            ],
+            "products": [
+                {
+                    "itemType": "block:Brick (Fantasy)",
+                    "count": 16
+                }
+            ]
+        },
+        {
+            "displayName": "Fantasy Brick",
+            "craftingTag" : "HAND",
+            "ingredients": [
+                {
+                    "itemType": "vox:Rock (Shale)",
+                    "count": 1
+                }
+            ],
+            "products": [
+                {
+                    "itemType": "block:Brick (Fantasy)",
+                    "count": 16
+                }
+            ]
+        }
+    ],
+    "files": [
+
+    ]
+}

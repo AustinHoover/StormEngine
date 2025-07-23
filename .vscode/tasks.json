@@ -1,0 +1,39 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "Install Native Lib",
+            "command": "cp ./out/build/libStormEngine.* ./shared-folder",
+            "group": "build",
+            "detail": "Installs the native lib locally",
+            "dependsOn": [
+                "CMake: build"
+            ]
+        },
+        {
+            "type": "cmake",
+            "label": "CMake: build",
+            "command": "build",
+            "targets": [
+                "all"
+            ],
+            "preset": "${command:cmake.activeBuildPresetName}",
+            "group": "build",
+            "problemMatcher": [],
+            "detail": "CMake template build task"
+        },
+        {
+            "type": "cmake",
+            "label": "CMake: clean rebuild",
+            "command": "cleanRebuild",
+            "targets": [
+                "all"
+            ],
+            "preset": "${command:cmake.activeBuildPresetName}",
+            "group": "build",
+            "problemMatcher": [],
+            "detail": "CMake template clean rebuild task"
+        }
+    ]
+}

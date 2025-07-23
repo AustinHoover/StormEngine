@@ -1,0 +1,20 @@
+{
+    "outputPath" : "./src/main/java/electrosphere/net/parser/",
+    "packageName" : "electrosphere.net.parser",
+    "categories":[
+
+    ],
+
+    "subfiles" : [
+        "./src/net/entity.json",
+        "./src/net/lore.json",
+        "./src/net/player.json",
+        "./src/net/terrain.json",
+        "./src/net/server.json",
+        "./src/net/character.json",
+        "./src/net/inventory.json",
+        "./src/net/synchronization.json",
+        "./src/net/combat.json"
+    ]
+
+}

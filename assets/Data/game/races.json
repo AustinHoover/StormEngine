@@ -1,0 +1,12 @@
+{
+    "raceMap" : [
+        {
+            "raceId" : "human",
+            "displayName" : "Human",
+            "associatedCreatureId" : "human",
+            "structureIds": [
+                "defaultHouse"
+            ]
+        }
+    ]
+}

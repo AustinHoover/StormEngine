@@ -1,0 +1,22 @@
+{
+    "hints": [
+        {
+            "id": "BasicNavigation",
+            "titleString": "Navigation",
+            "descriptionString": "You can move the mouse to move the camera around. Also, you can use the W, A, S, and D keys to move your character.",
+            "image": ""
+        },
+        {
+            "id": "GrabbingItems",
+            "titleString": "Items",
+            "descriptionString": "Using the interact key will pick up items if they are currently targeted. You can then access the items by opening the inventory (I) and the character screen (C).",
+            "image": ""
+        },
+        {
+            "id": "EquippingItems",
+            "titleString": "Equipment",
+            "descriptionString": "Once items are equipped to the player, you may use left click and right click to perform their functions.",
+            "image": ""
+        }
+    ]
+}

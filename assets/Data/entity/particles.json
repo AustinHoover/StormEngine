@@ -1,0 +1,17 @@
+{
+    "data" : [
+        {
+            "name" : "blood",
+            "maxLife" : 7,
+            "lifeCurrent" : 0,
+            "velocity" : {
+                "x": 0.3,
+                "y": 0.3,
+                "z": 0.3
+            },
+            "acceleration" : -0.1,
+            "size": 0.15,
+            "texture" : "Textures/bloodsplat1.png"
+        }
+    ]
+}

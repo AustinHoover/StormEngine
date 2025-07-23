@@ -1,0 +1,39 @@
+{
+    "units": [
+        {
+            "id" : "humanBlocker",
+            "creatureId" : "human",
+            "equipment" : [
+                {
+                    "pointId" : "handsCombined",
+                    "itemId" : "Katana2H"
+                }
+            ],
+            "ai" : [
+                {
+                    "name" : "Blocker"
+                }
+            ]
+        },
+        {
+            "id" : "humanSwordsman",
+            "creatureId" : "human",
+            "equipment" : [
+                {
+                    "pointId" : "handsCombined",
+                    "itemId" : "Katana2H"
+                }
+            ]
+        },
+        {
+            "id" : "skeletonSwordsman",
+            "creatureId" : "skeleton",
+            "equipment" : [
+                {
+                    "pointId" : "handsCombined",
+                    "itemId" : "Katana2H"
+                }
+            ]
+        }
+    ]
+}

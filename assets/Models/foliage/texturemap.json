@@ -1,0 +1,23 @@
+{
+    "textureMap": {
+        "Models/foliage/tree4.glb": [
+            {
+                "meshName" : "trunk",
+                "diffuse" : "/Textures/Bark_NormalTree.png",
+                "isDefault" : true
+            },
+            {
+                "meshName" : "leaves",
+                "diffuse" : "/Textures/Leaf_Pine_C.png",
+                "isDefault" : false
+            }
+        ],
+        "Models/foliage/bush4.glb": [
+            {
+                "meshName" : "bush",
+                "diffuse" : "/Models/foliage/Leaves_TwistedTree_Green.png",
+                "isDefault" : true
+            }
+        ]
+    }
+}

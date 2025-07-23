@@ -1,0 +1,30 @@
+{
+    "entities": [
+        {
+            "type": "object",
+            "subtype": "terrain1",
+            "posX": 2,
+            "posY": 1,
+            "posZ": 2,
+            "rotX": -0.7071068,
+            "rotY": 0,
+            "rotZ": 0,
+            "rotW": 0.7071068
+        },
+        {
+            "type": "creature",
+            "subtype": "fighter",
+            "posX": 2,
+            "posY": 1,
+            "posZ": 2,
+            "rotX": -0.7071068,
+            "rotY": 0,
+            "rotZ": 0,
+            "rotW": 0.7071068
+        }
+    ],
+    "scriptPaths": [
+        "Scenes/testscene1/someScript.js"
+    ],
+    "initScriptPath": "Scenes/testscene1/someScript.js"
+}

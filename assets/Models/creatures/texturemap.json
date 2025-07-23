@@ -1,0 +1,11 @@
+{
+    "textureMap": {
+        "Models/creatures/viewmodel.glb": [
+            {
+                "meshName" : "hands",
+                "diffuse" : "/Textures/skin1.png",
+                "isDefault" : true
+            }
+        ]
+    }
+}

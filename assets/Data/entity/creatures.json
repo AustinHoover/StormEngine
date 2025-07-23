@@ -1,0 +1,12 @@
+{
+    "creatures" : [
+
+
+    ],
+    "files" : [
+        "Data/entity/creatures/human.json",
+        "Data/entity/creatures/skeleton.json",
+        "Data/entity/creatures/editor.json"
+    ]
+}
+

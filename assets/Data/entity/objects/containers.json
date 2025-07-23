@@ -1,0 +1,61 @@
+{
+    "objects" : [
+
+        {
+            "id" : "crate",
+            "displayName" : "Crate",
+            "hitboxData" : [
+                    {
+                    "type": "static_capsule",
+                    "radius": 2,
+                    "length": 5
+                }
+            ],
+            "collidable": {
+                "type" : "CUBE",
+                "mass": 0.7,
+                "rollingFriction": 1.0,
+                "linearFriction": 0.001,
+                "dimension1" : 2.0,
+                "dimension2" : 2.0,
+                "dimension3" : 2.0,
+                "rotX": 0,
+                "rotY": 0,
+                "rotZ": 0,
+                "rotW": 1,
+                "offsetX" : 0,
+                "offsetY" : 0,
+                "offsetZ" : 0
+            },
+            "buttonInteraction" : {
+                "onInteract" : "inventory",
+                "interactionShape" : {
+                    "type" : "CUBE",
+                    "dimension1" : 2.0,
+                    "dimension2" : 2.0,
+                    "dimension3" : 2.0,
+                    "rotX": 0,
+                    "rotY": 0,
+                    "rotZ": 0,
+                    "rotW": 1,
+                    "offsetX" : 0.0,
+                    "offsetY" : 0.0,
+                    "offsetZ" : 0.0
+                }
+            },
+            "inventoryData" : {
+                "naturalSize" : 30
+            },
+            "tokens": [
+                "GRAVITY"
+            ],
+            "graphicsTemplate": {
+                "model": {
+                    "path" : "Models/objects/crate2.glb"
+                }
+            }
+        }
+
+    ],
+    "files" : []
+}

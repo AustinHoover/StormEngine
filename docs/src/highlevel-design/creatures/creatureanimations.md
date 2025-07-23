@@ -1,0 +1,43 @@
+@page creatureanimations Creature Animations
+
+A list of different sets of animations that creatures have. Also see 
+
+ - Common
+   - Idle
+   - Walk
+   - Jog
+   - WalkStrafeLeft
+   - WalkStrafeRight
+   - Sprint
+   - Jump
+   - Fall
+   - Land
+   - Swim
+   - Interact
+   - InteractChannel
+   - Eat
+ - Humanoid
+   - Crouch
+   - Crouch walk
+   - Crouch jump
+   - Sit (Ground)
+   - Sit (Chair)
+   - HoldItemRH
+   - HoldItemR2H
+   - HoldItemLH
+   - HoldItemRHOpenPalm
+   - HoldItemLHOpenPalm
+ - Combat
+   - AttackUnarmedReady
+   - AttackUnarmed1
+   - AttackUnarmed1Recoil
+   - AttackUnarmed2
+   - AttackUnarmed2Recoil
+   - AttackUnarmed3
+   - AttackUnarmed3Recoil
+ - Weapons
+   - [See Weapon Types Page](@ref weapontypes)
+ - Vehicles
+   - Ride Horse
+   - Ride Wagon
+   - Ride Glider

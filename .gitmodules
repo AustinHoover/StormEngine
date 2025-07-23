@@ -1,0 +1,3 @@
+[submodule "src/fluid/lib/stb"]
+	path = src/main/c/lib/stb
+	url = https://github.com/nothings/stb.git

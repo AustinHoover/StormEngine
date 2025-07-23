@@ -1,0 +1,203 @@
+@page skeletonprogress Skeleton
+
+Progress on the skeleton creature
+
+## Third Person Model
+ - [X] Meshed
+ - [X] Textured
+ - [X] Rigged
+ - Animations
+  - Common
+     - [X] Idle
+     - [X] Walk
+     - [X] WalkStrafeLeft
+     - [X] WalkStrafeRight
+     - [X] Jog
+     - [X] Sprint
+     - [X] Jump
+     - [X] Fall
+     - [X] Land
+     - [ ] Swim
+     - [X] Interact
+     - [X] InteractChannel
+     - [ ] Eat
+  - Humanoid
+     - [X] CrouchIdle
+     - [ ] CrouchStart
+     - [ ] CrouchGetup
+     - [ ] CrouchWalk
+     - [ ] CrouchStrafeLeft
+     - [ ] CrouchStrafeRight
+     - [ ] CrouchJump
+     - [ ] ClimbIdle
+     - [ ] ClimbUp
+     - [ ] ClimbLeft
+     - [ ] ClimbDown
+     - [ ] ClimbRight
+     - [ ] PushingItem
+     - [X] Sit (Ground)
+     - [ ] Sit (Chair)
+     - [ ] Sleep
+     - [X] HoldItemRH
+     - [X] HoldItemLH
+     - [X] HoldItemR2H
+     - [X] HoldItemRHOpenPalm
+     - [X] HoldItemLHOpenPalm
+  - Combat
+     - [X] AttackUnarmedReady
+     - [X] AttackUnarmed1
+     - [X] AttackUnarmed1Recoil
+     - [X] AttackUnarmed2
+     - [X] AttackUnarmed2Recoil
+  - Weapons
+     - SwordStraight
+       - [X] SwordRHSlash1
+       - [X] SwordRHSlash1Recoil
+       - [X] SwordRHSlash2
+       - [X] SwordRHSlash2Recoil
+       - [X] SwordRHSprintAttack
+       - [X] SwordRHSprintAttackRecoil
+     - SwordStab
+       - [X] StabSwordRHSlash1
+       - [X] StabSwordRHSlash1Recoil
+       - [X] StabSwordRHSlash2
+       - [X] StabSwordRHSlash2Recoil
+       - [X] StabSwordRHSprintAttack
+       - [X] StabSwordRHSprintAttackRecoil
+     - Sword2H
+       - [X] SwordR2HSlash1
+       - [X] SwordR2HSlash1Recoil
+       - [X] SwordR2HSlash2
+       - [X] SwordR2HSlash2Recoil
+       - [X] SwordR2HSprintAttack
+       - [X] SwordR2HSprintAttackRecoil
+       - [X] HoldItemR2HBlock
+     - Dagger
+       - [X] DaggerStab1
+       - [X] DaggerStab1Recoil
+       - [X] DaggerStab2
+       - [X] DaggerStab2Recoil
+       - [X] DaggerStab3
+       - [X] DaggerStab3Recoil
+       - [X] DaggerSprintAttack
+       - [X] DaggerSprintAttackRecoil
+     - Bow
+       - [X] BowDraw
+       - [X] HoldBowDraw
+       - [X] BowRelease
+     - Shield
+       - [X] HoldItemLH
+       - [X] ShieldLHRaise
+       - [X] ShieldLHBlock
+       - [X] ShieldLHLower
+  - Magic
+     - [ ] CastWeaveTwoHands
+     - [ ] CastChannelTwoHands
+     - [ ] CastInstantRight
+  - Vehicles
+     - [ ] Ride Horse
+     - [ ] Ride Wagon
+     - [ ] Ride Glider
+ - Attributes 0/?
+## First Person Model
+ - [ ] Meshed
+ - [ ] Textured
+ - [ ] Rigged
+ - Animations
+   - Common
+     - [ ] Idle
+     - [ ] Walk
+     - [ ] WalkStrafeLeft
+     - [ ] WalkStrafeRight
+     - [ ] Jog
+     - [ ] Sprint
+     - [ ] Jump
+     - [ ] Fall
+     - [ ] Land
+     - [ ] Swim
+     - [ ] Interact
+     - [ ] InteractChannel
+     - [ ] Eat
+  - Humanoid
+     - [ ] Crouch
+     - [ ] Crouch walk
+     - [ ] Crouch jump
+     - [ ] Sit (Ground)
+     - [ ] Sit (Chair)
+     - [ ] HoldItemRH
+     - [ ] HoldItemLH
+     - [ ] HoldItemR2H
+     - [ ] HoldItemRHOpenPalm
+     - [ ] HoldItemLHOpenPalm
+  - Combat
+     - [ ] AttackUnarmedReady
+     - [ ] AttackUnarmed1
+     - [ ] AttackUnarmed1Recoil
+     - [ ] AttackUnarmed2
+     - [ ] AttackUnarmed2Recoil
+  - Weapons
+     - SwordStraight
+       - [ ] SwordRHSlash1
+       - [ ] SwordRHSlash1Recoil
+       - [ ] SwordRHSlash2
+       - [ ] SwordRHSlash2Recoil
+       - [ ] SwordRHSprintAttack
+       - [ ] SwordRHSprintAttackRecoil
+     - SwordStab
+       - [ ] StabSwordRHSlash1
+       - [ ] StabSwordRHSlash1Recoil
+       - [ ] StabSwordRHSlash2
+       - [ ] StabSwordRHSlash2Recoil
+       - [ ] StabSwordRHSprintAttack
+       - [ ] StabSwordRHSprintAttackRecoil
+     - Sword2H
+       - [ ] SwordR2HSlash1
+       - [ ] SwordR2HSlash1Recoil
+       - [ ] SwordR2HSlash2
+       - [ ] SwordR2HSlash2Recoil
+       - [ ] SwordR2HSprintAttack
+       - [ ] SwordR2HSprintAttackRecoil
+       - [ ] HoldItemR2HBlock
+     - Dagger
+       - [ ] DaggerStab1
+       - [ ] DaggerStab1Recoil
+       - [ ] DaggerStab2
+       - [ ] DaggerStab2Recoil
+       - [ ] DaggerStab3
+       - [ ] DaggerStab3Recoil
+       - [ ] DaggerSprintAttack
+       - [ ] DaggerSprintAttackRecoil
+     - Bow
+       - [ ] HoldBow
+       - [ ] BowDraw
+       - [ ] BowHold
+       - [ ] BowRelease
+       - [ ] Bow Reload
+     - Shield
+       - [ ] HoldItemLH
+       - [ ] ShieldLHRaise
+       - [ ] ShieldLHBlock
+       - [ ] ShieldLHLower
+  - Vehicles
+     - [ ] Ride Horse
+     - [ ] Ride Wagon
+     - [ ] Ride Glider
+ - Attributes 0/0
+## Data
+ - [X] Bone Groups
+ - [X] Physics
+ - [ ] Visual Attributes
+ - Movement
+   - [X] Ground Movement
+   - [X] Sprinting
+   - [X] Jumping
+   - [X] Falling
+   - [X] Walking
+   - [X] Swimming
+ - [X] Equip Data
+ - [X] Hitboxes
+ - Combat
+   - [X] Health
+   - [X] Block System
+   - [X] Attack Moves
+ - [X] AI

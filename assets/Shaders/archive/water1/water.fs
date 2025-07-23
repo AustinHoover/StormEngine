@@ -1,0 +1,351 @@
+/*
+MIT License
+
+Copyright (c) 2022 railgunSR
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+*/
+/*
+THIS MAKES USE OF OPENSIMPLEX2, A NOISE ALGORITHM CREATED BY THE FINE FOLKS 
+OVER AT https://github.com/KdotJPG/OpenSimplex2
+PLEASE GIVE THEM SOME LOVE.
+
+IT ALSO MAKES USE OF FUNCTIONS FROM THE_FORCE, A SHADER IDE
+https://github.com/shawnlawson/The_Force
+
+*/
+
+//version
+#version 420 core
+
+//macros
+#extension GL_ARB_explicit_uniform_location : enable
+
+//output
+// out vec4 fragColor;
+
+layout (location = 0) out vec4 accum;
+layout (location = 1) out float reveal;
+
+//input
+in vec3 FragPos;
+in vec3 Normal;
+in vec2 TexCoord;
+in vec4 projCoord;
+in vec4 modelCoord;
+
+//uniforms
+uniform float time;
+
+//layout uniforms
+layout (location = 3) uniform sampler2D shadowMap;
+layout (location = 5) uniform sampler2D volumeDepthFrontface;
+layout (location = 6) uniform sampler2D volumeDepthBackface;
+
+//function declarations
+vec4 openSimplex2_Conventional(vec3 X);
+vec4 openSimplex2_ImproveXY(vec3 X);
+float flameTex(float x, float y);
+float getNoise(float scale, float timeScale);
+float voronoi(vec2 point);
+vec3 voronoi(vec3 x);
+float linearCenterAroundPoint(float input, float centerpoint, float falloff);
+
+/*
+Main method
+*/
+void main(){
+    
+    float timeS = time * 0.003;
+    
+    // Normalized pixel coordinates (from 0 to 1)
+    vec3 projCoordNorm = projCoord.xyz / projCoord.w / 2.0 + 0.5;
+    //make vec2
+    vec2 finalProd = projCoordNorm.xy;
+    //grab depth values
+    float closeDepth = texture(volumeDepthFrontface, finalProd.xy).r;
+    float farDepth =   texture(volumeDepthBackface, finalProd.xy).r;
+    //distance between the two
+    float volume = min(abs(farDepth - closeDepth),1);
+    
+
+    //based on distance of model coords from center
+    float dist = length(modelCoord.xyz);
+
+
+    //noise
+    // float noiseInX = modelCoord.x * 7.0;
+    // float noiseInZ = FragPos.y * 7.0 - timeS;
+    // float noiseInY = modelCoord.y * 7.0;
+    // float noise = openSimplex2_ImproveXY(vec3(noiseInX,noiseInY,noiseInZ)).x;
+    float noise = (getNoise(7.0,1.5 * timeS) + getNoise(10.0,1.5 * (timeS + 0.1)) + getNoise(14.0,1.5 * (timeS + 0.2)) + getNoise(20.0,3.0 * timeS)) / 4.0;
+    // float noise = getNoise(10.0,1.5);
+    // float noise = getNoise(14.0,2.0);
+
+    float vertical = -modelCoord.z;
+
+    float amountOfFire = volume * 50.0 + vertical * 2.0 + noise * 0.1;// + dist * 0.1; //should be a function of volume + noise + dist from center
+
+    // if(amountOfFire < 0.1){
+    //     discard;
+    // }
+
+    amountOfFire = amountOfFire * 2.0;
+
+    float red = 0.1984;
+    float green = 0.6464;
+    float blue = 0.7366;
+    float alpha = volume * 7.0;
+
+    volume = volume * 3;
+
+    float foamFallout = max(1 - (volume * 7),0);
+    float lightWaterVal = max(1 - (volume * 3),0);
+    float darkWaterVal = linearCenterAroundPoint(volume,0.5,0.5);
+    float blackWaterVal = max((volume * 3) - 2,0);
+
+    red =   0.1984 * lightWaterVal + darkWaterVal * 0.0000 + blackWaterVal * 0.0000;
+    green = 0.6464 * lightWaterVal + darkWaterVal * 0.1370 + blackWaterVal * 0.0980;
+    blue  = 0.7366 * lightWaterVal + darkWaterVal * 0.3140 + blackWaterVal * 0.2200;
+
+    if(dot(Normal,vec3(0,1,0)) > 0.5){
+        float foamVal = voronoi(vec3(modelCoord.x * 8,modelCoord.z * 8,timeS)).x;
+        // foamVal = foamVal * foamVal * min(1 - volume * 10,0);
+        foamVal = foamVal * foamVal;
+        red =   red   + foamVal;// * foamFallout;
+        blue =  blue  + foamVal;// * foamFallout;
+        green = green + foamVal;// * foamFallout;
+        alpha = alpha + foamVal;// * foamFallout;
+    //     // float foamVal = openSimplex2_ImproveXY(vec3(modelCoord.x * 5.0,modelCoord.z * 5.0,timeS)).x;
+    //     // if(foamVal > 0.4 && foamVal < 0.7){
+    //     //     foamVal = 1.0 - foamVal * foamVal;
+    //     //     red = foamVal + red;
+    //     //     green = foamVal + green;
+    //     //     blue = foamVal + blue;
+    //     //     alpha = foamVal + alpha;
+    //     // }
+    }
+
+    // alpha = 0.5;
+
+    // float red = volume * 10.0;
+    // float green = volume * 10.0;
+    // float blue = volume * 10.0;
+    // float alpha = 1.0;
+
+    vec4 color = vec4(
+        red,
+        green,
+        blue,
+        alpha
+        );
+
+
+    // weight function
+	float weight = clamp(pow(min(1.0, color.a * 10.0) + 0.01, 3.0) * 1e8 * pow(1.0 - gl_FragCoord.z * 0.9, 3.0), 1e-2, 3e3);
+	
+    // weight = 1.0;
+
+	// store pixel color accumulation
+	accum = vec4(color.rgb * color.a, color.a) * weight;
+	
+	// store pixel revealage threshold
+	reveal = color.a;
+    // reveal = 1.0;
+    
+    // if(val < 0.3){
+    //     discard;
+    // }
+
+    // Output to screen
+    // fragColor = color;
+}
+
+
+float getNoise(float scale, float time){
+    float noiseInX = modelCoord.x * scale;
+    float noiseInZ = FragPos.y * scale - time;
+    float noiseInY = modelCoord.y * scale;
+    float noise = openSimplex2_ImproveXY(vec3(noiseInX,noiseInY,noiseInZ)).x;
+    return noise;
+}
+
+
+//////////////// K.jpg's Re-oriented 4-Point BCC Noise (OpenSimplex2) ////////////////
+////////////////////// Output: vec4(dF/dx, dF/dy, dF/dz, value) //////////////////////
+
+// Inspired by Stefan Gustavson's noise
+vec4 permute(vec4 t) {
+    return t * (t * 34.0 + 133.0);
+}
+
+// Gradient set is a normalized expanded rhombic dodecahedron
+vec3 grad(float hash) {
+    
+    // Random vertex of a cube, +/- 1 each
+    vec3 cube = mod(floor(hash / vec3(1.0, 2.0, 4.0)), 2.0) * 2.0 - 1.0;
+    
+    // Random edge of the three edges connected to that vertex
+    // Also a cuboctahedral vertex
+    // And corresponds to the face of its dual, the rhombic dodecahedron
+    vec3 cuboct = cube;
+    cuboct[int(hash / 16.0)] = 0.0;
+    
+    // In a funky way, pick one of the four points on the rhombic face
+    float type = mod(floor(hash / 8.0), 2.0);
+    vec3 rhomb = (1.0 - type) * cube + type * (cuboct + cross(cube, cuboct));
+    
+    // Expand it so that the new edges are the same length
+    // as the existing ones
+    vec3 grad = cuboct * 1.22474487139 + rhomb;
+    
+    // To make all gradients the same length, we only need to shorten the
+    // second type of vector. We also put in the whole noise scale constant.
+    // The compiler should reduce it into the existing floats. I think.
+    grad *= (1.0 - 0.042942436724648037 * type) * 32.80201376986577;
+    
+    return grad;
+}
+
+// BCC lattice split up into 2 cube lattices
+vec4 openSimplex2Base(vec3 X) {
+    
+    // First half-lattice, closest edge
+    vec3 v1 = round(X);
+    vec3 d1 = X - v1;
+    vec3 score1 = abs(d1);
+    vec3 dir1 = step(max(score1.yzx, score1.zxy), score1);
+    vec3 v2 = v1 + dir1 * sign(d1);
+    vec3 d2 = X - v2;
+    
+    // Second half-lattice, closest edge
+    vec3 X2 = X + 144.5;
+    vec3 v3 = round(X2);
+    vec3 d3 = X2 - v3;
+    vec3 score2 = abs(d3);
+    vec3 dir2 = step(max(score2.yzx, score2.zxy), score2);
+    vec3 v4 = v3 + dir2 * sign(d3);
+    vec3 d4 = X2 - v4;
+    
+    // Gradient hashes for the four points, two from each half-lattice
+    vec4 hashes = permute(mod(vec4(v1.x, v2.x, v3.x, v4.x), 289.0));
+    hashes = permute(mod(hashes + vec4(v1.y, v2.y, v3.y, v4.y), 289.0));
+    hashes = mod(permute(mod(hashes + vec4(v1.z, v2.z, v3.z, v4.z), 289.0)), 48.0);
+    
+    // Gradient extrapolations & kernel function
+    vec4 a = max(0.5 - vec4(dot(d1, d1), dot(d2, d2), dot(d3, d3), dot(d4, d4)), 0.0);
+    vec4 aa = a * a; vec4 aaaa = aa * aa;
+    vec3 g1 = grad(hashes.x); vec3 g2 = grad(hashes.y);
+    vec3 g3 = grad(hashes.z); vec3 g4 = grad(hashes.w);
+    vec4 extrapolations = vec4(dot(d1, g1), dot(d2, g2), dot(d3, g3), dot(d4, g4));
+    
+    // Derivatives of the noise
+    vec3 derivative = -8.0 * mat4x3(d1, d2, d3, d4) * (aa * a * extrapolations)
+        + mat4x3(g1, g2, g3, g4) * aaaa;
+    
+    // Return it all as a vec4
+    return vec4(derivative, dot(aaaa, extrapolations));
+}
+
+// Use this if you don't want Z to look different from X and Y
+vec4 openSimplex2_Conventional(vec3 X) {
+    
+    // Rotate around the main diagonal. Not a skew transform.
+    vec4 result = openSimplex2Base(dot(X, vec3(2.0/3.0)) - X);
+    return vec4(dot(result.xyz, vec3(2.0/3.0)) - result.xyz, result.w);
+}
+
+// Use this if you want to show X and Y in a plane, then use Z for time, vertical, etc.
+vec4 openSimplex2_ImproveXY(vec3 X) {
+    
+    // Rotate so Z points down the main diagonal. Not a skew transform.
+    mat3 orthonormalMap = mat3(
+        0.788675134594813, -0.211324865405187, -0.577350269189626,
+        -0.211324865405187, 0.788675134594813, -0.577350269189626,
+        0.577350269189626, 0.577350269189626, 0.577350269189626);
+    
+    vec4 result = openSimplex2Base(orthonormalMap * X);
+    return vec4(result.xyz * orthonormalMap, result.w);
+}
+
+const mat2 myt = mat2(.12121212,.13131313,-.13131313,.12121212);
+const vec2 mys = vec2(1e4, 1e6);
+vec2 rhash(vec2 uv) {
+    uv *= myt;
+    uv *= mys;
+    return  fract(fract(uv/mys)*uv);
+}
+
+vec3 hash( vec3 p ){
+    return fract(sin(vec3( dot(p,vec3(1.0,57.0,113.0)), 
+                           dot(p,vec3(57.0,113.0,1.0)),
+                           dot(p,vec3(113.0,1.0,57.0))))*43758.5453);
+
+}
+
+float voronoi(vec2 point){
+    vec2 p = floor( point );
+    vec2 f = fract( point );
+    float res = 0.0;
+    for( int j=-1; j<=1; j++ ) {
+        for( int i=-1; i<=1; i++ ) {
+            vec2 b = vec2( i, j );
+            vec2 r = vec2( b ) - f + rhash( p + b);
+            res += 1./pow(dot(r,r),8.);
+        }
+    }
+    return pow(1./res, 0.0625);
+}
+
+vec3 voronoi(vec3 x) {
+    vec3 p = floor( x );
+    vec3 f = fract( x );
+
+    float id = 0.0;
+    vec2 res = vec2( 100.0 );
+    for( int k=-1; k<=1; k++ ) {
+        for( int j=-1; j<=1; j++ ) {
+            for( int i=-1; i<=1; i++ ) {
+                vec3 b = vec3( float(i), float(j), float(k) );
+                vec3 r = vec3( b ) - f + hash( p + b );
+                float d = dot( r, r );
+
+                if( d < res.x ) {
+                    id = dot( p+b, vec3(1.0,57.0,113.0 ) );
+                    res = vec2( d, res.x );         
+                }
+                else if( d < res.y ) {
+                    res.y = d;
+                }
+            }
+        }
+    }
+
+    return vec3( sqrt( res ), abs(id) );
+}
+
+//////////////////////////////// End noise code ////////////////////////////////
+
+
+float linearCenterAroundPoint(float input, float centerpoint, float falloff){
+    return max(((-abs(input - centerpoint)) + centerpoint)*falloff,0);
+}
+
+
+

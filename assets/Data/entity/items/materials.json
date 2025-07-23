@@ -1,0 +1,35 @@
+{
+    "items" : [
+        {
+            "id" : "mat:Grain",
+            "displayName" : "Grain",
+            "tokens" : [
+                "GRAVITY",
+                "TARGETABLE"
+            ],
+            "graphicsTemplate": {
+                "model": {
+                    "path" : "Models/items/materials/sack.glb"
+                }
+            },
+            "collidable": {
+                "type" : "CUBE",
+                "dimension1" : 0.1,
+                "dimension2" : 0.1,
+                "dimension3" : 0.35,
+                "rotX": 0,
+                "rotY": 0,
+                "rotZ": 0,
+                "rotW": 1,
+                "offsetX" : 0,
+                "offsetY" : 0.05,
+                "offsetZ" : 0
+            },
+            "iconPath" : "Textures/icons/itemIconItemGeneric.png"
+        }
+    ],
+    "files" : [
+        "Data/entity/items/materials/rocks.json",
+        "Data/entity/items/materials/wood.json"
+    ]
+}

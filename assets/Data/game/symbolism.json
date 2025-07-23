@@ -1,0 +1,583 @@
+{
+    "symbolismMap" : [
+        {
+            "name" : "wind",
+            "relations" : [
+                {
+                    "name" : "water",
+                    "strength" : -1
+                }
+            ]
+        },
+        {
+            "name" : "fire",
+            "relations" : [
+                
+            ]
+        },
+        {
+            "name" : "earth",
+            "relations" : [
+                
+            ]
+        },
+        {
+            "name" : "ice",
+            "relations" : [
+                
+            ]
+        },
+        {
+            "name" : "water",
+            "relations" : [
+                
+            ]
+        },
+        {
+            "name" : "lightning",
+            "relations" : [
+                
+            ]
+        },
+        {
+            "name" : "metal",
+            "relations" : [
+                
+            ]
+        },
+        {
+            "name" : "crystal",
+            "relations" : [
+                
+            ]
+        },
+        {
+            "name" : "storm",
+            "relations" : [
+                
+            ]
+        },
+        {
+            "name" : "lava",
+            "relations" : [
+                
+            ]
+        },
+        {
+            "name" : "gravity",
+            "relations" : [
+                
+            ]
+        },
+        {
+            "name" : "light",
+            "relations" : [
+                
+            ]
+        },
+        {
+            "name" : "dark",
+            "relations" : [
+                
+            ]
+        },
+        {
+            "name" : "arcane",
+            "relations" : [
+                
+            ]
+        },
+        {
+            "name" : "time",
+            "relations" : [
+                
+            ]
+        },
+        {
+            "name" : "sound",
+            "relations" : [
+                
+            ]
+        },
+        {
+            "name" : "poison",
+            "relations" : [
+                
+            ]
+        },
+        {
+            "name" : "mirror",
+            "relations" : [
+                
+            ]
+        },
+        {
+            "name" : "barrier",
+            "relations" : [
+                
+            ]
+        },
+        {
+            "name" : "void",
+            "relations" : [
+                
+            ]
+        },
+        {
+            "name" : "crescent",
+            "relations" : [
+                
+            ]
+        },
+        {
+            "name" : "life",
+            "relations" : [
+                
+            ]
+        },
+        {
+            "name" : "death",
+            "relations" : [
+                
+            ]
+        },
+        {
+            "name" : "nightmare",
+            "relations" : [
+                
+            ]
+        },
+        {
+            "name" : "dream",
+            "relations" : [
+                
+            ]
+        },
+        {
+            "name" : "sleep",
+            "relations" : [
+                
+            ]
+        },
+        {
+            "name" : "sky",
+            "relations" : [
+                
+            ]
+        },
+        {
+            "name" : "speed",
+            "relations" : [
+                
+            ]
+        },
+        {
+            "name" : "mind",
+            "relations" : [
+                
+            ]
+        },
+        {
+            "name" : "dawn",
+            "relations" : [
+                
+            ]
+        },
+        {
+            "name" : "dusk",
+            "relations" : [
+                
+            ]
+        },
+        {
+            "name" : "spring",
+            "relations" : [
+                
+            ]
+        },
+        {
+            "name" : "summer",
+            "relations" : [
+                
+            ]
+        },
+        {
+            "name" : "fall",
+            "relations" : [
+                
+            ]
+        },
+        {
+            "name" : "winter",
+            "relations" : [
+                
+            ]
+        },
+        {
+            "name" : "hunting",
+            "relations" : [
+                
+            ]
+        },
+        {
+            "name" : "sun",
+            "relations" : [
+                
+            ]
+        },
+        {
+            "name" : "moon",
+            "relations" : [
+                
+            ]
+        },
+        {
+            "name" : "sky",
+            "relations" : [
+                
+            ]
+        },
+        {
+            "name" : "earth",
+            "relations" : [
+                
+            ]
+        },
+        {
+            "name" : "cloud",
+            "relations" : [
+                
+            ]
+        },
+        {
+            "name" : "song",
+            "relations" : [
+                
+            ]
+        },
+        {
+            "name" : "harmony",
+            "relations" : [
+                
+            ]
+        },
+        {
+            "name" : "discord",
+            "relations" : [
+                
+            ]
+        },
+        {
+            "name" : "beginning",
+            "relations" : [
+                
+            ]
+        },
+        {
+            "name" : "end",
+            "relations" : [
+                
+            ]
+        },
+        {
+            "name" : "moral",
+            "relations" : [
+                
+            ]
+        },
+        {
+            "name" : "amoral",
+            "relations" : [
+                
+            ]
+        },
+        {
+            "name" : "storm",
+            "relations" : [
+                
+            ]
+        },
+        {
+            "name" : "flower",
+            "relations" : [
+                
+            ]
+        },
+        {
+            "name" : "shadow",
+            "relations" : [
+                
+            ]
+        },
+        {
+            "name" : "wealth",
+            "relations" : [
+                
+            ]
+        },
+        {
+            "name" : "poverty",
+            "relations" : [
+                
+            ]
+        },
+        {
+            "name" : "undeath",
+            "relations" : [
+                
+            ]
+        },
+        {
+            "name" : "afterlife",
+            "relations" : [
+                
+            ]
+        },
+        {
+            "name" : "logic",
+            "relations" : [
+                
+            ]
+        },
+        {
+            "name" : "writing",
+            "relations" : [
+                
+            ]
+        },
+        {
+            "name" : "violence",
+            "relations" : [
+                
+            ]
+        },
+        {
+            "name" : "warfare",
+            "relations" : [
+                
+            ]
+        },
+        {
+            "name" : "strategy",
+            "relations" : [
+                
+            ]
+        },
+        {
+            "name" : "trade",
+            "relations" : [
+                
+            ]
+        },
+        {
+            "name" : "law",
+            "relations" : [
+                
+            ]
+        },
+        {
+            "name" : "order",
+            "relations" : [
+                
+            ]
+        },
+        {
+            "name" : "justice",
+            "relations" : [
+                
+            ]
+        },
+        {
+            "name" : "marriage",
+            "relations" : [
+                
+            ]
+        },
+        {
+            "name" : "family",
+            "relations" : [
+                
+            ]
+        },
+        {
+            "name" : "sea",
+            "relations" : [
+                
+            ]
+        },
+        {
+            "name" : "harvest",
+            "relations" : [
+                
+            ]
+        },
+        {
+            "name" : "argiculture",
+            "relations" : [
+                
+            ]
+        },
+        {
+            "name" : "nature",
+            "relations" : [
+                
+            ]
+        },
+        {
+            "name" : "wisdom",
+            "relations" : [
+                
+            ]
+        },
+        {
+            "name" : "handicraft",
+            "relations" : [
+                
+            ]
+        },
+        {
+            "name" : "prophecy",
+            "relations" : [
+                
+            ]
+        },
+        {
+            "name" : "philosophy",
+            "relations" : [
+                
+            ]
+        },
+        {
+            "name" : "archery",
+            "relations" : [
+                
+            ]
+        },
+        {
+            "name" : "truth",
+            "relations" : [
+                
+            ]
+        },
+        {
+            "name" : "inspiration",
+            "relations" : [
+                
+            ]
+        },
+        {
+            "name" : "poety",
+            "relations" : [
+                
+            ]
+        },
+        {
+            "name" : "art",
+            "relations" : [
+                
+            ]
+        },
+        {
+            "name" : "medicine",
+            "relations" : [
+                
+            ]
+        },
+        {
+            "name" : "healing",
+            "relations" : [
+                
+            ]
+        },
+        {
+            "name" : "wilderness",
+            "relations" : [
+                
+            ]
+        },
+        {
+            "name" : "protection",
+            "relations" : [
+                
+            ]
+        },
+        {
+            "name" : "love",
+            "relations" : [
+                
+            ]
+        },
+        {
+            "name" : "invention",
+            "relations" : [
+                
+            ]
+        },
+        {
+            "name" : "volcanoes",
+            "relations" : [
+                
+            ]
+        },
+        {
+            "name" : "travel",
+            "relations" : [
+                
+            ]
+        },
+        {
+            "name" : "communication",
+            "relations" : [
+                
+            ]
+        },
+        {
+            "name" : "borders",
+            "relations" : [
+                
+            ]
+        },
+        {
+            "name" : "diplomacy",
+            "relations" : [
+                
+            ]
+        },
+        {
+            "name" : "theft",
+            "relations" : [
+                
+            ]
+        },
+        {
+            "name" : "game",
+            "relations" : [
+                
+            ]
+        },
+        {
+            "name" : "civilization",
+            "relations" : [
+                
+            ]
+        },
+        {
+            "name" : "structure",
+            "relations" : [
+                
+            ]
+        },
+        {
+            "name" : "festivity",
+            "relations" : [
+                
+            ]
+        },
+        {
+            "name" : "madness",
+            "relations" : [
+                
+            ]
+        }
+    ]
+}

@@ -1,0 +1,297 @@
+{
+    "outputPath" : "./src/main/java/electrosphere/net/parser/",
+    "packageName" : "electrosphere.net.parser",
+    "categories":[
+        {
+            "categoryName" : "Entity",
+            "data" : [
+                {
+                    "name" : "entityCategory",
+                    "type" : "FIXED_INT"
+                },
+                {
+                    "name" : "entitySubtype",
+                    "type" : "VAR_STRING"
+                },
+                {
+                    "name" : "entityID",
+                    "type" : "FIXED_INT"
+                },
+                {
+                    "name" : "creatureTemplate",
+                    "type" : "VAR_STRING"
+                },
+                {
+                    "name" : "positionX",
+                    "type" : "FIXED_DOUBLE"
+                },
+                {
+                    "name" : "positionY",
+                    "type" : "FIXED_DOUBLE"
+                },
+                {
+                    "name" : "positionZ",
+                    "type" : "FIXED_DOUBLE"
+                },
+                {
+                    "name" : "rotationX",
+                    "type" : "FIXED_DOUBLE"
+                },
+                {
+                    "name" : "rotationY",
+                    "type" : "FIXED_DOUBLE"
+                },
+                {
+                    "name" : "rotationZ",
+                    "type" : "FIXED_DOUBLE"
+                },
+                {
+                    "name" : "rotationW",
+                    "type" : "FIXED_DOUBLE"
+                },
+                {
+                    "name" : "linVelX",
+                    "type" : "FIXED_DOUBLE"
+                },
+                {
+                    "name" : "linVelY",
+                    "type" : "FIXED_DOUBLE"
+                },
+                {
+                    "name" : "linVelZ",
+                    "type" : "FIXED_DOUBLE"
+                },
+                {
+                    "name" : "angVelX",
+                    "type" : "FIXED_DOUBLE"
+                },
+                {
+                    "name" : "angVelY",
+                    "type" : "FIXED_DOUBLE"
+                },
+                {
+                    "name" : "angVelZ",
+                    "type" : "FIXED_DOUBLE"
+                },
+                {
+                    "name" : "linForceX",
+                    "type" : "FIXED_DOUBLE"
+                },
+                {
+                    "name" : "linForceY",
+                    "type" : "FIXED_DOUBLE"
+                },
+                {
+                    "name" : "linForceZ",
+                    "type" : "FIXED_DOUBLE"
+                },
+                {
+                    "name" : "angForceX",
+                    "type" : "FIXED_DOUBLE"
+                },
+                {
+                    "name" : "angForceY",
+                    "type" : "FIXED_DOUBLE"
+                },
+                {
+                    "name" : "angForceZ",
+                    "type" : "FIXED_DOUBLE"
+                },
+                {
+                    "name" : "yaw",
+                    "type" : "FIXED_DOUBLE"
+                },
+                {
+                    "name" : "pitch",
+                    "type" : "FIXED_DOUBLE"
+                },
+                {
+                    "name" : "velocity",
+                    "type" : "FIXED_DOUBLE"
+                },
+                {
+                    "name" : "treeState",
+                    "type" : "FIXED_INT"
+                },
+                {
+                    "name" : "propertyType",
+                    "type" : "FIXED_INT"
+                },
+                {
+                    "name" : "propertyValue",
+                    "type" : "FIXED_INT"
+                },
+                {
+                    "name" : "time",
+                    "type" : "FIXED_LONG"
+                },
+                {
+                    "name" : "bone",
+                    "type" : "VAR_STRING"
+                },
+                {
+                    "name" : "targetID",
+                    "type" : "FIXED_INT"
+                },
+                {
+                    "name" : "bTreeID",
+                    "type" : "FIXED_INT"
+                },
+                {
+                    "name" : "propertyValueInt",
+                    "type" : "FIXED_INT"
+                },
+                {
+                    "name" : "bodyEnabled",
+                    "type" : "FIXED_BOOL"
+                },
+                {
+                    "name" : "interactionSignal",
+                    "type" : "VAR_STRING"
+                }
+            ],
+            "messageTypes" : [
+                {
+                    "messageName" : "Create",
+                    "description" : "Spawns an entity on the client",
+                    "data" : [
+                        "entityID",
+                        "entityCategory",
+                        "entitySubtype",
+                        "creatureTemplate",
+                        "positionX",
+                        "positionY",
+                        "positionZ",
+                        "rotationX",
+                        "rotationY",
+                        "rotationZ",
+                        "rotationW"
+                    ]
+                },
+                {
+                    "messageName" : "moveUpdate",
+                    "description" : "Updates a client on the move state of an entity",
+                    "data" : [
+                        "entityID",
+                        "time",
+                        "positionX",
+                        "positionY",
+                        "positionZ",
+                        "rotationX",
+                        "rotationY",
+                        "rotationZ",
+                        "rotationW",
+                        "velocity",
+                        "propertyValueInt",
+                        "treeState"
+                    ]
+                },
+                {
+                    "messageName" : "attackUpdate",
+                    "description" : "(Deprecated) Updates the client on the status of a given attack",
+                    "data" : [
+                        "entityID",
+                        "time",
+                        "positionX",
+                        "positionY",
+                        "positionZ",
+                        "rotationX",
+                        "rotationY",
+                        "rotationZ",
+                        "velocity",
+                        "treeState"
+                    ]
+                },
+                {
+                    "messageName" : "startAttack",
+                    "description" : "Alerts the server that the client wants to start attacking",
+                    "data" : []
+                },
+                {
+                    "messageName" : "Kill",
+                    "description" : "Kills an entity (ie plays death animation, creates effects, etc -- does not actually delete the entity from data/scene)",
+                    "data" : [
+                        "time",
+                        "entityID"
+                    ]
+                },
+                {
+                    "messageName" : "Destroy",
+                    "description" : "Destroys an entity, clearing it from the client scene",
+                    "data" : [
+                        "entityID"
+                    ]
+                },
+                {
+                    "messageName" : "setProperty",
+                    "description" : "Sets a property on an entity (old method user to set the player's entity)",
+                    "data" : [
+                        "entityID",
+                        "time",
+                        "propertyType",
+                        "propertyValue"
+                    ]
+                },
+                {
+                    "messageName" : "attachEntityToEntity",
+                    "description" : "Tells the client to attach an entity to another entity",
+                    "data" : [
+                        "entityID",
+                        "bone",
+                        "targetID"
+                    ]
+                },
+                {
+                    "messageName" : "updateEntityViewDir",
+                    "description" : "Updates the server's value for where the player is looking",
+                    "data" : [
+                        "entityID",
+                        "time",
+                        "propertyType",
+                        "yaw",
+                        "pitch"
+                    ]
+                },
+                {
+                    "messageName" : "syncPhysics",
+                    "description" : "Synchronizes server physics state to client",
+                    "data" : [
+                        "entityID",
+                        "time",
+                        "positionX",
+                        "positionY",
+                        "positionZ",
+                        "rotationX",
+                        "rotationY",
+                        "rotationZ",
+                        "rotationW",
+                        "linVelX",
+                        "linVelY",
+                        "linVelZ",
+                        "angVelX",
+                        "angVelY",
+                        "angVelZ",
+                        "linForceX",
+                        "linForceY",
+                        "linForceZ",
+                        "angForceX",
+                        "angForceY",
+                        "angForceZ",
+                        "bodyEnabled"
+                    ]
+                },
+                {
+                    "messageName" : "interact",
+                    "description" : "Interacts with a given entity",
+                    "data" : [
+                        "entityID",
+                        "interactionSignal"
+                    ]
+                }
+
+
+
+            ]
+        }
+    ]
+}

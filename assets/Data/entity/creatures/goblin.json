@@ -1,0 +1,132 @@
+{
+    "creatures" : [
+        {
+            "id" : "goblin",
+            "displayName" : "Goblin",
+            "hitboxes" : [
+                {
+                    "type": "hurt",
+                    "bone": "Bone.031",
+                    "radius": 0.04
+                },
+                {
+                    "type": "hurt",
+                    "bone": "Bone.012",
+                    "radius": 0.04
+                },
+                {
+                    "type": "hurt",
+                    "bone": "Bone.003",
+                    "radius": 0.04
+                },
+                {
+                    "type": "hurt",
+                    "bone": "Bone.010",
+                    "radius": 0.06
+                },
+                {
+                    "type": "hurt",
+                    "bone": "Bone.001",
+                    "radius": 0.06
+                },
+                {
+                    "type": "hurt",
+                    "bone": "Bone.014",
+                    "radius": 0.06
+                },
+                {
+                    "type": "hurt",
+                    "bone": "Bone",
+                    "radius": 0.08
+                },
+                {
+                    "type": "hurt",
+                    "bone": "Bone.014",
+                    "radius": 0.06
+                },
+                {
+                    "type": "hurt",
+                    "bone": "Bone.019",
+                    "radius": 0.04
+                }
+            ],
+            "tokens" : [
+                "SENTIENT",
+                "ATTACKER",
+                "GRAVITY",
+                "TARGETABLE",
+                "CAN_EQUIP"
+            ],
+            "movementSystems" : [
+                {
+                    "type" : "GROUND",
+                    "acceleration" : 13.0,
+                    "maxVelocity" : 1.8,
+                    "animationStartup" : {
+                        "name" : "Walk",
+                        "length" : 1,
+                        "loops" : false
+                    },
+                    "animationLoop" : {
+                        "name" : "Walk",
+                        "length" : 1,
+                        "loops" : false
+                    },
+                    "animationWindDown" : {
+                        "name" : "Armature|WalkForwardStart",
+                        "length" : 1,
+                        "loops" : false
+                    },
+                    "sprintSystem" : {
+                        "maxVelocity" : 3.8,
+                        "staminaMax" : 500,
+                        "animationStartUp" : {
+                            "name" : "Run",
+                            "length" : 1,
+                            "loops" : false
+                        },
+                        "animationMain" : {
+                            "name" : "Run",
+                            "length" : 1,
+                            "loops" : false
+                        }
+                    }
+                }
+            ],
+            "collidable" : {
+                "type" : "CYLINDER",
+                "dimension1" : 0.1,
+                "dimension2" : 0.2,
+                "dimension3" : 0.1,
+                "rotX": 0,
+                "rotY": 0,
+                "rotZ": 0,
+                "rotW": 1,
+                "offsetX" : 0,
+                "offsetY" : 0.2,
+                "offsetZ" : 0
+            },
+            "attackMoves" : [
+                {
+                    "type" : "MELEE_WEAPON_SWING_ONE_HAND",
+                    "animationName" : "Armature|SwingWeapon",
+                    "damageStartFrame" : 10,
+                    "damageEndFrame" : 30,
+                    "nextMoveId" : "",
+                    "nextAttackMoveWindowStart" : 0,
+                    "nextAttackMoveWindowEnd" : 1,
+                    "movementStart" : 0,
+                    "movementEnd" : 0,
+                    "movementGoal" : 0,
+                    "initialMove" : true
+                }
+            ],
+            "healthSystem" : {
+                "maxHealth" : 100,
+                "onDamageIFrames" : 30
+            },
+            "modelPath" : "Models/goblin1.fbx"
+        }
+    ],
+    "files" : []
+}

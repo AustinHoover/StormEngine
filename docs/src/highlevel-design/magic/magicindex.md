@@ -1,0 +1,1 @@
+@page magicindex Magic Index

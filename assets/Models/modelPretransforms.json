@@ -1,0 +1,96 @@
+{
+    "models" : [
+        {
+            "path" : "Models/testPretransform.fbx",
+            "meshes" : [
+                {
+                    "meshName" : "Cube",
+                    "rotation" : [0.0, 0.0, 0.0, 1.0],
+                    "offset" : [1.0, 1.0, 1.0],
+                    "scale" : [1.0, 1.0, 1.0]
+                }
+            ]
+        },
+        {
+            "path" : "Models/f15.fbx",
+            "meshes" : [
+                {
+                    "meshName" : "Cube.001",
+                    "rotation" : [0.0, 0.0, -0.7071068, 0.7071068],
+                    "offset" : [0.0, 0.0, 0.0],
+                    "scale" : [0.0015, 0.0015, 0.0015]
+                }
+            ]
+        },
+        {
+            "path" : "Models/foliage/proceduralTree2/proceduralTree2v2.fbx",
+            "meshes" : [
+                {
+                    "meshName" : "Trunk",
+                    "rotation" : [-0.7071068, 0.0, 0.0, 0.7071068],
+                    "offset" : [0.0, 0.0, 0.0],
+                    "scale" : [100.0, 100.0, 100.0]
+                }
+            ]
+        },
+        {
+            "path" : "Models/foliage/foliageBlockTemplate1Test1.fbx",
+            "meshes" : [
+                {
+                    "meshName" : "Plane",
+                    "rotation" : [-0.7071068, 0.0, 0.0, 0.7071068],
+                    "offset" : [0.0, 0.0, 0.0],
+                    "scale" : [100.0, 100.0, 100.0]
+                },
+                {
+                    "meshName" : "Plane.001",
+                    "rotation" : [-0.7071068, 0.0, 0.0, 0.7071068],
+                    "offset" : [0.0, 0.0, 0.0],
+                    "scale" : [100.0, 100.0, 100.0]
+                },
+                {
+                    "meshName" : "Plane.002",
+                    "rotation" : [-0.7071068, 0.0, 0.0, 0.7071068],
+                    "offset" : [0.0, 0.0, 0.0],
+                    "scale" : [100.0, 100.0, 100.0]
+                }
+            ]
+        },
+        {
+            "path" : "Models/baseman5.glb",
+            "globalTransform": {
+                "rotation" : [0,0,0,1],
+                "offset" : [0.0, 0.0, 0.0],
+                "scale" : [0.6, 0.6, 0.6]
+            },
+            "meshes" : [
+            ]
+        },
+        {
+            "path" : "Models/creatures/person2/person2_1.glb",
+            "globalTransform": {
+                "rotation" : [0,0,0,1],
+                "offset" : [0.0, 0.0, 0.0],
+                "scale" : [1.0, 1.0, 1.0]
+            },
+            "meshes" : [
+            ]
+        },
+        {
+            "path" : "Models/foliage/grass2.fbx",
+            "globalTransform": {
+                "rotation" : [0.0, 0.0, 0.0, 1.0],
+                "offset" : [0.0, 0.0, 0.0],
+                "scale" : [1.0, 1.0, 1.0]
+            },
+            "meshes" : [
+                {
+                    "meshName" : "Plane",
+                    "rotation" : [-0.7071068, 0.0, 0.0, 0.7071068],
+                    "offset" : [0.0, 0.0, 0.0],
+                    "scale" : [100.0, 100.0, 100.0]
+                }
+            ]
+        }
+    ]
+}

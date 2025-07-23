@@ -1,0 +1,56 @@
+{
+    "types" : [
+        {
+            "id" : 0,
+            "name" : "Air"
+        },
+        {
+            "id" : 1,
+            "name" : "Dirt",
+            "texture" : "/Textures/Ground/Dirt2_256.png"
+        },
+        {
+            "id" : 2,
+            "name" : "Grass",
+            "ambientFoliage" : [
+                "Green Grass"
+            ],
+            "texture" : "/Textures/Ground/GrassTileable256.png"
+        },
+        {
+            "id" : 3,
+            "name" : "Leaves",
+            "texture" : "/Textures/Ground/Leaves1_256.png"
+        },
+        {
+            "id" : 4,
+            "name" : "Stone Path",
+            "texture" : "/Textures/Ground/stone1_256.png"
+        },
+        {
+            "id" : 5,
+            "name" : "Snow",
+            "texture" : "/Textures/Ground/snow1_256.jpg"
+        },
+        {
+            "id" : 6,
+            "name" : "Rock (Shale)",
+            "texture" : "/Textures/Ground/cliff1_256.png"
+        },
+        {
+            "id" : 7,
+            "name" : "Rock (Gneiss)",
+            "texture" : "/Textures/Ground/rock2_256.png"
+        },
+        {
+            "id" : 8,
+            "name" : "Rock (Slate)",
+            "texture" : "/Textures/Ground/rock3_256.png"
+        },
+        {
+            "id" : 9,
+            "name" : "Farmland",
+            "texture" : "/Textures/Ground/farmland_1.png"
+        }
+    ]
+}

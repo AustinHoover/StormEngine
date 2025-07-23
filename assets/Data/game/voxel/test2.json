@@ -1,0 +1,36 @@
+{
+    "name" : "test2",
+    "sampler" :{
+        "name" : "DomainWarp",
+        "x" : {
+            "name" : "Mul",
+            "first" : {
+                "name" : "Const",
+                "value" : 0.02
+            },
+            "second" : {
+                "name" : "OpenSimplex"
+            }
+        },
+        "z" : {
+            "name" : "Mul",
+            "first" : {
+                "name" : "Const",
+                "value" : 0.02
+            },
+            "second" : {
+                "name" : "OpenSimplex"
+            }
+        },
+        "source" : {
+            "name" : "Add",
+            "first" : {
+                "name" : "Const",
+                "value" : 0.2
+            },
+            "second" : {
+                "name" : "OpenSimplex"
+            }
+        }
+    }
+}

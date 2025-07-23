@@ -1,0 +1,237 @@
+{
+    "items" : [
+
+
+
+        {
+            "id" : "Katana",
+            "displayName" : "Katana (1H)",
+            "modelPath" : "Models/items/weapons/katana1alt.fbx",
+            "weaponData" : {
+                "weaponClass" : "sword1h",
+                "damage" : 10,
+                "hitboxes" : [
+                    {
+                        "type": "hit_connected",
+                        "bone": "Blade1",
+                        "radius": 0.04
+                    },
+                    {
+                        "type": "hit_connected",
+                        "bone": "Blade2",
+                        "radius": 0.04
+                    },
+                    {
+                        "type": "hit_connected",
+                        "bone": "Blade3",
+                        "radius": 0.04
+                    }
+                ]
+            },
+            "equipData": {
+                "equipClass" : "weapon"
+            },
+            "tokens" : [
+                "GRAVITY",
+                "MELEE",
+                "TARGETABLE",
+                "OUTLINE"
+            ],
+            "idleAnim" : "Sword|Idle",
+            "collidable": {
+                "type" : "CUBE",
+                "dimension1" : 0.03,
+                "dimension2" : 0.03,
+                "dimension3" : 0.2,
+                "rotX": 0,
+                "rotY": 0,
+                "rotZ": 0,
+                "rotW": 1,
+                "offsetX" : 0.0,
+                "offsetY" : 0.05,
+                "offsetZ" : 0.0
+            },
+            "iconPath" : "Textures/icons/itemIconWeapon.png"
+        },
+        {
+            "id" : "Katana2H",
+            "displayName" : "Katana (2H)",
+            "weaponData" : {
+                "weaponClass" : "sword2h",
+                "damage" : 10,
+                "weaponActionMovePenalty" : 0.4,
+                "hitboxes" : [
+                    {
+                        "type": "hit_connected",
+                        "bone": "Blade1",
+                        "radius": 0.06,
+                        "offset": [0, 0, -0.03]
+                    },
+                    {
+                        "type": "hit_connected",
+                        "bone": "Blade2",
+                        "radius": 0.06,
+                        "offset": [0, 0, -0.1]
+                    },
+                    {
+                        "type": "hit_connected",
+                        "bone": "Blade2",
+                        "radius": 0.06,
+                        "offset": [0, 0, 0.02]
+                    },
+                    {
+                        "type": "hit_connected",
+                        "bone": "Blade3",
+                        "radius": 0.06,
+                        "offset": [0, 0, -0.07]
+                    },
+                    {
+                        "type": "hit_connected",
+                        "bone": "Blade3",
+                        "radius": 0.06,
+                        "offset": [0, 0, 0.05]
+                    },
+                    {
+                        "type": "hit_connected",
+                        "bone": "Blade3",
+                        "radius": 0.06,
+                        "offset": [0, 0, 0.15]
+                    }
+                ]
+            },
+            "equipData": {
+                "equipClass" : "weapon2H"
+            },
+            "itemAudio": {
+                "uiGrabAudio" : "Audio/ui/items/specific/Pick Up Metal A.wav",
+                "uiReleaseAudio" : "Audio/ui/items/specific/Drop Metal A.wav"
+            },
+            "tokens" : [
+                "GRAVITY",
+                "MELEE",
+                "TARGETABLE",
+                "OUTLINE"
+            ],
+            "graphicsTemplate": {
+                "model": {
+                    "idleData": {
+                        "animation": {
+                            "nameFirstPerson" : "Idle",
+                            "nameThirdPerson" : "Idle",
+                            "priorityCategory" : "IDLE"
+                        }
+                    },
+                    "path" : "Models/items/weapons/katana1alt.glb"
+                }
+            },
+            "boneGroups" : [
+                {
+                    "id" : "torso",
+                    "boneNamesThirdPerson" : []
+                }
+            ],
+            "collidable": {
+                "type" : "CUBE",
+                "dimension1" : 0.04,
+                "dimension2" : 0.04,
+                "dimension3" : 0.8,
+                "rotX": 0,
+                "rotY": 0,
+                "rotZ": 0,
+                "rotW": 1,
+                "offsetX" : 0.0,
+                "offsetY" : 0.0,
+                "offsetZ" : 0.0
+            },
+            "iconPath" : "Textures/icons/greatsword.png"
+        },
+        {
+            "id" : "bow1",
+            "displayName" : "Bow",
+            "modelPath": "Models/bow1.fbx",
+            "weaponData" : {
+                "weaponClass" : "bow2h",
+                "damage" : 10,
+                "projectileModel" : "Models/arrow1.fbx"
+            },
+            "equipData": {
+                "equipClass" : "weapon"
+            },
+            "tokens" : [
+                "GRAVITY",
+                "RANGED",
+                "TARGETABLE",
+                "OUTLINE"
+            ],
+            "collidable": {
+                "type" : "CUBE",
+                "dimension1" : 0.1,
+                "dimension2" : 0.1,
+                "dimension3" : 0.35,
+                "rotX": 0,
+                "rotY": 0,
+                "rotZ": 0,
+                "rotW": 1,
+                "offsetX" : 0,
+                "offsetY" : 0.05,
+                "offsetZ" : 0
+            },
+            "iconPath" : "Textures/icons/itemIconWeapon.png"
+        },
+        {
+            "id" : "Stone Axe",
+            "displayName" : "Stone Axe",
+            "weaponData" : {
+                "weaponClass" : "sword1h",
+                "damage" : 7,
+                "weaponActionMovePenalty" : 0.3,
+                "hitboxes" : [
+                    {
+                        "type": "hit_connected",
+                        "radius": 0.06,
+                        "offset": [0, 0, 0.37]
+                    }
+                ]
+            },
+            "equipData": {
+                "equipClass" : "weapon1H"
+            },
+            "itemAudio": {
+                "uiGrabAudio" : "Audio/ui/items/specific/Pick Up Metal A.wav",
+                "uiReleaseAudio" : "Audio/ui/items/specific/Drop Metal A.wav"
+            },
+            "tokens" : [
+                "GRAVITY",
+                "MELEE",
+                "TARGETABLE",
+                "OUTLINE",
+                "AXE"
+            ],
+            "graphicsTemplate": {
+                "model": {
+                    "path" : "Models/items/weapons/axe1.glb"
+                }
+            },
+            "collidable": {
+                "type" : "CUBE",
+                "dimension1" : 0.04,
+                "dimension2" : 0.04,
+                "dimension3" : 0.8,
+                "rotX": 0,
+                "rotY": 0,
+                "rotZ": 0,
+                "rotW": 1,
+                "offsetX" : 0.0,
+                "offsetY" : 0.0,
+                "offsetZ" : 0.0
+            },
+            "iconPath" : "Textures/icons/itemIconItemGeneric.png"
+        }
+
+
+
+
+    ],
+    "files" : [
+    ]
+}

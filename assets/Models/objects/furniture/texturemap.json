@@ -1,0 +1,18 @@
+{
+    "textureMap": {
+        "Models/objects/furniture/torch1.glb": [
+            {
+                "meshName" : "Cube",
+                "diffuse" : "/Textures/wooden.png",
+                "isDefault" : true
+            }
+        ],
+        "Models/objects/furniture/workbench1.glb": [
+            {
+                "meshName" : "Cube",
+                "diffuse" : "/Models/objects/furniture/workbench1.png",
+                "isDefault" : true
+            }
+        ]
+    }
+}

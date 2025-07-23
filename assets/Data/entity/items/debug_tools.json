@@ -1,0 +1,233 @@
+{
+    "items" : [
+        {
+            "id" : "terrainTool",
+            "displayName" : "Terrain Tool",
+            "tokens" : [
+                "GRAVITY",
+                "TARGETABLE",
+                "CURSOR"
+            ],
+            "equipData": {
+                "equipClass" : "tool"
+            },
+            "graphicsTemplate": {
+                "model": {
+                    "path" : "Models/items/weapons/shovel1.glb"
+                }
+            },
+            "primaryUsage" : {
+                "clientHook" : "ADD_VOXEL",
+                "suppressServerRequest": true
+            },
+            "secondaryUsage" : {
+                "clientHook" : "OPEN_VOXEL",
+                "suppressServerRequest": true
+            },
+            "collidable": {
+                "type" : "CUBE",
+                "dimension1" : 0.1,
+                "dimension2" : 0.1,
+                "dimension3" : 0.35,
+                "rotX": 0,
+                "rotY": 0,
+                "rotZ": 0,
+                "rotW": 1,
+                "offsetX" : 0,
+                "offsetY" : 0.05,
+                "offsetZ" : 0
+            },
+            "iconPath" : "Textures/icons/shovel.png"
+        },
+
+        {
+            "id" : "spawningPalette",
+            "displayName" : "Spawning Palette",
+            "tokens" : [
+                "GRAVITY",
+                "TARGETABLE",
+                "CURSOR"
+            ],
+            "equipData": {
+                "equipClass" : "tool"
+            },
+            "graphicsTemplate": {
+                "model": {
+                    "path" : "Models/basic/geometry/unitvector.glb"
+                }
+            },
+            "primaryUsage" : {
+                "clientHook" : "LEVEL_EDIT_SPAWN",
+                "suppressServerRequest": true
+            },
+            "secondaryUsage" : {
+                "clientHook" : "OPEN_SPAWN_SELECT",
+                "suppressServerRequest": true
+            },
+            "collidable": {
+                "type" : "CUBE",
+                "dimension1" : 0.1,
+                "dimension2" : 0.1,
+                "dimension3" : 0.35,
+                "rotX": 0,
+                "rotY": 0,
+                "rotZ": 0,
+                "rotW": 1,
+                "offsetX" : 0,
+                "offsetY" : 0.05,
+                "offsetZ" : 0
+            },
+            "iconPath" : "Textures/icons/wand.png"
+        },
+        {
+            "id" : "entityinspector",
+            "displayName" : "Entity Inspector",
+            "tokens" : [
+                "GRAVITY",
+                "TARGETABLE",
+                "CURSOR"
+            ],
+            "equipData": {
+                "equipClass" : "tool"
+            },
+            "graphicsTemplate": {
+                "model": {
+                    "path" : "Models/items/weapons/shovel1.glb"
+                }
+            },
+            "secondaryUsage" : {
+                "clientHook" : "INSPECTOR",
+                "suppressServerRequest": true
+            },
+            "collidable": {
+                "type" : "CUBE",
+                "dimension1" : 0.1,
+                "dimension2" : 0.1,
+                "dimension3" : 0.35,
+                "rotX": 0,
+                "rotY": 0,
+                "rotZ": 0,
+                "rotW": 1,
+                "offsetX" : 0,
+                "offsetY" : 0.05,
+                "offsetZ" : 0
+            },
+            "iconPath" : "Textures/icons/magnifyingglass.png"
+        },
+        {
+            "id" : "waterSpawner",
+            "displayName" : "Water Wand",
+            "tokens" : [
+                "GRAVITY",
+                "TARGETABLE",
+                "CURSOR"
+            ],
+            "equipData": {
+                "equipClass" : "tool"
+            },
+            "graphicsTemplate": {
+                "model": {
+                    "path" : "Models/basic/geometry/unitvector.glb"
+                }
+            },
+            "secondaryUsage" : {
+                "clientHook" : "SPAWN_WATER",
+                "suppressServerRequest": true
+            },
+            "collidable": {
+                "type" : "CUBE",
+                "dimension1" : 0.1,
+                "dimension2" : 0.1,
+                "dimension3" : 0.35,
+                "rotX": 0,
+                "rotY": 0,
+                "rotZ": 0,
+                "rotW": 1,
+                "offsetX" : 0,
+                "offsetY" : 0.05,
+                "offsetZ" : 0
+            },
+            "iconPath" : "Textures/icons/wave.png"
+        },
+        {
+            "id" : "fabTool",
+            "displayName" : "Fab Tool",
+            "tokens" : [
+                "GRAVITY",
+                "TARGETABLE",
+                "CURSOR_FAB"
+            ],
+            "equipData": {
+                "equipClass" : "tool"
+            },
+            "graphicsTemplate": {
+                "model": {
+                    "path" : "Models/basic/geometry/unitvector.glb"
+                }
+            },
+            "primaryUsage" : {
+                "clientHook" : "PLACE_FAB",
+                "suppressServerRequest": true
+            },
+            "secondaryUsage" : {
+                "clientHook" : "SELECT_FAB",
+                "suppressServerRequest": true
+            },
+            "collidable": {
+                "type" : "CUBE",
+                "dimension1" : 0.1,
+                "dimension2" : 0.1,
+                "dimension3" : 0.35,
+                "rotX": 0,
+                "rotY": 0,
+                "rotZ": 0,
+                "rotW": 1,
+                "offsetX" : 0,
+                "offsetY" : 0.05,
+                "offsetZ" : 0
+            },
+            "iconPath" : "Textures/icons/hammer.png"
+        },
+        {
+            "id" : "roomTool",
+            "displayName" : "Room Tool",
+            "tokens" : [
+                "GRAVITY",
+                "TARGETABLE",
+                "CURSOR_FAB"
+            ],
+            "equipData": {
+                "equipClass" : "tool"
+            },
+            "graphicsTemplate": {
+                "model": {
+                    "path" : "Models/basic/geometry/unitvector.glb"
+                }
+            },
+            "primaryUsage" : {
+                "clientHook" : "ROOM_TOOL_ACTION",
+                "suppressServerRequest": true
+            },
+            "secondaryUsage" : {
+                "clientHook" : "ROOM_TOOL_MENU",
+                "suppressServerRequest": true
+            },
+            "collidable": {
+                "type" : "CUBE",
+                "dimension1" : 0.1,
+                "dimension2" : 0.1,
+                "dimension3" : 0.35,
+                "rotX": 0,
+                "rotY": 0,
+                "rotZ": 0,
+                "rotW": 1,
+                "offsetX" : 0,
+                "offsetY" : 0.05,
+                "offsetZ" : 0
+            },
+            "iconPath" : "Textures/icons/hammer.png"
+        }
+    ],
+    "files" : [
+    ]
+}

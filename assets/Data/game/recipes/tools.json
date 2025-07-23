@@ -1,0 +1,67 @@
+{
+    "recipes": [
+        {
+            "displayName": "Stone Axe",
+            "craftingTag" : "HAND",
+            "ingredients": [
+                {
+                    "itemType": "mat:Stick",
+                    "count": 1
+                },
+                {
+                    "itemType": "mat:Rock",
+                    "count": 1
+                }
+            ],
+            "products": [
+                {
+                    "itemType": "Stone Axe",
+                    "count": 1
+                }
+            ]
+        },
+        {
+            "displayName": "Stone Shovel",
+            "craftingTag" : "HAND",
+            "ingredients": [
+                {
+                    "itemType": "mat:Stick",
+                    "count": 1
+                },
+                {
+                    "itemType": "mat:Rock",
+                    "count": 1
+                }
+            ],
+            "products": [
+                {
+                    "itemType": "Stone Shovel",
+                    "count": 1
+                }
+            ]
+        },
+        {
+            "displayName": "Stone Pick",
+            "craftingTag" : "HAND",
+            "ingredients": [
+                {
+                    "itemType": "mat:Stick",
+                    "count": 1
+                },
+                {
+                    "itemType": "mat:Rock",
+                    "count": 1
+                }
+            ],
+            "products": [
+                {
+                    "itemType": "Stone Pick",
+                    "count": 1
+                }
+            ]
+        }
+    ],
+    "files": [
+
+    ]
+}

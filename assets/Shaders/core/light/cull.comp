@@ -1,0 +1,91 @@
+#version 450 core
+
+/**
+Maximum number of lights per cluster
+*/
+#define MAX_LIGHTS_PER_CLUSTER 100
+
+/**
+The number of "threads" to run
+*/
+#define CULL_LOCAL_SIZE 128
+
+/**
+Bind points for different SSBOs
+*/
+#define CLUSTER_SSBO_BIND_POINT 1
+#define POINT_LIGHT_SSBO_BIND_POINT 2
+#define DIRECT_LIGHT_SSBO_BIND_POINT 3
+
+
+layout(local_size_x = CULL_LOCAL_SIZE, local_size_y = 1, local_size_z = 1) in;
+
+struct PointLight {
+    vec4 position;
+    vec4 color;
+    float constant;
+    float linear;
+    float quadratic;
+    float radius;
+};
+
+struct Cluster {
+    vec4 minPoint;
+    vec4 maxPoint;
+    uint count;
+    uint lightIndices[MAX_LIGHTS_PER_CLUSTER];
+};
+
+layout(std430, binding = CLUSTER_SSBO_BIND_POINT) restrict buffer clusterSSBO {
+    Cluster clusters[];
+};
+
+layout(std430, binding = POINT_LIGHT_SSBO_BIND_POINT) restrict buffer lightSSBO {
+    PointLight pointLight[];
+};
+
+uniform mat4 viewMatrix;
+
+/**
+ * Number of lights in the scene
+ */
+uniform int lightCount;
+
+bool testSphereAABB(uint i, Cluster c);
+
+// each invocation of main() is a thread processing a cluster
+void main() {
+    uint index = gl_WorkGroupID.x * CULL_LOCAL_SIZE + gl_LocalInvocationID.x;
+    Cluster cluster = clusters[index];
+
+    // we need to reset count because culling runs every frame.
+    // otherwise it would accumulate.
+    cluster.count = 0;
+
+    for (uint i = 0; i < lightCount; ++i){
+        if (testSphereAABB(i, cluster) && cluster.count < MAX_LIGHTS_PER_CLUSTER){
+            cluster.lightIndices[cluster.count] = i;
+            cluster.count++;
+        }
+    }
+    clusters[index] = cluster;
+}
+
+bool sphereAABBIntersection(vec3 center, float radius, vec3 aabbMin, vec3 aabbMax) {
+    // closest point on the AABB to the sphere center
+    vec3 closestPoint = clamp(center, aabbMin, aabbMax);
+    // squared distance between the sphere center and closest point
+    float distanceSquared = dot(closestPoint - center, closestPoint - center);
+    return distanceSquared <= radius * radius;
+}
+
+// this just unpacks data for sphereAABBIntersection
+bool testSphereAABB(uint i, Cluster cluster) {
+    vec3 center = vec3(viewMatrix * pointLight[i].position);
+    float radius = pointLight[i].radius;
+
+    vec3 aabbMin = cluster.minPoint.xyz;
+    vec3 aabbMax = cluster.maxPoint.xyz;
+
+    return sphereAABBIntersection(center, radius, aabbMin, aabbMax);
+}

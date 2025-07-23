@@ -1,0 +1,19 @@
+{
+    "objects" : [
+
+        {
+            "id" : "hitboxTester",
+            "displayName" : "Hitbox Tester",
+            "hitboxData" : [
+                    {
+                    "type": "static_capsule",
+                    "radius": 2,
+                    "length": 5
+                }
+            ],
+            "tokens": []
+        }
+
+    ],
+    "files" : []
+}

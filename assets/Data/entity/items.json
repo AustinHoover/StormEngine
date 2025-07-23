@@ -1,0 +1,13 @@
+{
+    "items" : [
+        
+    ],
+    "files" : [
+        "Data/entity/items/weapons.json",
+        "Data/entity/items/debug_tools.json",
+        "Data/entity/items/hand_tools.json",
+        "Data/entity/items/clothing.json",
+        "Data/entity/items/materials.json",
+        "Data/entity/items/fabs.json"
+    ]
+}

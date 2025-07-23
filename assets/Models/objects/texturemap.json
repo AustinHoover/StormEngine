@@ -1,0 +1,11 @@
+{
+    "textureMap": {
+        "Models/objects/crate2.glb": [
+            {
+                "meshName" : "Cube",
+                "diffuse" : "/Textures/woodplanks1.png",
+                "isDefault" : true
+            }
+        ]
+    }
+}

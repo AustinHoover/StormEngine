@@ -1,0 +1,361 @@
+{
+    "outputPath" : "./src/main/java/electrosphere/net/parser/",
+    "packageName" : "electrosphere.net.parser",
+    "categories":[
+        {
+            "categoryName" : "Terrain",
+            "data" : [
+                {
+                    "name" : "worldSizeDiscrete",
+                    "type" : "FIXED_INT"
+                },
+                {
+                    "name" : "dynamicInterpolationRatio",
+                    "type" : "FIXED_INT"
+                },
+                {
+                    "name" : "randomDampener",
+                    "type" : "FIXED_FLOAT"
+                },
+                {
+                    "name" : "worldMinX",
+                    "type" : "FIXED_INT"
+                },
+                {
+                    "name" : "worldMinY",
+                    "type" : "FIXED_INT"
+                },
+                {
+                    "name" : "worldMinZ",
+                    "type" : "FIXED_INT"
+                },
+                {
+                    "name" : "worldMaxX",
+                    "type" : "FIXED_INT"
+                },
+                {
+                    "name" : "worldMaxY",
+                    "type" : "FIXED_INT"
+                },
+                {
+                    "name" : "worldMaxZ",
+                    "type" : "FIXED_INT"
+                },
+
+
+                {
+                    "name" : "value",
+                    "type" : "FIXED_FLOAT"
+                },
+
+
+                {
+                    "name" : "worldX",
+                    "type" : "FIXED_INT"
+                },
+                {
+                    "name" : "worldY",
+                    "type" : "FIXED_INT"
+                },
+                {
+                    "name" : "worldZ",
+                    "type" : "FIXED_INT"
+                },
+
+                {
+                    "name" : "voxelX",
+                    "type" : "FIXED_INT"
+                },
+                {
+                    "name" : "voxelY",
+                    "type" : "FIXED_INT"
+                },
+                {
+                    "name" : "voxelZ",
+                    "type" : "FIXED_INT"
+                },
+
+                
+
+
+                {
+                    "name" : "realLocationX",
+                    "type" : "FIXED_DOUBLE"
+                },
+                {
+                    "name" : "realLocationY",
+                    "type" : "FIXED_DOUBLE"
+                },
+                {
+                    "name" : "realLocationZ",
+                    "type" : "FIXED_DOUBLE"
+                },
+
+
+
+                {
+                    "name" : "chunkData",
+                    "type" : "BYTE_ARRAY"
+                },
+
+                {
+                    "name" : "homogenousValue",
+                    "type" : "FIXED_INT"
+                },
+
+                {
+                    "name" : "chunkResolution",
+                    "type" : "FIXED_INT"
+                },
+
+                {
+                    "name" : "terrainWeight",
+                    "type" : "FIXED_FLOAT"
+                },
+                {
+                    "name" : "terrainValue",
+                    "type" : "FIXED_INT"
+                },
+
+                {
+                    "name" : "blockType",
+                    "type" : "FIXED_INT"
+                },
+                {
+                    "name" : "blockMetadata",
+                    "type" : "FIXED_INT"
+                },
+                {
+                    "name" : "blockEditSize",
+                    "type" : "FIXED_INT"
+                },
+                {
+                    "name" : "fabPath",
+                    "type" : "VAR_STRING"
+                },
+                {
+                    "name" : "blockRotation",
+                    "type" : "FIXED_INT"
+                }
+            ],
+            "messageTypes" : [
+                {
+                    "messageName" : "RequestMetadata",
+                    "description" : "Requests terrain metadata from the server",
+                    "data" : []
+                },
+                {
+                    "messageName" : "ResponseMetadata",
+                    "description" : "Tell the client the terrain metadata",
+                    "data" : [
+                        "worldSizeDiscrete",
+                        "worldMinX",
+                        "worldMinY",
+                        "worldMinZ",
+                        "worldMaxX",
+                        "worldMaxY",
+                        "worldMaxZ"
+                    ]
+                },
+                {
+                    "messageName" : "RequestEditVoxel",
+                    "description" : "Requests that a voxel be edited on the server",
+                    "data" : [
+                        "worldX",
+                        "worldY",
+                        "worldZ",
+                        "voxelX",
+                        "voxelY",
+                        "voxelZ",
+                        "terrainWeight",
+                        "terrainValue"
+                    ]
+                },
+                {
+                    "messageName" : "UpdateVoxel",
+                    "description" : "Tells the client to update a voxel's value",
+                    "data" : [
+                        "worldX",
+                        "worldY",
+                        "worldZ",
+                        "voxelX",
+                        "voxelY",
+                        "voxelZ",
+                        "terrainWeight",
+                        "terrainValue"
+                    ]
+                },
+                {
+                    "messageName" : "RequestUseTerrainPalette",
+                    "description" : "Requests that the current player entity use a given terrain palette",
+                    "data" : [
+                        "realLocationX",
+                        "realLocationY",
+                        "realLocationZ",
+                        "value",
+                        "terrainWeight",
+                        "terrainValue"
+                    ]
+                },
+                {
+                    "messageName" : "RequestDestroyTerrain",
+                    "description" : "Requests that the current player entity destroys voxels in a radius around a position using a given weight",
+                    "data" : [
+                        "realLocationX",
+                        "realLocationY",
+                        "realLocationZ",
+                        "value",
+                        "terrainWeight"
+                    ]
+                },
+                {
+                    "messageName" : "SpawnPosition",
+                    "description" : "Sets the spawn position of the client",
+                    "data" : [
+                        "realLocationX",
+                        "realLocationY",
+                        "realLocationZ"
+                    ]
+                },
+                {
+                    "messageName" : "RequestChunkData",
+                    "description" : "Requests chunk data from the server",
+                    "data" : [
+                        "worldX",
+                        "worldY",
+                        "worldZ"
+                    ]
+                },
+                {
+                    "messageName" : "sendChunkData",
+                    "description" : "Sends chunk data to the client",
+                    "data" : [
+                        "worldX",
+                        "worldY",
+                        "worldZ",
+                        "chunkData"
+                    ]
+                },
+                {
+                    "messageName" : "RequestReducedChunkData",
+                    "description" : "Requests reduced resolution chunk data from the server",
+                    "data" : [
+                        "worldX",
+                        "worldY",
+                        "worldZ",
+                        "chunkResolution"
+                    ]
+                },
+                {
+                    "messageName" : "SendReducedChunkData",
+                    "description" : "Sends chunk data to the client",
+                    "customParser" : true,
+                    "data" : [
+                        "worldX",
+                        "worldY",
+                        "worldZ",
+                        "chunkResolution",
+                        "homogenousValue",
+                        "chunkData"
+                    ]
+                },
+
+                {
+                    "messageName" : "RequestReducedBlockData",
+                    "description" : "Requests reduced resolution block data from the server",
+                    "data" : [
+                        "worldX",
+                        "worldY",
+                        "worldZ",
+                        "chunkResolution"
+                    ]
+                },
+                {
+                    "messageName" : "SendReducedBlockData",
+                    "description" : "Sends block data to the client",
+                    "customParser" : true,
+                    "data" : [
+                        "worldX",
+                        "worldY",
+                        "worldZ",
+                        "chunkResolution",
+                        "homogenousValue",
+                        "chunkData"
+                    ]
+                },
+                {
+                    "messageName" : "UpdateBlock",
+                    "description" : "Tells the client to update a voxel's value",
+                    "data" : [
+                        "worldX",
+                        "worldY",
+                        "worldZ",
+                        "voxelX",
+                        "voxelY",
+                        "voxelZ",
+                        "blockType",
+                        "blockMetadata"
+                    ]
+                },
+                {
+                    "messageName" : "RequestFluidData",
+                    "description" : "Requests a fluid data from the server",
+                    "data" : [
+                        "worldX",
+                        "worldY",
+                        "worldZ"
+                    ]
+                },
+                {
+                    "messageName" : "sendFluidData",
+                    "description" : "Sends fluid data to the client",
+                    "data" : [
+                        "worldX",
+                        "worldY",
+                        "worldZ",
+                        "chunkData"
+                    ]
+                },
+                {
+                    "messageName" : "updateFluidData",
+                    "description" : "Updates fluid data on the client",
+                    "data" : [
+                        "worldX",
+                        "worldY",
+                        "worldZ",
+                        "chunkData"
+                    ]
+                },
+                {
+                    "messageName" : "RequestEditBlock",
+                    "description" : "Requests that a block be edited on the server",
+                    "data" : [
+                        "worldX",
+                        "worldY",
+                        "worldZ",
+                        "voxelX",
+                        "voxelY",
+                        "voxelZ",
+                        "blockType",
+                        "blockMetadata",
+                        "blockEditSize"
+                    ]
+                },
+                {
+                    "messageName" : "RequestPlaceFab",
+                    "description" : "Requests that a fab be placed",
+                    "data" : [
+                        "worldX",
+                        "worldY",
+                        "worldZ",
+                        "voxelX",
+                        "voxelY",
+                        "voxelZ",
+                        "blockRotation",
+                        "fabPath"
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,67 @@
+{
+    "objects" : [
+
+        {
+            "id" : "spawnPoint",
+            "displayName" : "Spawn Point",
+            "graphicsTemplate": {
+                "model": {
+                    "path" : "Models/gameobj/token.glb"
+                }
+            },
+            "tokens": [
+                "SPAWNPOINT"
+            ]
+        },
+        {
+            "id" : "marker",
+            "displayName" : "Marker",
+            "graphicsTemplate": {
+                "model": {
+                    "path" : "Models/gameobj/token.glb"
+                }
+            },
+            "tokens": [
+                "MARKER"
+            ]
+        },
+        {
+            "id" : "flameEmitterTest",
+            "displayName" : "Flame Emitter",
+            "particleEmitter": {
+                "maxLife": 20,
+                "lifeCurrent": 0,
+                "particleVelocity": {
+                    "x": 0.0,
+                    "y": 0.02,
+                    "z": 0.0
+                },
+                "acceleration": -0.0001,
+                "texture": "flame_05.png",
+                "size": 0.3,
+                "color": {
+                    "x": 0.83,
+                    "y": 0.6,
+                    "z": 0.09
+                },
+                "offset": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "radialAcceleration": 0.0001,
+                "transparency": {
+                    "constant": 1,
+                    "linear": 0,
+                    "quadratic": -1
+                },
+                "spread": 15,
+                "frequency": 2
+            },
+            "tokens": [
+            ]
+        }
+
+    ],
+    "files" : []
+}

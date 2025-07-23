@@ -1,0 +1,20 @@
+<style>
+testClass {
+    margin-top: "50px";
+    margin-left: "50px";
+}
+mainPanel {
+    margin-top: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+}
+</style>
+<div class="mainPanel">
+    <p class="testClass">Room Tool Menu!</p>
+    <button onclick="engine.playerState.controlState.roomTool.updateState('SelectRoom')">Select Rooms</button>
+    <button onclick="engine.playerState.controlState.roomTool.updateState('ShowRoom')">Show Rooms</button>
+    <button onclick="engine.playerState.controlState.roomTool.updateState('SelectFurniture')">Select Furniture Spots</button>
+    <button onclick="engine.playerState.controlState.roomTool.updateState('ShowFurniture')">Show Furniture Spots</button>
+    <button onclick="engine.playerState.controlState.roomTool.updateState('DetectRoom')">Detect Room</button>
+</div>

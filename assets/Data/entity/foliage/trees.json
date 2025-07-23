@@ -1,0 +1,223 @@
+{
+    "foliageList" : [
+        {
+            "id" : "pine",
+            "displayName" : "Tree (Pine)",
+            "tokens" : [
+                "TREE",
+                "REACTS_TO_WIND",
+                "GROWS_BACK",
+                "FLAMMABLE",
+                "SEEDED"
+            ],
+            "growthModel": {
+                "growthRate" : 0.001
+            },
+            "ambientAudio": {
+                "responseWindAudioFilePath": "Audio/ambienceWind1SeamlessMono.ogg",
+                "responseWindLoops": true,
+                "randomizeOffset": true,
+                "gainMultiplier": 0.9,
+                "emitterSpatialOffset": [0,3,0]
+            },
+            "graphicsTemplate": {
+                "proceduralModel": {
+                    "treeModel": {
+                        "trunkModel": {
+                            "trunkScalarFalloffFactor": 0.2,
+                            "minimumTrunkScalar": 0.2,
+                            "maximumTrunkSegments": 6,
+                            "physicsCutoff": 3,
+                            "centralTrunk": true
+                        },
+                        "branchModel": {
+                            "limbScalarFalloffFactor": 0.3,
+                            "minimumLimbScalar": 0.25,
+                            "maximumLimbDispersion": 0.5,
+                            "minimumLimbDispersion": 0.3,
+                            "minimumNumberForks": 3,
+                            "maximumNumberForks": 5,
+                            "maximumBranchSegments": 3,
+                            "maxBranchSegmentFalloffFactor": 1,
+                            "minimumSegmentToSpawnLeaves": 2
+                        },
+                        "minBranchHeightToStartSpawningLeaves": 1.5,
+                        "maxBranchHeightToStartSpawningLeaves": 3.01,
+                        "leafIncrement": 0.5,
+                        "minLeavesToSpawnPerPoint": 3,
+                        "maxLeavesToSpawnPerPoint": 5,
+                        "leafDistanceFromCenter": 1.2,
+                        "peelVariance": 0.2,
+                        "peelMinimum": 0.1,
+                        "swaySigmoidFactor": 2,
+                        "minimumSwayTime": 500,
+                        "swayTimeVariance": 500,
+                        "yawVariance": 0.2,
+                        "yawMinimum": 0.1,
+                        "minimumScalarToGenerateSwayTree": 0.5,
+                        "maximumScalarToGenerateSwayTree": 1.0,
+                        "branchHeight": 3,
+                        "physicsBody": {
+                            "type" : "CYLINDER",
+                            "dimension1" : 0.5,
+                            "dimension2" : 3,
+                            "dimension3" : 0.5,
+                            "rotX": 0,
+                            "rotY": 0,
+                            "rotZ": 0,
+                            "rotW": 1,
+                            "offsetX" : 0,
+                            "offsetY" : 1.5,
+                            "offsetZ" : 0
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id" : "oak",
+            "displayName" : "Tree (Oak)",
+            "tokens" : [
+                "TREE",
+                "REACTS_TO_WIND",
+                "GROWS_BACK",
+                "FLAMMABLE",
+                "SEEDED"
+            ],
+            "growthModel": {
+                "growthRate" : 0.001
+            },
+            "ambientAudio": {
+                "responseWindAudioFilePath": "Audio/ambienceWind1SeamlessMono.ogg",
+                "responseWindLoops": true,
+                "randomizeOffset": true,
+                "gainMultiplier": 0.9,
+                "emitterSpatialOffset": [0,3,0]
+            },
+            "graphicsTemplate": {
+                "proceduralModel": {
+                    "treeModel": {
+                        "trunkModel": {
+                            "maximumTrunkSegments": 4,
+                            "physicsCutoff": 3,
+                            "centralTrunk": false
+                        },
+                        "branchModel": {
+                            "limbScalarFalloffFactor": 0.3,
+                            "minimumLimbScalar": 0.25,
+                            "maximumLimbDispersion": 0.5,
+                            "minimumLimbDispersion": 0.3,
+                            "minimumNumberForks": 3,
+                            "maximumNumberForks": 5,
+                            "maximumBranchSegments": 3,
+                            "maxBranchSegmentFalloffFactor": 1,
+                            "minimumSegmentToSpawnLeaves": 2
+                        },
+                        "minBranchHeightToStartSpawningLeaves": 1.5,
+                        "maxBranchHeightToStartSpawningLeaves": 3.01,
+                        "leafIncrement": 0.5,
+                        "minLeavesToSpawnPerPoint": 3,
+                        "maxLeavesToSpawnPerPoint": 5,
+                        "leafDistanceFromCenter": 1.2,
+                        "peelVariance": 0.2,
+                        "peelMinimum": 0.1,
+                        "swaySigmoidFactor": 2,
+                        "minimumSwayTime": 500,
+                        "swayTimeVariance": 500,
+                        "yawVariance": 0.2,
+                        "yawMinimum": 0.1,
+                        "minimumScalarToGenerateSwayTree": 0.5,
+                        "maximumScalarToGenerateSwayTree": 1.0,
+                        "branchHeight": 3,
+                        "physicsBody": {
+                            "type" : "CYLINDER",
+                            "dimension1" : 0.5,
+                            "dimension2" : 3,
+                            "dimension3" : 0.5,
+                            "rotX": 0,
+                            "rotY": 0,
+                            "rotZ": 0,
+                            "rotW": 1,
+                            "offsetX" : 0,
+                            "offsetY" : 1.5,
+                            "offsetZ" : 0
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id" : "pine2",
+            "displayName" : "Tree (Pine)",
+            "tokens" : [
+                "TREE",
+                "FLAMMABLE"
+            ],
+            "hitboxes" : [
+                {
+                    "type": "hurt",
+                    "offset": [0, 0.045, 0],
+                    "radius": 0.175
+                },
+                {
+                    "type": "hurt",
+                    "offset": [0, 0.6, 0],
+                    "radius": 0.175
+                },
+                {
+                    "type": "hurt",
+                    "offset": [0, 1.2, 0],
+                    "radius": 0.175
+                },
+                {
+                    "type": "hurt",
+                    "offset": [0, 1.8, 0],
+                    "radius": 0.175
+                }
+            ],
+            "collidable" : {
+                "type" : "CYLINDER",
+                "dimension1" : 0.2,
+                "dimension2" : 1.6,
+                "dimension3" : 0.2,
+                "linearFriction": 0.001,
+                "mass": 0.3,
+                "rotX": 0,
+                "rotY": 0,
+                "rotZ": 0,
+                "rotW": 1,
+                "offsetX" : 0,
+                "offsetY" : 0.8,
+                "offsetZ" : 0,
+                "kinematic" : true
+            },
+            "healthSystem" : {
+                "maxHealth" : 50,
+                "onDamageIFrames" : 5,
+                "lootPool" : {
+                    "tickets" : [
+                        {
+                            "itemId" : "mat:Log",
+                            "rarity" : 0.8,
+                            "minQuantity" : 2,
+                            "maxQuantity" : 5
+                        },
+                        {
+                            "itemId" : "block:Wood",
+                            "rarity" : 0.8,
+                            "minQuantity" : 0,
+                            "maxQuantity" : 5
+                        }
+                    ]
+                }
+            },
+            "graphicsTemplate": {
+                "model": {
+                    "path" : "Models/foliage/tree4.glb"
+                }
+            }
+        }
+    ],
+    "files" : [
+    ]
+}

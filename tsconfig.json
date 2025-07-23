@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+        "paths" : {
+            "/*" : [
+                "./assets/*"
+            ],
+        },
+        "outDir" : ".cache/tscache/src"
+    }
+}

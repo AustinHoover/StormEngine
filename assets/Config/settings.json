@@ -1,0 +1,30 @@
+{
+    "gameplayGenerateWorld" : false,
+    "gameplayPhysicsCellRadius" : 10,
+
+    "displayWidth" :  1920,
+    "displayHeight" : 1080,
+    "displayFullscreen" : false,
+
+    "graphicsFOV" : 100.0,
+    
+    
+    "graphicsPerformanceLODChunkRadius" : 7,
+    "graphicsPerformanceEnableVSync" : false,
+    "graphicsPerformanceDrawShadows" : true,
+    "graphicsPerformanceOIT" : true,
+    "graphicsPerformanceEnableFoliageManager" : true,
+    "graphicsViewRange" : 20000.0,
+
+    "renderResolutionX": 1920,
+    "renderResolutionY": 1080,
+
+    "graphicsDebugDrawCollisionSpheresClient" : false,
+    "graphicsDebugDrawCollisionSpheresServer" : false,
+    "graphicsDebugDrawPhysicsObjects" : false,
+    "graphicsDebugDrawMovementVectors" : false,
+    "graphicsDebugDrawNavmesh" : false,
+
+    "netRunNetMonitor" : false
+
+}

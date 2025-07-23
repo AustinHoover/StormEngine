@@ -1,0 +1,31 @@
+{
+    "foliageList" : [
+        {
+            "id" : "Green Grass",
+            "displayName" : "Grass",
+            "tokens" : [
+                "AMBIENT",
+                "REACTS_TO_WIND",
+                "GROWS_BACK",
+                "FLAMMABLE"
+            ],
+            "growthModel": {
+                "growthRate" : 0.001
+            },
+            "grassData": {
+                "baseColor": {"x": 0.25, "y": 0.6, "z": 0.43},
+                "tipColor": {"x": 0.17, "y": 0.71, "z": 0.12},
+                "maxTipCurve" : 0.27,
+                "minHeight" : 0.7,
+                "maxHeight" : 1.3
+            },
+            "graphicsTemplate": {
+                "model": {
+                    "path" : "Models/foliage/grass2.fbx"
+                }
+            }
+        }
+    ],
+    "files" : [
+    ]
+}

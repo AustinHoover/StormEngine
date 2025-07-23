@@ -1,0 +1,65 @@
+{
+    "outputPath" : "./src/main/java/electrosphere/net/parser/",
+    "packageName" : "electrosphere.net.parser",
+    "categories":[
+        {
+            "categoryName" : "Character",
+            "data" : [
+                {
+                    "name" : "data",
+                    "type" : "VAR_STRING"
+                }
+            ],
+            "messageTypes" : [
+                {
+                    "messageName" : "RequestCharacterList",
+                    "description" : "Requests the list of characters from the server for the logged in user account",
+                    "data" : []
+                },
+                {
+                    "messageName" : "ResponseCharacterList",
+                    "description" : "Gives the client the list of characters available to it",
+                    "data" : [
+                        "data"
+                    ]
+                },
+                {
+                    "messageName" : "RequestCreateCharacter",
+                    "description" : "Requests that the server create a new character with the data provided",
+                    "data" : [
+                        "data"
+                    ]
+                },
+                {
+                    "messageName" : "ResponseCreateCharacterSuccess",
+                    "description" : "Tells the client that it successfully created a character",
+                    "data" : []
+                },
+                {
+                    "messageName" : "ResponseCreateCharacterFailure",
+                    "description" : "Tells the client that it failed to create a character",
+                    "data" : []
+                },
+                {
+                    "messageName" : "RequestSpawnCharacter",
+                    "description" : "Requests that the server spawn the client in as a given character",
+                    "data" : [
+                        "data"
+                    ]
+                },
+                {
+                    "messageName" : "ResponseSpawnCharacter",
+                    "description" : "Deprecated - Unused",
+                    "data" : [
+                        "data"
+                    ]
+                },
+                {
+                    "messageName" : "EditorSwap",
+                    "description" : "Swaps between the editor entity and the non-editor entity",
+                    "data" : []
+                }
+            ]
+        }
+    ]
+}

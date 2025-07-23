@@ -1,0 +1,36 @@
+{
+    "outputPath" : "./src/main/java/electrosphere/net/parser/",
+    "packageName" : "electrosphere.net.parser",
+    "categories":[
+        {
+            "categoryName" : "Lore",
+            "data" : [
+                {
+                    "name" : "data",
+                    "type" : "VAR_STRING"
+                }
+            ],
+            "messageTypes" : [
+                {
+                    "messageName" : "RequestRaces",
+                    "description" : "Requests the data for all races available to the character to play",
+                    "data" : []
+                },
+                {
+                    "messageName" : "ResponseRaces",
+                    "description" : "Responds with the data on all races available for play",
+                    "data" : [
+                        "data"
+                    ]
+                },
+                {
+                    "messageName" : "TemporalUpdate",
+                    "description" : "Sends the current temporal data to the client",
+                    "data" : [
+                        "data"
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,280 @@
+{
+    "biomes": [
+        {
+            "id": "plains",
+            "displayName": "Plains",
+            "isAerial": false,
+            "isSurface": true,
+            "isSubterranean": false,
+            "regions": [
+                {
+                    "frequency": 1.0,
+                    "baseFloorVoxel": 1,
+                    "floorVariants": [
+                        {
+                            "voxelId": 2,
+                            "frequency": 1.0,
+                            "dispersion": 1.0,
+                            "priority": 1.0
+                        }
+                    ],
+                    "foliageDescription": [
+                    ]
+                }
+            ],
+            "surfaceGenerationParams": {
+                "surfaceGenTag": "plains",
+                "heightOffset": 10,
+                "noiseScale" : 0.1,
+                "warpScale" : 0.1,
+                "floorVariants": [
+                    {
+                        "voxelId": 2,
+                        "frequency": 1.0,
+                        "dispersion": 1.0,
+                        "priority": 1.0
+                    }
+                ]
+            }
+        },
+        {
+            "id": "forest",
+            "displayName": "Forest",
+            "isAerial": false,
+            "isSurface": true,
+            "isSubterranean": false,
+            "regions": [
+                {
+                    "frequency": 1.0,
+                    "baseFloorVoxel": 1,
+                    "floorVariants": [
+                        {
+                            "voxelId": 2,
+                            "frequency": 1.0,
+                            "dispersion": 1.0,
+                            "priority": 1.0
+                        }
+                    ],
+                    "foliageDescription": [
+                    ]
+                }
+            ],
+            "surfaceGenerationParams": {
+                "surfaceGenTag": "plains",
+                "heightOffset": 30,
+                "noiseScale" : 0.1,
+                "warpScale" : 0.1,
+                "floorVariants": [
+                    {
+                        "voxelId": 2,
+                        "frequency": 0.9,
+                        "dispersion": 1.0,
+                        "priority": 1.0
+                    },
+                    {
+                        "voxelId": 1,
+                        "frequency": 0.1,
+                        "dispersion": 1.0,
+                        "priority": 1.0
+                    }
+                ],
+                "foliageDescriptions": [
+                    {
+                        "entityIDs": [
+                            "pine2"
+                        ],
+                        "regularity": 0.6,
+                        "threshold": 0.03,
+                        "scale": 0.5,
+                        "priority": 5.0
+                    },
+                    {
+                        "entityIDs": [
+                            "wheat_plant"
+                        ],
+                        "regularity": 0.6,
+                        "threshold": 0.04,
+                        "scale": 0.5,
+                        "priority": 4.0
+                    },
+                    {
+                        "entityIDs": [
+                            "bush4"
+                        ],
+                        "regularity": 0.6,
+                        "threshold": 0.05,
+                        "scale": 0.5,
+                        "priority": 3.0
+                    },
+                    {
+                        "entityIDs": [
+                            "rock_static"
+                        ],
+                        "regularity": 0.6,
+                        "threshold": 0.06,
+                        "scale": 0.5,
+                        "priority": 1.0
+                    }
+                ]
+            }
+        },
+        {
+            "id": "hills",
+            "displayName": "Hills",
+            "isAerial": false,
+            "isSurface": true,
+            "isSubterranean": false,
+            "regions": [
+                {
+                    "frequency": 1.0,
+                    "baseFloorVoxel": 1,
+                    "floorVariants": [
+                        {
+                            "voxelId": 2,
+                            "frequency": 1.0,
+                            "dispersion": 1.0,
+                            "priority": 1.0
+                        }
+                    ],
+                    "foliageDescription": [
+                    ]
+                }
+            ],
+            "surfaceGenerationParams": {
+                "surfaceGenTag": "hills",
+                "heightOffset": 10,
+                "noiseScale" : 0.1,
+                "warpScale" : 0.1,
+                "floorVariants": [
+                    {
+                        "voxelId": 2,
+                        "frequency": 1.0,
+                        "dispersion": 1.0,
+                        "priority": 1.0
+                    }
+                ],
+                "foliageDescriptions": [
+                ]
+            }
+        },
+        {
+            "id": "hills_forested",
+            "displayName": "Hills (Forested)",
+            "isAerial": false,
+            "isSurface": true,
+            "isSubterranean": false,
+            "regions": [
+                {
+                    "frequency": 1.0,
+                    "baseFloorVoxel": 1,
+                    "floorVariants": [
+                        {
+                            "voxelId": 2,
+                            "frequency": 1.0,
+                            "dispersion": 1.0,
+                            "priority": 1.0
+                        }
+                    ],
+                    "foliageDescription": [
+                    ]
+                }
+            ],
+            "surfaceGenerationParams": {
+                "surfaceGenTag": "hills",
+                "heightOffset": 10,
+                "noiseScale" : 0.1,
+                "warpScale" : 0.1,
+                "floorVariants": [
+                    {
+                        "voxelId": 2,
+                        "frequency": 1.0,
+                        "dispersion": 1.0,
+                        "priority": 1.0
+                    }
+                ],
+                "foliageDescriptions": [
+                    {
+                        "entityIDs": [
+                            "pine2"
+                        ],
+                        "regularity": 0.6,
+                        "threshold": 0.05,
+                        "scale": 0.5,
+                        "priority": 1.0
+                    }
+                ]
+            }
+        },
+        {
+            "id": "sky",
+            "displayName": "Sky",
+            "isAerial": true,
+            "isSurface": false,
+            "isSubterranean": false,
+            "regions": [
+                {
+                    "frequency": 1.0,
+                    "baseFloorVoxel": 0,
+                    "floorVariants": [],
+                    "foliageDescription": []
+                }
+            ],
+            "surfaceGenerationParams": {
+                "surfaceGenTag": "empty",
+                "heightOffset": 0
+            }
+        },
+        {
+            "id": "plains_rock",
+            "displayName": "Plains (rock)",
+            "isAerial": false,
+            "isSurface": true,
+            "isSubterranean": false,
+            "regions": [
+                {
+                    "frequency": 1.0,
+                    "baseFloorVoxel": 1,
+                    "floorVariants": [
+                        {
+                            "voxelId": 7,
+                            "frequency": 0.5,
+                            "dispersion": 0.5,
+                            "priority": 1.0
+                        },
+                        {
+                            "voxelId": 8,
+                            "frequency": 0.5,
+                            "dispersion": 0.5,
+                            "priority": 1.0
+                        }
+                    ],
+                    "foliageDescription": [
+                    ]
+                }
+            ],
+            "surfaceGenerationParams": {
+                "surfaceGenTag": "plains",
+                "heightOffset": 10,
+                "noiseScale" : 0.1,
+                "warpScale" : 0.1,
+                "floorVariants": [
+                    {
+                        "voxelId": 7,
+                        "frequency": 0.5,
+                        "dispersion": 0.5,
+                        "priority": 1.0
+                    },
+                    {
+                        "voxelId": 8,
+                        "frequency": 0.5,
+                        "dispersion": 0.5,
+                        "priority": 1.0
+                    }
+                ]
+            }
+        }
+    ],
+    "files": [
+        
+    ]
+}

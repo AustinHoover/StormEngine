@@ -1,0 +1,165 @@
+{
+    "items" : [
+        {
+            "id" : "shorts1",
+            "displayName" : "Shorts",
+            "modelPath": "Models/items/itemEntityShorts.fbx",
+            "equipData": {
+                "equipClass" : "clothing",
+                "equipWhitelist" : [
+                    {
+                        "creatureId" : "human",
+                        "model" : "Models/creatures/person2/clothing/shorts1.fbx",
+                        "meshList" : [
+                            "ClothingItem"
+                        ],
+                        "meshMaskList" : [
+                            "Shorts"
+                        ]
+                    }
+                ]
+            },
+            "tokens" : [
+                "GRAVITY",
+                "TARGETABLE"
+            ],
+            "collidable": {
+                "type" : "CUBE",
+                "dimension1" : 0.1,
+                "dimension2" : 0.1,
+                "dimension3" : 0.35,
+                "rotX": 0,
+                "rotY": 0,
+                "rotZ": 0,
+                "rotW": 1,
+                "offsetX" : 0,
+                "offsetY" : 0.05,
+                "offsetZ" : 0
+            },
+            "iconPath" : "Textures/icons/itemIconItemGeneric.png"
+        },
+
+        {
+            "id" : "hairshort1",
+            "displayName" : "Hair",
+            "modelPath": "Models/itemEntityShorts.fbx",
+            "equipData": {
+                "equipClass" : "trait",
+                "equipWhitelist" : [
+                    {
+                        "creatureId" : "human",
+                        "model" : "Models/hairshort1.fbx",
+                        "meshList" : [
+                            "Hair"
+                        ],
+                        "meshMaskList" : []
+                    }
+                ]
+            },
+            "tokens" : [
+                "GRAVITY",
+                "ARMOR",
+                "TARGETABLE"
+            ],
+            "equipClass" : "trait",
+            "collidable": {
+                "type" : "CUBE",
+                "dimension1" : 0.1,
+                "dimension2" : 0.1,
+                "dimension3" : 0.35,
+                "rotX": 0,
+                "rotY": 0,
+                "rotZ": 0,
+                "rotW": 1,
+                "offsetX" : 0,
+                "offsetY" : 0.05,
+                "offsetZ" : 0
+            },
+            "iconPath" : "Textures/icons/itemIconItemGeneric.png"
+        },
+
+        {
+            "id" : "boots1",
+            "displayName" : "Boots",
+            "modelPath": "Models/boots1.glb",
+            "tokens" : [
+                "GRAVITY",
+                "ARMOR",
+                "TARGETABLE"
+            ],
+            "equipData": {
+                "equipClass" : "clothing",
+                "equipWhitelist" : [
+                    {
+                        "creatureId" : "human",
+                        "model" : "Models/boots1.glb",
+                        "meshList" : [
+                            "BootLeft",
+                            "BootRight"
+                        ],
+                        "meshMaskList" : [
+                        ]
+                    }
+                ]
+            },
+            "collidable": {
+                "type" : "CUBE",
+                "dimension1" : 0.1,
+                "dimension2" : 0.1,
+                "dimension3" : 0.35,
+                "rotX": 0,
+                "rotY": 0,
+                "rotZ": 0,
+                "rotW": 1,
+                "offsetX" : 0,
+                "offsetY" : 0.05,
+                "offsetZ" : 0
+            },
+            "iconPath" : "Textures/icons/itemIconItemGeneric.png"
+        },
+
+        {
+            "id" : "shirt1",
+            "displayName" : "Shirt",
+            "modelPath": "Models/itemEntityShorts.fbx",
+            "tokens" : [
+                "GRAVITY",
+                "ARMOR",
+                "TARGETABLE"
+            ],
+            "equipData": {
+                "equipClass" : "clothing",
+                "equipWhitelist" : [
+                    {
+                        "creatureId" : "human",
+                        "model" : "Models/shirt1.fbx",
+                        "meshList" : [
+                            "ClothingItem"
+                        ],
+                        "meshMaskList" : [
+                            "ShoulderLeft",
+                            "ShoulderRight"
+                        ]
+                    }
+                ]
+            },
+            "collidable": {
+                "type" : "CUBE",
+                "dimension1" : 0.1,
+                "dimension2" : 0.1,
+                "dimension3" : 0.35,
+                "rotX": 0,
+                "rotY": 0,
+                "rotZ": 0,
+                "rotW": 1,
+                "offsetX" : 0,
+                "offsetY" : 0.05,
+                "offsetZ" : 0
+            },
+            "iconPath" : "Textures/icons/itemIconItemGeneric.png"
+        }
+
+    ],
+    "files" : [
+    ]
+}

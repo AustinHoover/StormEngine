@@ -1,0 +1,13 @@
+{
+    "name" : "test1",
+    "sampler" : {
+        "name" : "Add",
+        "first" : {
+            "name" : "Const",
+            "value" : 0.2
+        },
+        "second" : {
+            "name" : "OpenSimplex"
+        }
+    }
+}

@@ -1,0 +1,48 @@
+{
+    "foliageList" : [
+        {
+            "id" : "rock_static",
+            "displayName" : "Rock",
+            "tokens" : [
+                "HARVESTABLE"
+            ],
+            "buttonInteraction" : {
+                "onInteract" : "harvest",
+                "interactionShape" : {
+                    "type" : "CUBE",
+                    "dimension1" : 0.4,
+                    "dimension2" : 0.4,
+                    "dimension3" : 0.4,
+                    "rotX": 0,
+                    "rotY": 0,
+                    "rotZ": 0,
+                    "rotW": 1,
+                    "offsetX" : 0.0,
+                    "offsetY" : 0.1,
+                    "offsetZ" : 0.0
+                }
+            },
+            "healthSystem" : {
+                "maxHealth" : 1,
+                "onDamageIFrames" : 0,
+                "lootPool" : {
+                    "tickets" : [
+                        {
+                            "itemId" : "mat:Rock",
+                            "rarity" : 1.0,
+                            "minQuantity" : 1,
+                            "maxQuantity" : 1
+                        }
+                    ]
+                }
+            },
+            "graphicsTemplate": {
+                "model": {
+                    "path" : "Models/items/materials/rock1.glb"
+                }
+            }
+        }
+    ],
+    "files" : [
+    ]
+}

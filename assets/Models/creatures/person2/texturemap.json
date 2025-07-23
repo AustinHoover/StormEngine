@@ -1,0 +1,42 @@
+{
+    "textureMap": {
+        "Models/creatures/person2/person2_1.glb": [
+            {
+                "meshName" : "Torso.001",
+                "diffuse" : "/Textures/skin1.png",
+                "isDefault" : true
+            },
+            {
+                "meshName" : "Eyebrow.R",
+                "diffuse" : "/Textures/b1.png"
+            },
+            {
+                "meshName" : "Eyebrow.L",
+                "diffuse" : "/Textures/b1.png"
+            },
+            {
+                "meshName" : "Eye.R",
+                "diffuse" : "/Textures/w1.png"
+            },
+            {
+                "meshName" : "Eye.L",
+                "diffuse" : "/Textures/w1.png"
+            },
+            {
+                "meshName" : "Iris.R",
+                "diffuse" : "/Textures/b1.png"
+            },
+            {
+                "meshName" : "Iris.L",
+                "diffuse" : "/Textures/b1.png"
+            }
+        ],
+        "Models/creatures/person2/person2_1_lod.glb": [
+            {
+                "meshName" : "Torso.001",
+                "diffuse" : "/Textures/skin1.png",
+                "isDefault" : true
+            }
+        ]
+    }
+}

@@ -1,0 +1,212 @@
+{
+    "ignoredVoxelTypes" : [
+        0
+    ],
+    "defaultSurfaceAudio" : {
+        "voxelTypeIds" : [
+            1
+        ],
+        "footstepRegularBareAudioPaths" : [
+            "Audio/movement/surface/dirt/Bare Step Gravel Medium A.wav",
+            "Audio/movement/surface/dirt/Bare Step Gravel Medium B.wav",
+            "Audio/movement/surface/dirt/Bare Step Gravel Medium C.wav",
+            "Audio/movement/surface/dirt/Bare Step Gravel Medium D.wav",
+            "Audio/movement/surface/dirt/Bare Step Gravel Medium E.wav"
+        ],
+        "footstepHeavyBareAudioPaths" : [
+            "Audio/movement/surface/dirt/Bare Step Gravel Hard A.wav",
+            "Audio/movement/surface/dirt/Bare Step Gravel Hard B.wav",
+            "Audio/movement/surface/dirt/Bare Step Gravel Hard C.wav",
+            "Audio/movement/surface/dirt/Bare Step Gravel Hard D.wav",
+            "Audio/movement/surface/dirt/Bare Step Gravel Hard E.wav"
+        ],
+        "footstepRegularShoeAudioPaths" : [
+            "Audio/movement/surface/dirt/Shoe Step Gravel Medium A.wav",
+            "Audio/movement/surface/dirt/Shoe Step Gravel Medium B.wav",
+            "Audio/movement/surface/dirt/Shoe Step Gravel Medium C.wav",
+            "Audio/movement/surface/dirt/Shoe Step Gravel Medium D.wav",
+            "Audio/movement/surface/dirt/Shoe Step Gravel Medium E.wav"
+        ],
+        "footstepHeavyShoeAudioPaths" : [
+            "Audio/movement/surface/dirt/Shoe Step Gravel Hard A.wav",
+            "Audio/movement/surface/dirt/Shoe Step Gravel Hard B.wav",
+            "Audio/movement/surface/dirt/Shoe Step Gravel Hard C.wav",
+            "Audio/movement/surface/dirt/Shoe Step Gravel Hard D.wav",
+            "Audio/movement/surface/dirt/Shoe Step Gravel Hard E.wav"
+        ],
+        "jumpAudioPaths" : [
+            "Audio/movement/surface/dirt/Jump Step Gravel A.wav",
+            "Audio/movement/surface/dirt/Jump Step Gravel B.wav"
+        ],
+        "landAudioPaths" : [
+            "Audio/movement/surface/dirt/Land Step Gravel A.wav",
+            "Audio/movement/surface/dirt/Land Step Gravel B.wav"
+        ]
+    },
+    "surfaceAudio" : [
+        {
+            "voxelTypeIds" : [
+                1
+            ],
+            "footstepRegularBareAudioPaths" : [
+                "Audio/movement/surface/dirt/Bare Step Gravel Medium A.wav",
+                "Audio/movement/surface/dirt/Bare Step Gravel Medium B.wav",
+                "Audio/movement/surface/dirt/Bare Step Gravel Medium C.wav",
+                "Audio/movement/surface/dirt/Bare Step Gravel Medium D.wav",
+                "Audio/movement/surface/dirt/Bare Step Gravel Medium E.wav"
+            ],
+            "footstepHeavyBareAudioPaths" : [
+                "Audio/movement/surface/dirt/Bare Step Gravel Hard A.wav",
+                "Audio/movement/surface/dirt/Bare Step Gravel Hard B.wav",
+                "Audio/movement/surface/dirt/Bare Step Gravel Hard C.wav",
+                "Audio/movement/surface/dirt/Bare Step Gravel Hard D.wav",
+                "Audio/movement/surface/dirt/Bare Step Gravel Hard E.wav"
+            ],
+            "footstepRegularShoeAudioPaths" : [
+                "Audio/movement/surface/dirt/Shoe Step Gravel Medium A.wav",
+                "Audio/movement/surface/dirt/Shoe Step Gravel Medium B.wav",
+                "Audio/movement/surface/dirt/Shoe Step Gravel Medium C.wav",
+                "Audio/movement/surface/dirt/Shoe Step Gravel Medium D.wav",
+                "Audio/movement/surface/dirt/Shoe Step Gravel Medium E.wav"
+            ],
+            "footstepHeavyShoeAudioPaths" : [
+                "Audio/movement/surface/dirt/Shoe Step Gravel Hard A.wav",
+                "Audio/movement/surface/dirt/Shoe Step Gravel Hard B.wav",
+                "Audio/movement/surface/dirt/Shoe Step Gravel Hard C.wav",
+                "Audio/movement/surface/dirt/Shoe Step Gravel Hard D.wav",
+                "Audio/movement/surface/dirt/Shoe Step Gravel Hard E.wav"
+            ],
+            "jumpAudioPaths" : [
+                "Audio/movement/surface/dirt/Jump Step Gravel A.wav",
+                "Audio/movement/surface/dirt/Jump Step Gravel B.wav"
+            ],
+            "landAudioPaths" : [
+                "Audio/movement/surface/dirt/Land Step Gravel A.wav",
+                "Audio/movement/surface/dirt/Land Step Gravel B.wav"
+            ]
+        },
+        {
+            "voxelTypeIds" : [
+                2,3
+            ],
+            "footstepRegularBareAudioPaths" : [
+                "Audio/movement/surface/grass/Bare Step Grass Medium A.wav",
+                "Audio/movement/surface/grass/Bare Step Grass Medium B.wav",
+                "Audio/movement/surface/grass/Bare Step Grass Medium C.wav",
+                "Audio/movement/surface/grass/Bare Step Grass Medium D.wav",
+                "Audio/movement/surface/grass/Bare Step Grass Medium E.wav"
+            ],
+            "footstepHeavyBareAudioPaths" : [
+                "Audio/movement/surface/grass/Bare Step Grass Hard A.wav",
+                "Audio/movement/surface/grass/Bare Step Grass Hard B.wav",
+                "Audio/movement/surface/grass/Bare Step Grass Hard C.wav",
+                "Audio/movement/surface/grass/Bare Step Grass Hard D.wav",
+                "Audio/movement/surface/grass/Bare Step Grass Hard E.wav"
+            ],
+            "footstepRegularShoeAudioPaths" : [
+                "Audio/movement/surface/grass/Shoe Step Grass Medium A.wav",
+                "Audio/movement/surface/grass/Shoe Step Grass Medium B.wav",
+                "Audio/movement/surface/grass/Shoe Step Grass Medium C.wav",
+                "Audio/movement/surface/grass/Shoe Step Grass Medium D.wav",
+                "Audio/movement/surface/grass/Shoe Step Grass Medium E.wav"
+            ],
+            "footstepHeavyShoeAudioPaths" : [
+                "Audio/movement/surface/grass/Shoe Step Grass Hard A.wav",
+                "Audio/movement/surface/grass/Shoe Step Grass Hard B.wav",
+                "Audio/movement/surface/grass/Shoe Step Grass Hard C.wav",
+                "Audio/movement/surface/grass/Shoe Step Grass Hard D.wav",
+                "Audio/movement/surface/grass/Shoe Step Grass Hard E.wav"
+            ],
+            "jumpAudioPaths" : [
+                "Audio/movement/surface/grass/Jump Step Grass A.wav",
+                "Audio/movement/surface/grass/Jump Step Grass B.wav"
+            ],
+            "landAudioPaths" : [
+                "Audio/movement/surface/grass/Land Step Grass A.wav",
+                "Audio/movement/surface/grass/Land Step Grass B.wav"
+            ]
+        },
+        {
+            "voxelTypeIds" : [
+                4,6,7,8
+            ],
+            "footstepRegularBareAudioPaths" : [
+                "Audio/movement/surface/stone/Bare Step Stone Medium A.wav",
+                "Audio/movement/surface/stone/Bare Step Stone Medium B.wav",
+                "Audio/movement/surface/stone/Bare Step Stone Medium C.wav",
+                "Audio/movement/surface/stone/Bare Step Stone Medium D.wav",
+                "Audio/movement/surface/stone/Bare Step Stone Medium E.wav"
+            ],
+            "footstepHeavyBareAudioPaths" : [
+                "Audio/movement/surface/stone/Bare Step Stone Hard A.wav",
+                "Audio/movement/surface/stone/Bare Step Stone Hard B.wav",
+                "Audio/movement/surface/stone/Bare Step Stone Hard C.wav",
+                "Audio/movement/surface/stone/Bare Step Stone Hard D.wav",
+                "Audio/movement/surface/stone/Bare Step Stone Hard E.wav"
+            ],
+            "footstepRegularShoeAudioPaths" : [
+                "Audio/movement/surface/stone/Shoe Step Stone Medium A.wav",
+                "Audio/movement/surface/stone/Shoe Step Stone Medium B.wav",
+                "Audio/movement/surface/stone/Shoe Step Stone Medium C.wav",
+                "Audio/movement/surface/stone/Shoe Step Stone Medium D.wav",
+                "Audio/movement/surface/stone/Shoe Step Stone Medium E.wav"
+            ],
+            "footstepHeavyShoeAudioPaths" : [
+                "Audio/movement/surface/stone/Shoe Step Stone Hard A.wav",
+                "Audio/movement/surface/stone/Shoe Step Stone Hard B.wav",
+                "Audio/movement/surface/stone/Shoe Step Stone Hard C.wav",
+                "Audio/movement/surface/stone/Shoe Step Stone Hard D.wav",
+                "Audio/movement/surface/stone/Shoe Step Stone Hard E.wav"
+            ],
+            "jumpAudioPaths" : [
+                "Audio/movement/surface/stone/Jump Step Stone A.wav",
+                "Audio/movement/surface/stone/Jump Step Stone B.wav"
+            ],
+            "landAudioPaths" : [
+                "Audio/movement/surface/stone/Land Step Stone A.wav",
+                "Audio/movement/surface/stone/Land Step Stone B.wav"
+            ]
+        },
+        {
+            "voxelTypeIds" : [
+                5
+            ],
+            "footstepRegularBareAudioPaths" : [
+                "Audio/movement/surface/snow/Bare Step Snow Medium A.wav",
+                "Audio/movement/surface/snow/Bare Step Snow Medium B.wav",
+                "Audio/movement/surface/snow/Bare Step Snow Medium C.wav",
+                "Audio/movement/surface/snow/Bare Step Snow Medium D.wav",
+                "Audio/movement/surface/snow/Bare Step Snow Medium E.wav"
+            ],
+            "footstepHeavyBareAudioPaths" : [
+                "Audio/movement/surface/snow/Bare Step Snow Hard A.wav",
+                "Audio/movement/surface/snow/Bare Step Snow Hard B.wav",
+                "Audio/movement/surface/snow/Bare Step Snow Hard C.wav",
+                "Audio/movement/surface/snow/Bare Step Snow Hard D.wav",
+                "Audio/movement/surface/snow/Bare Step Snow Hard E.wav"
+            ],
+            "footstepRegularShoeAudioPaths" : [
+                "Audio/movement/surface/snow/Shoe Step Snow Medium A.wav",
+                "Audio/movement/surface/snow/Shoe Step Snow Medium B.wav",
+                "Audio/movement/surface/snow/Shoe Step Snow Medium C.wav",
+                "Audio/movement/surface/snow/Shoe Step Snow Medium D.wav",
+                "Audio/movement/surface/snow/Shoe Step Snow Medium E.wav"
+            ],
+            "footstepHeavyShoeAudioPaths" : [
+                "Audio/movement/surface/snow/Shoe Step Snow Hard A.wav",
+                "Audio/movement/surface/snow/Shoe Step Snow Hard B.wav",
+                "Audio/movement/surface/snow/Shoe Step Snow Hard C.wav",
+                "Audio/movement/surface/snow/Shoe Step Snow Hard D.wav",
+                "Audio/movement/surface/snow/Shoe Step Snow Hard E.wav"
+            ],
+            "jumpAudioPaths" : [
+                "Audio/movement/surface/snow/Jump Step Snow A.wav",
+                "Audio/movement/surface/snow/Jump Step Snow B.wav"
+            ],
+            "landAudioPaths" : [
+                "Audio/movement/surface/snow/Land Step Snow A.wav",
+                "Audio/movement/surface/snow/Land Step Snow B.wav"
+            ]
+        }
+    ]
+}

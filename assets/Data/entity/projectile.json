@@ -1,0 +1,12 @@
+{
+    "projectiles" : [
+        {
+            "id" : "missile1",
+            "modelPath" : "Models/unitsphere.fbx",
+            "maxLife" : 10000,
+            "velocity" : 0.1,
+            "damage" : 1,
+            "hitboxRadius" : 0.4
+        }
+    ]
+}

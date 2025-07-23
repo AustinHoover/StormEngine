@@ -1,0 +1,76 @@
+{
+    "outputPath" : "./src/main/java/electrosphere/net/parser/",
+    "packageName" : "electrosphere.net.parser",
+    "categories":[
+        {
+            "categoryName" : "Combat",
+            "data" : [
+                {
+                    "name" : "entityID",
+                    "type" : "FIXED_INT"
+                },
+                {
+                    "name" : "receiverEntityID",
+                    "type" : "FIXED_INT"
+                },
+                {
+                    "name" : "positionX",
+                    "type" : "FIXED_DOUBLE"
+                },
+                {
+                    "name" : "positionY",
+                    "type" : "FIXED_DOUBLE"
+                },
+                {
+                    "name" : "positionZ",
+                    "type" : "FIXED_DOUBLE"
+                },
+                {
+                    "name" : "rotationX",
+                    "type" : "FIXED_DOUBLE"
+                },
+                {
+                    "name" : "rotationY",
+                    "type" : "FIXED_DOUBLE"
+                },
+                {
+                    "name" : "rotationZ",
+                    "type" : "FIXED_DOUBLE"
+                },
+                {
+                    "name" : "rotationW",
+                    "type" : "FIXED_DOUBLE"
+                },
+                {
+                    "name" : "time",
+                    "type" : "FIXED_LONG"
+                },
+                {
+                    "name" : "hitboxType",
+                    "type" : "VAR_STRING"
+                },
+                {
+                    "name" : "hurtboxType",
+                    "type" : "VAR_STRING"
+                }
+            ],
+            "messageTypes" : [
+                {
+                    "messageName" : "serverReportHitboxCollision",
+                    "description" : "Reports to clients that a hitbox collision happened",
+                    "data" : [
+                        "entityID",
+                        "receiverEntityID",
+                        "time",
+                        "hitboxType",
+                        "hurtboxType",
+                        "positionX",
+                        "positionY",
+                        "positionZ"
+                    ]
+                }
+
+            ]
+        }
+    ]
+}

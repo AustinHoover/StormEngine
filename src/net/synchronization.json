@@ -1,0 +1,154 @@
+{
+    "outputPath" : "./src/main/java/electrosphere/net/parser/",
+    "packageName" : "electrosphere.net.parser",
+    "categories":[
+
+        {
+            "categoryName" : "Synchronization",
+            "data" : [
+                {
+                    "name" : "entityId",
+                    "type" : "FIXED_INT"
+                },
+                {
+                    "name" : "bTreeId",
+                    "type" : "FIXED_INT"
+                },
+                {
+                    "name" : "fieldId",
+                    "type" : "FIXED_INT"
+                },
+                {
+                    "name" : "bTreeValue",
+                    "type" : "FIXED_INT"
+                },
+                {
+                    "name" : "stringValue",
+                    "type" : "VAR_STRING"
+                },
+                {
+                    "name" : "intValue",
+                    "type" : "FIXED_INT"
+                },
+                {
+                    "name" : "longValue",
+                    "type" : "FIXED_LONG"
+                },
+                {
+                    "name" : "floatValue",
+                    "type" : "FIXED_FLOAT"
+                },
+                {
+                    "name" : "doubleValue",
+                    "type" : "FIXED_DOUBLE"
+                }
+            ],
+            "messageTypes" : [
+                {
+                    "messageName" : "UpdateClientState",
+                    "description" : "Updates a btree state variable on the client",
+                    "data" : [
+                        "entityId",
+                        "bTreeId",
+                        "fieldId",
+                        "bTreeValue"
+                    ]
+                },
+                {
+                    "messageName" : "UpdateClientStringState",
+                    "description" : "Updates a string on the client",
+                    "data" : [
+                        "entityId",
+                        "bTreeId",
+                        "fieldId",
+                        "stringValue"
+                    ]
+                },
+                {
+                    "messageName" : "UpdateClientIntState",
+                    "description" : "Updates an int on the client",
+                    "data" : [
+                        "entityId",
+                        "bTreeId",
+                        "fieldId",
+                        "intValue"
+                    ]
+                },
+                {
+                    "messageName" : "UpdateClientLongState",
+                    "description" : "Updates a long on the client",
+                    "data" : [
+                        "entityId",
+                        "bTreeId",
+                        "fieldId",
+                        "longValue"
+                    ]
+                },
+                {
+                    "messageName" : "UpdateClientFloatState",
+                    "description" : "Updates a float on the client",
+                    "data" : [
+                        "entityId",
+                        "bTreeId",
+                        "fieldId",
+                        "floatValue"
+                    ]
+                },
+                {
+                    "messageName" : "UpdateClientDoubleState",
+                    "description" : "Updates a double on the client",
+                    "data" : [
+                        "entityId",
+                        "bTreeId",
+                        "fieldId",
+                        "doubleValue"
+                    ]
+                },
+                {
+                    "messageName" : "ClientRequestBTreeAction",
+                    "description" : "Client requests a btree on the server performs an action (ie start, interrupt, etc)",
+                    "data" : [
+                        "entityId",
+                        "bTreeId",
+                        "bTreeValue"
+                    ]
+                },
+                {
+                    "messageName" : "ServerNotifyBTreeTransition",
+                    "description" : "Packet from the server to the client notifying the client that it should transition a btree from one state to another",
+                    "data" : [
+                        "entityId",
+                        "bTreeId",
+                        "fieldId",
+                        "bTreeValue"
+                    ]
+                },
+                {
+                    "messageName" : "AttachTree",
+                    "description" : "Attaches a btree to an entity on the client",
+                    "data" : [
+                        "entityId",
+                        "bTreeId"
+                    ]
+                },
+                {
+                    "messageName" : "DetatchTree",
+                    "description" : "Detatches a btree from an entity on the client",
+                    "data" : [
+                        "entityId",
+                        "bTreeId"
+                    ]
+                },
+                {
+                    "messageName" : "LoadScene",
+                    "description" : "Instructs the client to load a given scene",
+                    "data" : [
+                        "stringValue"
+                    ]
+                }
+            ]
+        }
+
+    ]
+
+}

@@ -1,0 +1,56 @@
+{
+    "foliageList" : [
+        {
+            "id" : "bush4",
+            "displayName" : "Bush",
+            "tokens" : [
+                "FLAMMABLE",
+                "HARVESTABLE"
+            ],
+            "hitboxes" : [
+                {
+                    "type": "hurt",
+                    "offset": [0, 0.6, 0],
+                    "radius": 0.35
+                }
+            ],
+            "healthSystem" : {
+                "maxHealth" : 5,
+                "onDamageIFrames" : 0,
+                "lootPool" : {
+                    "tickets" : [
+                        {
+                            "itemId" : "mat:Stick",
+                            "rarity" : 1.0,
+                            "minQuantity" : 1,
+                            "maxQuantity" : 1
+                        }
+                    ]
+                }
+            },
+            "buttonInteraction" : {
+                "onInteract" : "harvest",
+                "interactionShape" : {
+                    "type" : "CUBE",
+                    "dimension1" : 1.0,
+                    "dimension2" : 1.0,
+                    "dimension3" : 1.0,
+                    "rotX": 0,
+                    "rotY": 0,
+                    "rotZ": 0,
+                    "rotW": 1,
+                    "offsetX" : 0.0,
+                    "offsetY" : 0.5,
+                    "offsetZ" : 0.0
+                }
+            },
+            "graphicsTemplate": {
+                "model": {
+                    "path" : "Models/foliage/bush4.glb"
+                }
+            }
+        }
+    ],
+    "files" : [
+    ]
+}

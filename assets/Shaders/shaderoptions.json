@@ -1,0 +1,13 @@
+{
+    "shaderAlternativesMap" : {
+        "/Shaders/entities/terrain/terrain.fs" : [
+            "/Shaders/entities/terrain/terrain-low.fs"
+        ],
+        "Shaders/core/anime/compositeAnimeOutline.fs" : [
+            "Shaders/core/anime/compositeAnimeOutline-low.fs"
+        ],
+        "Shaders/core/oit/composite.fs" : [
+            "Shaders/core/oit/composite-low.fs"
+        ]
+    }
+}

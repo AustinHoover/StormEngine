@@ -1,0 +1,142 @@
+{
+    "items" : [
+        {
+            "id" : "mat:Rock",
+            "displayName" : "Rock",
+            "maxStack" : 100,
+            "tokens" : [
+                "GRAVITY",
+                "TARGETABLE",
+                "HARVESTABLE"
+            ],
+            "itemAudio": {
+                "uiGrabAudio" : "Audio/ui/items/specific/Pick Up Stone A.wav",
+                "uiReleaseAudio" : "Audio/ui/items/specific/Drop Stone A.wav"
+            },
+            "graphicsTemplate": {
+                "model": {
+                    "path" : "Models/items/materials/rock1.glb"
+                }
+            },
+            "collidable": {
+                "type" : "CUBE",
+                "dimension1" : 0.1,
+                "dimension2" : 0.1,
+                "dimension3" : 0.35,
+                "rotX": 0,
+                "rotY": 0,
+                "rotZ": 0,
+                "rotW": 1,
+                "offsetX" : 0,
+                "offsetY" : 0.05,
+                "offsetZ" : 0
+            },
+            "iconPath" : "Textures/icons/itemIconItemGeneric.png"
+        },
+        {
+            "id" : "mat:Copper",
+            "displayName" : "Copper",
+            "maxStack" : 100,
+            "tokens" : [
+                "GRAVITY",
+                "TARGETABLE"
+            ],
+            "itemAudio": {
+                "uiGrabAudio" : "Audio/ui/items/specific/Pick Up Stone A.wav",
+                "uiReleaseAudio" : "Audio/ui/items/specific/Drop Stone A.wav"
+            },
+            "graphicsTemplate": {
+                "model": {
+                    "path" : "Models/items/materials/rock2.glb",
+                    "meshColorMap" : {
+                        "Cube" : {
+                            "x" : 0.71,
+                            "y" : 0.43,
+                            "z" : 0.13
+                        }
+                    }
+                }
+            },
+            "collidable": {
+                "type" : "CUBE",
+                "dimension1" : 0.1,
+                "dimension2" : 0.1,
+                "dimension3" : 0.35,
+                "rotX": 0,
+                "rotY": 0,
+                "rotZ": 0,
+                "rotW": 1,
+                "offsetX" : 0,
+                "offsetY" : 0.05,
+                "offsetZ" : 0
+            },
+            "iconPath" : "Textures/icons/itemIconItemGeneric.png"
+        },
+        {
+            "id" : "mat:Tin",
+            "displayName" : "Tin",
+            "maxStack" : 100,
+            "tokens" : [
+                "GRAVITY",
+                "TARGETABLE"
+            ],
+            "itemAudio": {
+                "uiGrabAudio" : "Audio/ui/items/specific/Pick Up Stone A.wav",
+                "uiReleaseAudio" : "Audio/ui/items/specific/Drop Stone A.wav"
+            },
+            "graphicsTemplate": {
+                "model": {
+                    "path" : "Models/items/materials/rock2.glb"
+                }
+            },
+            "collidable": {
+                "type" : "CUBE",
+                "dimension1" : 0.1,
+                "dimension2" : 0.1,
+                "dimension3" : 0.35,
+                "rotX": 0,
+                "rotY": 0,
+                "rotZ": 0,
+                "rotW": 1,
+                "offsetX" : 0,
+                "offsetY" : 0.05,
+                "offsetZ" : 0
+            },
+            "iconPath" : "Textures/icons/itemIconItemGeneric.png"
+        },
+        {
+            "id" : "mat:Clay",
+            "displayName" : "Clay",
+            "maxStack" : 100,
+            "tokens" : [
+                "GRAVITY",
+                "TARGETABLE"
+            ],
+            "itemAudio": {
+                "uiGrabAudio" : "Audio/ui/items/specific/Pick Up Stone A.wav",
+                "uiReleaseAudio" : "Audio/ui/items/specific/Drop Stone A.wav"
+            },
+            "graphicsTemplate": {
+                "model": {
+                    "path" : "Models/items/materials/rock3.glb"
+                }
+            },
+            "collidable": {
+                "type" : "CUBE",
+                "dimension1" : 0.1,
+                "dimension2" : 0.1,
+                "dimension3" : 0.35,
+                "rotX": 0,
+                "rotY": 0,
+                "rotZ": 0,
+                "rotW": 1,
+                "offsetX" : 0,
+                "offsetY" : 0.05,
+                "offsetZ" : 0
+            },
+            "iconPath" : "Textures/icons/itemIconItemGeneric.png"
+        }
+    ],
+    "files" : [
+    ]
+}

@@ -1,0 +1,1 @@
+curl https://unpkg.com/typescript@latest/lib/typescript.js -v -L > ./assets/Scripts/compiler/typescript.js

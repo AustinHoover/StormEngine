@@ -1,0 +1,71 @@
+{
+    "outputPath" : "./src/main/java/electrosphere/net/parser/",
+    "packageName" : "electrosphere.net.parser",
+    "categories":[
+
+        {
+            "categoryName" : "Server",
+            "data" : [
+            ],
+            "messageTypes" : [
+                {
+                    "messageName" : "Ping",
+                    "description" : "Pings the other side of the socket",
+                    "data" : []
+                },
+                {
+                    "messageName" : "Pong",
+                    "description" : "Replies to a ping from the other side of the socket",
+                    "data" : []
+                },
+                {
+                    "messageName" : "Disconnect",
+                    "description" : "Tell the other side of the socket that this side is disconnecting",
+                    "data" : []
+                }
+            ]
+        },
+
+
+        {
+            "categoryName" : "Auth",
+            "data" : [
+                {
+                    "name" : "user",
+                    "type" : "VAR_STRING"
+                },
+                {
+                    "name" : "pass",
+                    "type" : "VAR_STRING"
+                }
+            ],
+            "messageTypes" : [
+                {
+                    "messageName" : "AuthRequest",
+                    "description" : "Requests authorization from the client",
+                    "data" : []
+                },
+                {
+                    "messageName" : "AuthDetails",
+                    "description" : "Tells the server the auth details of this client",
+                    "data" : [
+                        "user",
+                        "pass"
+                    ]
+                },
+                {
+                    "messageName" : "AuthSuccess",
+                    "description" : "Tells the client it successfully logged in",
+                    "data" : []
+                },
+                {
+                    "messageName" : "AuthFailure",
+                    "description" : "Tells the client it failed to log in",
+                    "data" : []
+                }
+            ]
+        }
+
+    ]
+
+}

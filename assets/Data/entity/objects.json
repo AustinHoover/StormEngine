@@ -1,0 +1,12 @@
+{
+    "objects" : [
+
+    ],
+    "files" : [
+        "Data/entity/objects/testscene1objects.json",
+        "Data/entity/objects/debug_objects.json",
+        "Data/entity/objects/game_objects.json",
+        "Data/entity/objects/containers.json",
+        "Data/entity/objects/furniture.json"
+    ]
+}

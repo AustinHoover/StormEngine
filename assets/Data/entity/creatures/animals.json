@@ -1,0 +1,44 @@
+{
+    "creatures" : [
+        {
+            "id" : "Deer",
+            "displayName" : "Deer",
+            "hitboxes" : [
+                {
+                    "type": "hurt",
+                    "bone": "Bone",
+                    "radius": 0.04
+                }
+            ],
+            "tokens" : [
+                "GRAVITY"
+            ],
+            "movementSystems" : [
+                {
+                    "type" : "GROUND",
+                    "acceleration" : 0.001,
+                    "maxVelocity" : 0.025
+                }
+            ],
+            "collidable" : {
+                "type" : "CYLINDER",
+                "dimension1" : 0.1,
+                "dimension2" : 0.2,
+                "dimension3" : 0.1,
+                "rotX": 0,
+                "rotY": 0,
+                "rotZ": 0,
+                "rotW": 1,
+                "offsetX" : 0,
+                "offsetY" : 0.2,
+                "offsetZ" : 0
+            },
+            "healthSystem" : {
+                "maxHealth" : 100,
+                "onDamageIFrames" : 30
+            },
+            "modelPath" : "Models/deer1.fbx"
+        }
+    ],
+    "files" : []
+}

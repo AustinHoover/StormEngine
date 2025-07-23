@@ -1,0 +1,146 @@
+{
+    "state": "TITLE_MENU",
+    "mouseIsVisible" : true,
+    "controls": {
+        "moveForward": {
+            "isKey": true,
+            "isMouse": false,
+            "keyValue": 87
+        },
+        "menuType9": {
+            "isKey": true,
+            "isMouse": false,
+            "keyValue": 57
+        },
+        "menuTypeBackspace": {
+            "isKey": true,
+            "isMouse": false,
+            "keyValue": 259
+        },
+        "moveBackward": {
+            "isKey": true,
+            "isMouse": false,
+            "keyValue": 83
+        },
+        "menuType0": {
+            "isKey": true,
+            "isMouse": false,
+            "keyValue": 48
+        },
+        "menuType.": {
+            "isKey": true,
+            "isMouse": false,
+            "keyValue": 46
+        },
+        "fall": {
+            "isKey": true,
+            "isMouse": false,
+            "keyValue": 341
+        },
+        "moveRight": {
+            "isKey": true,
+            "isMouse": false,
+            "keyValue": 68
+        },
+        "menuSelect": {
+            "isKey": true,
+            "isMouse": false,
+            "keyValue": 257
+        },
+        "menuType7": {
+            "isKey": true,
+            "isMouse": false,
+            "keyValue": 55
+        },
+        "menuDecrement": {
+            "isKey": true,
+            "isMouse": false,
+            "keyValue": 265
+        },
+        "menuBackout": {
+            "isKey": true,
+            "isMouse": false,
+            "keyValue": 256
+        },
+        "menuType8": {
+            "isKey": true,
+            "isMouse": false,
+            "keyValue": 56
+        },
+        "moveLeft": {
+            "isKey": true,
+            "isMouse": false,
+            "keyValue": 65
+        },
+        "menuType5": {
+            "isKey": true,
+            "isMouse": false,
+            "keyValue": 53
+        },
+        "menuType6": {
+            "isKey": true,
+            "isMouse": false,
+            "keyValue": 54
+        },
+        "menuType3": {
+            "isKey": true,
+            "isMouse": false,
+            "keyValue": 51
+        },
+        "menuType4": {
+            "isKey": true,
+            "isMouse": false,
+            "keyValue": 52
+        },
+        "menuIncrement": {
+            "isKey": true,
+            "isMouse": false,
+            "keyValue": 264
+        },
+        "menuType1": {
+            "isKey": true,
+            "isMouse": false,
+            "keyValue": 49
+        },
+        "jump": {
+            "isKey": true,
+            "isMouse": false,
+            "keyValue": 32
+        },
+        "menuType2": {
+            "isKey": true,
+            "isMouse": false,
+            "keyValue": 50
+        },
+        "attackPrimary" : {
+            "isKey": false,
+            "isMouse": true,
+            "keyValue": 0
+        },
+        "inGameMainMenu" : {
+            "isKey": true,
+            "isMouse": false,
+            "keyValue": 256
+        },
+        "sprint" : {
+            "isKey": true,
+            "isMouse": false,
+            "keyValue": 340
+        },
+        "interact" : {
+            "isKey": true,
+            "isMouse": false,
+            "keyValue": 69
+        },
+        "drop" : {
+            "isKey": true,
+            "isMouse": false,
+            "keyValue": 89
+        },
+        "placeTerrain": {
+            "isKey": true,
+            "isMouse": false,
+            "keyValue": 52
+        }
+    }
+}

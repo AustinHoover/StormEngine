@@ -1,0 +1,52 @@
+{
+    "foliageList" : [
+        {
+            "id" : "flower1",
+            "displayName" : "Flower",
+            "tokens" : [
+                "FLAMMABLE"
+            ],
+            "hitboxes" : [
+                {
+                    "type": "hurt",
+                    "offset": [0, 0.6, 0],
+                    "radius": 0.35
+                }
+            ],
+            "healthSystem" : {
+                "maxHealth" : 5,
+                "onDamageIFrames" : 0
+            },
+            "graphicsTemplate": {
+                "model": {
+                    "path" : "Models/foliage/flowers/Flower_3_Group.gltf"
+                }
+            }
+        },
+        {
+            "id" : "mushroom1",
+            "displayName" : "Mushroom",
+            "tokens" : [
+                "FLAMMABLE"
+            ],
+            "hitboxes" : [
+                {
+                    "type": "hurt",
+                    "offset": [0, 0.6, 0],
+                    "radius": 0.35
+                }
+            ],
+            "healthSystem" : {
+                "maxHealth" : 5,
+                "onDamageIFrames" : 0
+            },
+            "graphicsTemplate": {
+                "model": {
+                    "path" : "Models/foliage/mushroom1.glb"
+                }
+            }
+        }
+    ],
+    "files" : [
+    ]
+}

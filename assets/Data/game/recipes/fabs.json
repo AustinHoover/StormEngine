@@ -1,0 +1,23 @@
+{
+    "recipes": [
+        {
+            "displayName": "Wooden Floor",
+            "craftingTag" : "HAND",
+            "ingredients": [
+                {
+                    "itemType": "mat:Log",
+                    "count": 1
+                }
+            ],
+            "products": [
+                {
+                    "itemType": "fab:woodfloor",
+                    "count": 1
+                }
+            ]
+        }
+    ],
+    "files": [
+
+    ]
+}

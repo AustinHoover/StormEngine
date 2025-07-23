@@ -1,0 +1,90 @@
+/target
+
+#macos nonsense
+/**/.DS_Store
+
+/build
+
+/launcher/launcher.exe
+/src/launcher/launcher.exe
+
+/dependency-reduced-pom.xml
+/nb-configuration.xml
+
+/Telephone-*.jar
+/NetArranger*.jar
+/lwjglx-debug-*.jar
+/hs_err_pid*
+/replay_pid*
+/trace.log
+
+.classpath
+.project
+#want to allow .settings/org.eclipse.jdt.core.prefs
+#.settings
+
+.dbeaver
+
+#windows nonense
+/**/Thumbs.db
+
+#docs backup files
+/docs/~$NetworkFlow.drawio.bkp
+/docs/~$NetworkFlow.drawio.dtmp
+
+#saves
+/saves/random_sp_world
+/saves/defaultLevel*
+/saves/generation_testing
+/saves/World name*
+
+#screenshots
+/assets/Screenshots
+
+#debug
+/netmonitor
+
+#vscode
+.settings
+
+#testing cache
+.testcache
+
+#docs
+/docs-dist
+/docs/DoxygenWarningLog.txt
+
+#imgui local layout
+/imgui.ini
+
+#script engine related
+/assets/Scripts/compiler/typescript.js
+
+#spreadsheet stuff
+*/~$*.xlsx
+
+#General cache for the engine
+/.cache
+
+#Memory debug files
+/heap.dump
+/heap.dump.hwcache
+/tmp
+
+#native libraries
+/shared-folder
+/out
+
+#don't include any assets
+/assets/**/**.png
+/assets/**/**.jpg
+/assets/**/**.wav
+/assets/**/**.ogg
+/assets/**/**.fbx
+/assets/**/**.glb
+
+#don't include stb redundantly
+/src/main/c/lib/stb/**/**
+
+#don't include vscode cpp profile props
+/.vscode/c_cpp_properties.json

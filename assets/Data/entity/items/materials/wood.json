@@ -1,0 +1,71 @@
+{
+    "items" : [
+        {
+            "id" : "mat:Log",
+            "displayName" : "Log",
+            "maxStack" : 100,
+            "tokens" : [
+                "GRAVITY",
+                "TARGETABLE",
+                "HARVESTABLE"
+            ],
+            "itemAudio": {
+                "uiGrabAudio" : "Audio/ui/items/specific/Pick Up Wood A.wav",
+                "uiReleaseAudio" : "Audio/ui/items/specific/Drop Wood A.wav"
+            },
+            "graphicsTemplate": {
+                "model": {
+                    "path" : "Models/items/materials/log.glb"
+                }
+            },
+            "collidable": {
+                "type" : "CUBE",
+                "dimension1" : 0.1,
+                "dimension2" : 0.1,
+                "dimension3" : 0.35,
+                "rotX": 0,
+                "rotY": 0,
+                "rotZ": 0,
+                "rotW": 1,
+                "offsetX" : 0,
+                "offsetY" : 0.05,
+                "offsetZ" : 0
+            },
+            "iconPath" : "Textures/icons/itemIconItemGeneric.png"
+        },
+        {
+            "id" : "mat:Stick",
+            "displayName" : "Stick",
+            "maxStack" : 100,
+            "tokens" : [
+                "GRAVITY",
+                "TARGETABLE"
+            ],
+            "itemAudio": {
+                "uiGrabAudio" : "Audio/ui/items/specific/Pick Up Arrows A.wav",
+                "uiReleaseAudio" : "Audio/ui/items/specific/Drop Arrows A.wav"
+            },
+            "graphicsTemplate": {
+                "model": {
+                    "path" : "Models/items/materials/stick1.glb"
+                }
+            },
+            "collidable": {
+                "type" : "CUBE",
+                "dimension1" : 0.1,
+                "dimension2" : 0.1,
+                "dimension3" : 0.35,
+                "rotX": 0,
+                "rotY": 0,
+                "rotZ": 0,
+                "rotW": 1,
+                "offsetX" : 0,
+                "offsetY" : 0.05,
+                "offsetZ" : 0
+            },
+            "iconPath" : "Textures/icons/itemIconItemGeneric.png"
+        }
+    ],
+    "files" : [
+    ]
+}

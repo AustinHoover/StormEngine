@@ -1,0 +1,341 @@
+{
+    "objects" : [
+        {
+            "id" : "Torch",
+            "displayName" : "Torch",
+            "particleEmitter": {
+                "maxLife": 20,
+                "lifeCurrent": 0,
+                "particleVelocity": {
+                    "x": 0.0,
+                    "y": 0.02,
+                    "z": 0.0
+                },
+                "acceleration": -0.0001,
+                "texture": "flame_05.png",
+                "size": 0.3,
+                "color": {
+                    "x": 0.83,
+                    "y": 0.6,
+                    "z": 0.09
+                },
+                "offset": {
+                    "x": 0,
+                    "y": 1.2,
+                    "z": 0
+                },
+                "radialAcceleration": 0.0001,
+                "transparency": {
+                    "constant": 1,
+                    "linear": 0,
+                    "quadratic": -1
+                },
+                "spread": 15,
+                "frequency": 2
+            },
+            "pointLight" : {
+                "const": 1.0,
+                "linear": 0.9,
+                "quadratic": 0.9,
+                "radius": 3.0,
+                "color": {
+                    "x": 0.83,
+                    "y": 0.6,
+                    "z": 0.09
+                },
+                "offset": {
+                    "x": 0.0,
+                    "y": 1.1,
+                    "z": 0.0
+                }
+            },
+            "graphicsTemplate": {
+                "model": {
+                    "path" : "Models/objects/furniture/torch1.glb"
+                }
+            },
+            "tokens": [
+                "FURNITURE"
+            ]
+        },
+        {
+            "id" : "Workbench",
+            "displayName" : "Workbench",
+            "collidable": {
+                "type" : "CUBE",
+                "dimension1" : 1.0,
+                "dimension2" : 1.0,
+                "dimension3" : 2.0,
+                "rotX": 0,
+                "rotY": 0,
+                "rotZ": 0,
+                "rotW": 1,
+                "offsetX" : 0.0,
+                "offsetY" : 0.5,
+                "offsetZ" : 0.0,
+                "kinematic" : true
+            },
+            "buttonInteraction" : {
+                "onInteract" : "menu",
+                "windowTarget" : "crafting",
+                "windowData" : "Workbench"
+            },
+            "spawnItem" : {
+                "graphicsTemplate" : {
+                    "model": {
+                        "path" : "Models/objects/furniture/workbench1.glb"
+                    }
+                },
+                "recipe" : {
+                    "craftingTag" : "HAND",
+                    "ingredients": [
+                        {
+                            "itemType": "mat:Log",
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "gridAlignedData" : {
+                "width" : 10,
+                "height" : 10,
+                "length" : 10
+            },
+            "graphicsTemplate": {
+                "model": {
+                    "path" : "Models/objects/furniture/workbench1.glb"
+                }
+            },
+            "tokens": [
+                "FURNITURE"
+            ]
+        },
+        {
+            "id" : "Door1",
+            "displayName" : "Door (Rough)",
+            "collidable": {
+                "type" : "CUBE",
+                "dimension1" : 0.25,
+                "dimension2" : 2.6,
+                "dimension3" : 1.4,
+                "rotX": 0,
+                "rotY": 0,
+                "rotZ": 0,
+                "rotW": 1,
+                "offsetX" : 0.0,
+                "offsetY" : 1.3,
+                "offsetZ" : 0.0,
+                "kinematic" : true
+            },
+            "spawnItem" : {
+                "graphicsTemplate" : {
+                    "model": {
+                        "path" : "Models/objects/furniture/door1.glb"
+                    }
+                },
+                "recipe" : {
+                    "craftingTag" : "HAND",
+                    "ingredients": [
+                        {
+                            "itemType": "mat:Log",
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "furnitureData" : {
+                "door" : {
+                    "open" : {
+                        "animation" : {
+                            "nameThirdPerson": "Opend"
+                        }
+                    },
+                    "closed" : {
+                        "animation" : {
+                            "nameThirdPerson": "Closed"
+                        }
+                    },
+                    "opening" : {
+                        "animation" : {
+                            "nameThirdPerson": "Open"
+                        }
+                    },
+                    "closing" : {
+                        "animation" : {
+                            "nameThirdPerson": "Close"
+                        }
+                    }
+                }
+            },
+            "buttonInteraction" : {
+                "onInteract" : "door"
+            },
+            "gridAlignedData" : {
+                "width" : 10,
+                "height" : 10,
+                "length" : 10
+            },
+            "graphicsTemplate": {
+                "model": {
+                    "path" : "Models/objects/furniture/door1.glb"
+                }
+            },
+            "tokens": [
+                "FURNITURE"
+            ]
+        },
+        {
+            "id" : "Door2",
+            "displayName" : "Door (Solid)",
+            "collidable": {
+                "type" : "CUBE",
+                "dimension1" : 0.25,
+                "dimension2" : 2.6,
+                "dimension3" : 1.4,
+                "rotX": 0,
+                "rotY": 0,
+                "rotZ": 0,
+                "rotW": 1,
+                "offsetX" : 0.0,
+                "offsetY" : 1.3,
+                "offsetZ" : 0.0,
+                "kinematic" : true
+            },
+            "spawnItem" : {
+                "graphicsTemplate" : {
+                    "model": {
+                        "path" : "Models/objects/furniture/door2.glb"
+                    }
+                },
+                "recipe" : {
+                    "craftingTag" : "HAND",
+                    "ingredients": [
+                        {
+                            "itemType": "mat:Log",
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "furnitureData" : {
+                "door" : {
+                    "open" : {
+                        "animation" : {
+                            "nameThirdPerson": "Opened"
+                        }
+                    },
+                    "closed" : {
+                        "animation" : {
+                            "nameThirdPerson": "Closed"
+                        }
+                    },
+                    "opening" : {
+                        "animation" : {
+                            "nameThirdPerson": "Opening"
+                        }
+                    },
+                    "closing" : {
+                        "animation" : {
+                            "nameThirdPerson": "Closing"
+                        }
+                    }
+                }
+            },
+            "buttonInteraction" : {
+                "onInteract" : "door"
+            },
+            "gridAlignedData" : {
+                "width" : 1,
+                "height" : 8,
+                "length" : 4
+            },
+            "graphicsTemplate": {
+                "model": {
+                    "path" : "Models/objects/furniture/door2.glb"
+                }
+            },
+            "tokens": [
+                "FURNITURE"
+            ]
+        },
+        {
+            "id" : "chest1",
+            "displayName" : "Chest",
+            "collidable": {
+                "type" : "CUBE",
+                "dimension1" : 1.0,
+                "dimension2" : 0.85,
+                "dimension3" : 1.12,
+                "rotX": 0,
+                "rotY": 0,
+                "rotZ": 0,
+                "rotW": 1,
+                "offsetX" : 0.0,
+                "offsetY" : 0.5,
+                "offsetZ" : 0.0,
+                "kinematic" : true
+            },
+            "spawnItem" : {
+                "graphicsTemplate" : {
+                    "model": {
+                        "path" : "Models/objects/furniture/chest1.glb"
+                    }
+                },
+                "recipe" : {
+                    "craftingTag" : "HAND",
+                    "ingredients": [
+                        {
+                            "itemType": "mat:Log",
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "furnitureData" : {
+                "door" : {
+                    "open" : {
+                        "animation" : {
+                            "nameThirdPerson": "Open"
+                        }
+                    },
+                    "closed" : {
+                        "animation" : {
+                            "nameThirdPerson": "Closed"
+                        }
+                    },
+                    "opening" : {
+                        "animation" : {
+                            "nameThirdPerson": "Opening"
+                        }
+                    },
+                    "closing" : {
+                        "animation" : {
+                            "nameThirdPerson": "Closing"
+                        }
+                    }
+                }
+            },
+            "buttonInteraction" : {
+                "onInteract" : "inventory"
+            },
+            "gridAlignedData" : {
+                "width" : 4,
+                "height" : 4,
+                "length" : 4
+            },
+            "inventoryData" : {
+                "naturalSize" : 30
+            },
+            "graphicsTemplate": {
+                "model": {
+                    "path" : "Models/objects/furniture/chest1.glb"
+                }
+            },
+            "tokens": [
+                "FURNITURE"
+            ]
+        }
+
+    ],
+    "files" : []
+}

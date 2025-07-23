@@ -1,0 +1,10 @@
+{
+    "Civilizations" : [
+        {
+            "name" : "Humans",
+            "allowedCreatures" : [
+                "Human"
+            ]
+        }
+    ]
+}

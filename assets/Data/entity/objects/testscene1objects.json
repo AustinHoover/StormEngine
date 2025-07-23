@@ -1,0 +1,17 @@
+{
+    "objects" : [
+        {
+            "id" : "geometrytest1",
+            "displayName" : "Geometry Test",
+            "modelPath" : "Models/geometry1.fbx",
+            "tokens" : [
+                "DISABLE_COLLISION_REACTION",
+                "GENERATE_COLLISION_TERRAIN"
+            ],
+            "collidable": null,
+            "graphicsTemplate": null
+        }
+
+    ],
+    "files" : []
+}

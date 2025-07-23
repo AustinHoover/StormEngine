@@ -1,0 +1,8 @@
+{
+    "entities": [
+    ],
+    "scriptPaths": [
+        "Scenes/testscene1/someScript.js"
+    ],
+    "initScriptPath": "Scenes/testscene1/someScript.js"
+}

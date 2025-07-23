@@ -1,0 +1,222 @@
+{
+    "outputPath" : "./src/main/java/electrosphere/net/parser/",
+    "packageName" : "electrosphere.net.parser",
+    "categories":[
+        {
+            "categoryName" : "Inventory",
+            "data" : [
+                {
+                    "name" : "itemTemplate",
+                    "type" : "VAR_STRING"
+                },
+                {
+                    "name" : "equipPointId",
+                    "type" : "VAR_STRING"
+                },
+                {
+                    "name" : "entityId",
+                    "type" : "FIXED_INT"
+                },
+                {
+                    "name" : "itemEntId",
+                    "type" : "FIXED_INT"
+                },
+                {
+                    "name" : "targetEntId",
+                    "type" : "FIXED_INT"
+                },
+                {
+                    "name" : "equipperId",
+                    "type" : "FIXED_INT"
+                },
+                {
+                    "name" : "containerType",
+                    "type" : "FIXED_INT"
+                },
+                {
+                    "name" : "toolbarId",
+                    "type" : "FIXED_INT"
+                },
+                {
+                    "name" : "itemActionCode",
+                    "type" : "FIXED_INT"
+                },
+                {
+                    "name" : "itemActionCodeState",
+                    "type" : "FIXED_INT"
+                },
+                {
+                    "name" : "viewTargetX",
+                    "type" : "FIXED_DOUBLE"
+                },
+                {
+                    "name" : "viewTargetY",
+                    "type" : "FIXED_DOUBLE"
+                },
+                {
+                    "name" : "viewTargetZ",
+                    "type" : "FIXED_DOUBLE"
+                },
+                {
+                    "name" : "stationId",
+                    "type" : "FIXED_INT"
+                },
+                {
+                    "name" : "recipeId",
+                    "type" : "FIXED_INT"
+                },
+                {
+                    "name" : "charges",
+                    "type" : "FIXED_INT"
+                }
+            ],
+            "messageTypes" : [
+                {
+                    "messageName" : "addItemToInventory",
+                    "description" : "Requests that the server add the item to the client entity's appropriate inventory",
+                    "data" : [
+                        "targetEntId",
+                        "itemEntId",
+                        "itemTemplate"
+                    ]
+                },
+                {
+                    "messageName" : "removeItemFromInventory",
+                    "data" : [
+                        "entityId"
+                    ]
+                },
+                {
+                    "messageName" : "clientRequestEquipItem",
+                    "description" : "Requests that the server equip an item to the player's entity",
+                    "data" : [
+                        "equipPointId",
+                        "entityId"
+                    ]
+                },
+                {
+                    "messageName" : "serverCommandMoveItemContainer",
+                    "description" : "Instructs the client to move an item to a container",
+                    "data" : [
+                        "entityId",
+                        "containerType",
+                        "equipPointId"
+                    ]
+                },
+                {
+                    "messageName" : "serverCommandEquipItem",
+                    "description" : "Instructs the client to equip an item to an entity",
+                    "data" : [
+                        "equipperId",
+                        "containerType",
+                        "equipPointId",
+                        "entityId",
+                        "itemTemplate"
+                    ]
+                },
+                {
+                    "messageName" : "serverCommandUnequipItem",
+                    "description" : "Instructs the client to unequip an item",
+                    "data" : [
+                        "equipperId",
+                        "containerType",
+                        "equipPointId"
+                    ]
+                },
+                {
+                    "messageName" : "clientRequestUnequipItem",
+                    "description" : "Requests that the server unequip an item from the client's entity",
+                    "data" : [
+                        "equipPointId"
+                    ]
+                },
+                {
+                    "messageName" : "clientRequestStoreItem",
+                    "description" : "Requests that a given item be placed in a given container type on a given container",
+                    "data" : [
+                        "targetEntId",
+                        "containerType",
+                        "equipPointId",
+                        "itemEntId"
+                    ]
+                },
+                {
+                    "messageName" : "serverCommandStoreItem",
+                    "description" : "Commands that a given item be placed in a given container type on a given container",
+                    "data" : [
+                        "targetEntId",
+                        "itemEntId",
+                        "itemTemplate",
+                        "containerType",
+                        "equipPointId"
+                    ]
+                },
+                {
+                    "messageName" : "clientRequestWatchInventory",
+                    "description" : "Requests to watch the inventory of another entity",
+                    "data" : [
+                        "targetEntId"
+                    ]
+                },
+                {
+                    "messageName" : "clientRequestUnwatchInventory",
+                    "description" : "Requests to stop watching the inventory of another entity",
+                    "data" : [
+                        "targetEntId"
+                    ]
+                },
+                {
+                    "messageName" : "clientRequestAddToolbar",
+                    "description" : "Requests that the server add the item to the client entity's toolbar",
+                    "data" : [
+                        "entityId",
+                        "toolbarId"
+                    ]
+                },
+                {
+                    "messageName" : "clientRequestAddNatural",
+                    "description" : "Requests that the server add the item to the client entity's natural inventory",
+                    "data" : [
+                        "entityId"
+                    ]
+                },
+                {
+                    "messageName" : "clientUpdateToolbar",
+                    "description" : "Updates the server on the selected toolbar option",
+                    "data" : [
+                        "toolbarId"
+                    ]
+                },
+                {
+                    "messageName" : "clientRequestPerformItemAction",
+                    "description" : "Requests that the server have the entity perform its equipped item's action for the given equip point",
+                    "data" : [
+                        "equipPointId",
+                        "itemActionCode",
+                        "itemActionCodeState",
+                        "viewTargetX",
+                        "viewTargetY",
+                        "viewTargetZ"
+                    ]
+                },
+                {
+                    "messageName" : "clientRequestCraft",
+                    "description" : "Requests that the server craft an item",
+                    "data" : [
+                        "entityId",
+                        "stationId",
+                        "recipeId"
+                    ]
+                },
+                {
+                    "messageName" : "serverUpdateItemCharges",
+                    "description" : "Server tells client that its item has a set number of charges",
+                    "data" : [
+                        "entityId",
+                        "charges"
+                    ]
+                }
+            ]
+        }
+    ]
+}

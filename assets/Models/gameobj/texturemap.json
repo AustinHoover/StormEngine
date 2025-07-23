@@ -1,0 +1,11 @@
+{
+    "textureMap": {
+        "Models/gameobj/token.glb": [
+            {
+                "meshName" : "Cylinber",
+                "diffuse" : "/Textures/color/transparent_teal.png",
+                "isDefault" : true
+            }
+        ]
+    }
+}
