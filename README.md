@@ -27,6 +27,7 @@ It is uploaded here to be a showcase of the code for the engine, not a complete 
  - [SQL](https://github.com/AustinHoover/StormEngine/tree/master/assets/DB)
  - [GLSL](https://github.com/AustinHoover/StormEngine/tree/master/assets/Shaders)
  - [C](https://github.com/AustinHoover/StormEngine/tree/master/src/main/c)
+ - [HTML/CSS](https://github.com/AustinHoover/StormEngine/tree/master/assets/Data/menu)
 
 
 
@@ -48,7 +49,7 @@ It is uploaded here to be a showcase of the code for the engine, not a complete 
  - Explicit memory management for high-frequency objects (fluid chunks)
 ### UI
  - Web-inspired ui framework
- - Supports loading HTML files that define ui elements
+ - Supports loading HTML and CSS files that define ui elements
  - Scripting engine hooks typescript into ui events
 ### Chunks
  - Advanced terrain system (transvoxel, multi-textured)
