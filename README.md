@@ -13,9 +13,6 @@ It is uploaded here to be a showcase of the code for the engine, not a complete 
 ## Building
 
 
-### Cloning
-When cloning the repo, make sure to grab all submodules with `git clone --recurse-submodules git@git.austinwhoover.com:studiorailgun/Renderer.git`
-
 ### Windows
 1. Install
  - [gitbash](https://git-scm.com/downloads)
