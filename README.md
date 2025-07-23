@@ -1,10 +1,10 @@
 # Storm Engine
 
-A multiplayer-focused game engine
+A multithreaded, multiplayer-focused game engine
 
 
 This is a mirror of the codebase stored on my private git server.
-It does not include the assets required for the engine to actually run.
+**It does not include the assets required for the engine to actually run.**
 It is uploaded here to be a showcase of the code for the engine, not a complete product.
 
 
@@ -31,14 +31,53 @@ It is uploaded here to be a showcase of the code for the engine, not a complete 
 
 
 
+
+## Features
+### Core Engine
+ - Runtime scripting in Typescript
+ - Eventually-synchronized networking
+ - Service-and-signals system
+### Renderer
+ - Forward+ rendering
+ - Per-actor multi-pipeline support
+ - Transvoxel (networked) implementation
+ - Anime-inspired shading
+ - Instanced grass (up to 2 million blades at 60 fps)
+### Native Lib
+ - Complex fluid dynamics simulation
+ - Explicit memory management for high-frequency objects (fluid chunks)
+### UI
+ - Web-inspired ui framework
+ - Supports loading HTML files that define ui elements
+ - Scripting engine hooks typescript into ui events
+### Chunks
+ - Advanced terrain system (transvoxel, multi-textured)
+ - Blocks implementation
+ - Fluid simulation
+### AI
+ - Behavior Trees implementation
+### Collisions
+ - Floating-origin collision engine
+ - Dynamic terrain chunk collision management
+
+
+
+
 ## Support Tooling
  - [Jenkins](https://github.com/AustinHoover/StormEngine/blob/master/Jenkinsfile)
  - [Docker](https://gist.github.com/AustinHoover/c5a1799b6f42a410f6db3bfcbaaaff68)
  - [NetArranger](https://github.com/StudioRailgun/NetArranger)
+ - High Leve Netcode Gen (haven't uploaded to github yet)
  - [Remotery](https://github.com/Celtoys/Remotery)
  - [RenderDoc](https://renderdoc.org/)
+ - [VisualVM](https://visualvm.github.io/)
+ - [Eclipse Mission Control](https://adoptium.net/jmc)
+ - [Memory Analyzer](https://eclipse.dev/mat/)
 
 
+
+## Dependencies
+[See Here](https://github.com/AustinHoover/StormEngine/blob/master/DEPENDENCIES.md)
 
 
 
