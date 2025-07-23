@@ -9,6 +9,39 @@ It is uploaded here to be a showcase of the code for the engine, not a complete 
 
 
 
+## Codebase Guide
+ - [First File To Run](https://github.com/AustinHoover/StormEngine/blob/master/src/main/java/electrosphere/engine/Main.java)
+ - [Core Runtime Code](https://github.com/AustinHoover/StormEngine/tree/master/src/main/java/electrosphere)
+ - [Native Library](https://github.com/AustinHoover/StormEngine/tree/master/src/main/c)
+ - [Assets Bunbled With Release](https://github.com/AustinHoover/StormEngine/tree/master/assets)
+ - [Documentation Source Files](https://github.com/AustinHoover/StormEngine/tree/master/docs)
+
+
+
+
+
+
+## Languages
+ - [Java](https://github.com/AustinHoover/StormEngine/tree/master/src/main/java/electrosphere)
+ - [Typescript](https://github.com/AustinHoover/StormEngine/tree/master/assets/Scripts)
+ - [SQL](https://github.com/AustinHoover/StormEngine/tree/master/assets/DB)
+ - [GLSL](https://github.com/AustinHoover/StormEngine/tree/master/assets/Shaders)
+ - [C](https://github.com/AustinHoover/StormEngine/tree/master/src/main/c)
+
+
+
+
+## Support Tooling
+ - [Jenkins](https://github.com/AustinHoover/StormEngine/blob/master/Jenkinsfile)
+ - [Docker](https://gist.github.com/AustinHoover/c5a1799b6f42a410f6db3bfcbaaaff68)
+ - [NetArranger](https://github.com/StudioRailgun/NetArranger)
+ - [Remotery](https://github.com/Celtoys/Remotery)
+ - [RenderDoc](https://renderdoc.org/)
+
+
+
+
+
 
 ## Building
 
