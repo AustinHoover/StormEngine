@@ -13,7 +13,7 @@ It is uploaded here to be a showcase of the code for the engine, not a complete 
  - [First File To Run](https://github.com/AustinHoover/StormEngine/blob/master/src/main/java/electrosphere/engine/Main.java)
  - [Core Runtime Code](https://github.com/AustinHoover/StormEngine/tree/master/src/main/java/electrosphere)
  - [Native Library](https://github.com/AustinHoover/StormEngine/tree/master/src/main/c)
- - [Assets Bunbled With Release](https://github.com/AustinHoover/StormEngine/tree/master/assets)
+ - [Assets Bundled With Release](https://github.com/AustinHoover/StormEngine/tree/master/assets)
  - [Documentation Source Files](https://github.com/AustinHoover/StormEngine/tree/master/docs)
 
 
